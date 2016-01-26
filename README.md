@@ -12,6 +12,20 @@ a new machine - that'll be the `setup_nick.sh`. The other one,
 `setup_guest.sh` is nearly identical, except that it doesn't copy my
 public ssh key into your ~/.ssh/ directory.
 
+Here are two one-liners that will install my runtime configurations. The
+first one is what I personally use on new and remote machines, as it
+installs my public SSH key. IF YOU USE `setup_nick.sh` YOU ARE GIVING ME
+THE FRONT DOOR KEY TO YOUR COMPUTER. The `setup_guest.sh` does NOT
+install my SSH key.
+
+This is the one for me:
+
+    git clone https://github.com/nicholastmosher/nickrc.git ~/.nickrc; ~/.nickrc/setup_nick.sh
+
+This is the (safer) one for you:
+
+    git clone https://github.com/nicholastmosher/nickrc.git ~/.nickrc; ~/.nickrc/setup_guest.sh
+
 ### .vimrc
 
 The .vimrc that I use is about 99% Harlan Haskins's. In fact, I didn't
