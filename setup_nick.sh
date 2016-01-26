@@ -12,11 +12,20 @@ cp .gitignore $HOME/.gitignore
 # Configure the global gitignore
 git config --global core.excludesfile '$HOME/.gitignore'
 
+# Add my public key into the ~/.ssh/ directory.
+if [ ! -d "$HOME/.ssh" ]; then
+    mkdir -p $HOME/.ssh
+fi
+cat obsidyn.pub >> $HOME/.ssh/authorized_keys
+
 # Setup a .profile to set bash as default shell.
-# echo "" | cat >> .profile
-# echo "export SHELL=/bin/bash" | cat >> .profile
-# echo "exec '/bin/bash'" | cat >> .profile
+echo "" | cat >> .profile
+echo "export SHELL=/bin/bash" | cat >> .profile
+echo "exec '/bin/bash'" | cat >> .profile
 
 # Tell bash to source the .bash_profile
-# echo "" | cat >> .bashrc
-# echo "source .bash_profile" | cat >> .bashrc
+echo "" | cat >> .bashrc
+echo "source .bash_profile" | cat >> .bashrc
+
+# Copy .bash_profile to home directory.
+cp .bash_profile $HOME/.bash_profile
