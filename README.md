@@ -1,9 +1,13 @@
-# nickrc
+# Dotfiles
 
 This is a set of the runtime configurations that I use on my day-to-day
 linux setups. I've put together this repo so that I can quickly migrate
 to a new machine, and so that others can pick up some of my settings if
 they so wish.
+
+I do not have everything set up perfectly or even nicely, I'm still
+actively compiling all of the configurations I want to include and
+learning how to do automated installations.
 
 ## Setup scripts
 
