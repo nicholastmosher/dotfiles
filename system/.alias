@@ -5,3 +5,5 @@ alias ld="ls -ld */ --color"	# List in long format, only directories.
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias tkl="tmux kill-session -t "
+alias tls="tmux ls"
