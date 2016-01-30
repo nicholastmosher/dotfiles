@@ -1,0 +1,11 @@
+" Specify shell
+set shell=/bin/bash
+
+" Not compatible with Vi
+set nocompatible
+
+" Set up vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+filetype plugin indent on

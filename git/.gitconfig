@@ -1,0 +1,9 @@
+[user]
+	email = nicholastmosher@gmail.com
+	name = Nick Mosher
+[color]
+	ui = true
+[core]
+	excludesfile = /home/nick/.gitignore
+[push]
+	default = simple
