@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Sometimes having a .bashrc will cause .bash_profile not to run.
+source ~/.bash_profile
