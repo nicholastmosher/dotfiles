@@ -24,14 +24,21 @@ fi
 ./runcom/install.sh
 ./system/install.sh
 
-# Backup old .ctags and hardlink the new one.
+# Backup old .ctags.
 if [ -f ~/.ctags ]; then
 	echo "Found existing .ctags. Backing up and replacing."
 	mv ~/.ctags $BACKUP_DIR/.ctags_old
 fi
 
+# Backup old .tmux.conf.
+if [ -f ~/.tmux.conf ]; then
+	echo "Found existing .tmux.conf. Backing up to $BACKUP_DIR."
+	mv ~/.tmux.conf $BACKUP_DIR/.tmux.conf_old
+fi
+
 # Hardlink new files.
 ln -F ./.ctags ~/
+ln -F ./.tmux.conf ~/
 
 # Return to previous working directory.
 cd $OLDDIR
