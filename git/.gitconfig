@@ -5,5 +5,3 @@
 	ui = true
 [core]
 	excludesfile = /home/nick/.gitignore
-[push]
-	default = simple
