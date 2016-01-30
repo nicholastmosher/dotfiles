@@ -7,8 +7,8 @@ fi
 export EDITOR=vim
 
 # Cause bash to launch in tmux, attaching to a live session if available.
-[[ $TERM != "screen" ]] && exec tmux new-session -A -s 0 # Add -A to attach on start.
+[[ $TERM != "screen" ]] && exec tmux new-session # -A -s 0 # Add -A to attach on start.
 
 # Source other dotfiles
-source .env
-source .alias
+source ~/.env
+source ~/.alias
