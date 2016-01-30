@@ -3,5 +3,3 @@
 	name = Nick Mosher
 [color]
 	ui = true
-[core]
-	excludesfile = /home/nick/.gitignore

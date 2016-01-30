@@ -29,5 +29,8 @@ fi
 ln -F .gitconfig ~/
 ln -F .gitignore_global ~/
 
+# Configure the global gitignore.
+git config --global core.excludesfile '~/.gitignore_global'
+
 # Return to previous working directory.
 cd $OLDDIR
