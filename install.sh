@@ -24,9 +24,15 @@ fi
 ./runcom/install.sh
 ./system/install.sh
 
+# Backup old ~/bin.
+if [ -d ~/bin ]; then
+	echo "Found existing ~/bin dir. Backing up to $BACKUP_DIR/bin."
+	mv ~/bin $BACKUP_DIR/bin_old
+fi
+
 # Backup old .ctags.
 if [ -f ~/.ctags ]; then
-	echo "Found existing .ctags. Backing up and replacing."
+	echo "Found existing .ctags. Backing up to $BACKUP_DIR."
 	mv ~/.ctags $BACKUP_DIR/.ctags_old
 fi
 
@@ -39,6 +45,9 @@ fi
 # Hardlink new files.
 ln -F ./.ctags ~/
 ln -F ./.tmux.conf ~/
+
+# Symlink the ~/bin dir.
+ln -s $DOTFILES_DIR/bin ~/
 
 # Return to previous working directory.
 cd $OLDDIR

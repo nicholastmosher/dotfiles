@@ -12,3 +12,7 @@ export EDITOR=vim
 # Source other dotfiles
 source ~/.env
 source ~/.alias
+
+if [ -f $HOME/.path ]; then
+	source ~/.path
+fi
