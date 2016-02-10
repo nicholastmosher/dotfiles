@@ -26,11 +26,23 @@ if [ -f ~/.gitignore_global ]; then
 fi
 
 # Hardlink new git files.
-ln -F .gitconfig ~/
 ln -F .gitignore_global ~/
 
 # Configure the global gitignore.
 git config --global core.excludesfile '~/.gitignore_global'
+
+# Enable color in git.
+git config --global color.ui auto
+
+# Configure git user.name and user.email
+echo "Enter name for git config user.name: "
+read name
+git config --global user.name "$name"
+echo "Enter email for git config user.email: "
+read email
+git config --global user.email "$email"
+echo "Git config: user.name=$name, user.email=$email"
+echo "To change these settings, see 'git help config'"
 
 # Return to previous working directory.
 cd $OLDDIR
