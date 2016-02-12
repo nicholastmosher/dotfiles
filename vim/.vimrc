@@ -31,6 +31,16 @@ nnoremap  <tab> :bn<CR>
 nnoremap  <S-tab> :bp<CR>
 nnoremap  <Space>  za
 
+" Remap window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Set window splits to the right and bottom
+set splitbelow
+set splitright
+
 " Relative line numbers
 set nu
 set rnu
