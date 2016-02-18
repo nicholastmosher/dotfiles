@@ -37,6 +37,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Remap window splits
+nnoremap <C-W><C-V> :vsp<CR>
+nnoremap <C-W><C-S> :sp<CR>
+
 " Set window splits to the right and bottom
 set splitbelow
 set splitright
