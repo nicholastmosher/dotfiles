@@ -26,3 +26,6 @@ fi
 if [ -f $HOME/.alias.private ]; then
 	source ~/.alias.private
 fi
+
+# Prevent screen freeze from control S.
+stty -ixon

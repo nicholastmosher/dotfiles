@@ -19,14 +19,6 @@ set ttymouse=xterm2
 set foldmethod=syntax
 set foldlevelstart=99
 set scrolloff=2
-" inoremap  <Up>     <NOP>
-" inoremap  <Down>   <NOP>
-" inoremap  <Left>   <NOP>
-" inoremap  <Right>  <NOP>
-" noremap   <Up>     <NOP>
-" noremap   <Down>   <NOP>
-" noremap   <Left>   <NOP>
-" noremap   <Right>  <NOP>
 nnoremap  <tab> :bn<CR>
 nnoremap  <S-tab> :bp<CR>
 nnoremap  <Space>  za
@@ -36,10 +28,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" Remap window splits
-nnoremap <C-W><C-V> :vsp<CR>
-nnoremap <C-W><C-S> :sp<CR>
 
 " Set window splits to the right and bottom
 set splitbelow
@@ -89,7 +77,7 @@ set hlsearch
 au FileType * setlocal formatoptions-=r
 
 " When a macro is created on q, let space replay that macro
-noremap <Space> @q
+" noremap <Space> @q
 
 " Eliminate delay in switching modes
 set timeoutlen=1000 ttimeoutlen=0

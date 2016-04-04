@@ -26,6 +26,7 @@ Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'tpope/vim-afterimage'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
+Bundle 'Valloric/YouCompleteMe'
 
 " Plugins for integrating with tmux.
 Plugin 'christoomey/vim-tmux-navigator'

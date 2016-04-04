@@ -155,5 +155,18 @@ bar {
         status_command i3status
 }
 
+# Pulse Audio controls.
+bindsym XF86AudioRaiseVolume exec --no-startup-id pact1 set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pact1 set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pact1 set-sink-mute 0 toggle
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+
+bindsym XF86AudioPlay exec playerct1 play
+bindsym XF86AudioPause exec playerct1 pause
+bindsym XF86AudioNext exec playerct1 next
+bindsym XF86AudioPrev exec playerct1 prev
+
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -107 -107
 exec --no-startup-id xset r rate 200 100
