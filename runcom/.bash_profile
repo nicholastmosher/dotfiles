@@ -11,7 +11,8 @@ export EDITOR=vim
 
 # The .tmux.conf will launch a new session to attach to if none already exist.
 # Tmux will also give a recursive warning, so clear to scroll past it.
-tmux attach; clear
+tmux -2; clear # Workstation setting.
+#tmux attach; clear # Server setting.
 
 # Source other dotfiles
 source ~/.env
