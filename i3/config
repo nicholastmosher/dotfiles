@@ -171,5 +171,8 @@ bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym $mod+grave exec --no-startup-id gnome-screensaver-command -l
+
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -107 -107
 exec --no-startup-id xset r rate 200 100
+exec --no-startup-id xrandr --output HDMI1 --auto --left-of LVDS1
