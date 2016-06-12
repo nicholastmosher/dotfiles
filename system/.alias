@@ -1,10 +1,12 @@
 alias ls="ls --color"			# Force color for ls.
-alias l="ls -la --color"		# List in long format, include dotfiles.
-alias la="ls -la --color"		# List in long format, include dotfiles.
-alias ld="ls -ld */ --color"	# List in long format, only directories.
+alias l="ls -lah --color"		# List in long format, include dotfiles.
+alias la="ls -lah --color"		# List in long format, include dotfiles.
+alias ld="ls -ldh */ --color"	# List in long format, only directories.
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias tkl="tmux kill-session -t "
 alias tls="tmux ls"
 alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
+alias 'open'='xdg-open'
+alias ']'='xdg-open'
