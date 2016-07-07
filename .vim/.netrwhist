@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/nmosher'
+let g:netrw_dirhist_2='/Users/nmosher/.oh-my-zsh'
+let g:netrw_dirhist_3='/Users/nmosher'
+let g:netrw_dirhist_4='/Users/nmosher/Documents/campaignapi/performance-scripts/logs'
+let g:netrw_dirhist_5='/Users/nmosher/Documents/syndication/components/syndication-platform/campaign-router/campaign-router-web'
+let g:netrw_dirhist_6='/Users/nmosher/Documents/coreservices/components/accountsvc/rspec/src/test/spec'
+let g:netrw_dirhist_7='/Users/nmosher/Documents/coreservices/components/accountsvc/web-v3/spec'
+let g:netrw_dirhist_8='/Users/nmosher/Documents/coreservices/components/accountsvc/.vagrant/machines/default/virtualbox'

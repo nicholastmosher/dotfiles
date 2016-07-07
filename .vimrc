@@ -17,6 +17,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Allow saving files as sudo from non-sudo sesson
+cmap w!! w !sudo tee > /dev/null %
+
 " Set window splits to the right and bottom
 set splitbelow
 set splitright
@@ -67,7 +70,7 @@ set colorcolumn=80
 set timeoutlen=1000 ttimeoutlen=0
 
 " Fix slowness with ruby (and potentially other things)
-set re=1
+" set re=1
 set ttyfast
 set lazyredraw
 
@@ -86,3 +89,9 @@ let NERDTreeShowHidden=1
 " Airline
 set laststatus=2
 let g:airline_powerline_fonts=1
+
+" Set up puppet manifest filetype
+au BufRead,BufNewFile *.pp
+  \ set filetype=puppet
+
+filetype plugin indent on

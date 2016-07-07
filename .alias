@@ -1,0 +1,17 @@
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls="ls -Gh"			# Force color for ls.
+alias sl="ls -Gh"			# Alias for typo
+alias l="ls -la -Gh"		# List in long format, include dotfiles.
+alias la="ls -la -Gh"		# List in long format, include dotfiles.
+alias ld="ls -ld */ -Gh"	# List in long format, only directories.
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias tkl="tmux kill-session -t "
+alias tls="tmux ls"
+alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
+alias rgrep="grep -R"
+alias dree="tree -d"
+alias use_java7="export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/"
+alias use_java8="export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/"
+alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"

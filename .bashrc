@@ -118,3 +118,5 @@ fi
 
 # Sometimes having a .bashrc will cause .bash_profile not to run.
 source ~/.bash_profile
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
