@@ -1,5 +1,5 @@
 " Specify shell
-set shell=/bin/bash
+set shell=/bin/zsh
 
 " Not compatible with Vi
 set nocompatible
