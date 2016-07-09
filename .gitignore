@@ -1,3 +1,4 @@
 # Ignore dotfiles repo
 .dot/
 .vim/
+.oh-my-zsh/
