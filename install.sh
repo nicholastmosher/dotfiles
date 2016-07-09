@@ -23,6 +23,12 @@ else
 	dot checkout -q -f master
 fi
 
+echo "Installing powerline fonts..."
+if [ ! -d $HOME/fonts ]; then
+	git clone -q https://github.com/powerline/fonts.git ~/fonts
+	$HOME/fonts/install.sh
+fi
+
 echo "Downloading oh-my-zsh..."
 if [ ! -d $HOME/.oh-my-zsh ]; then
 	git clone -q https://github.com/nicholastmosher/oh-my-zsh.git $HOME/.oh-my-zsh
