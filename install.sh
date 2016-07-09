@@ -12,22 +12,25 @@ alias dot="$DOT"
 
 # Download dotfiles into ~/.dot
 if [ -d $HOME/.dot ]; then
-	# Force update from origin.
+	echo "Found dotfiles. Updating..."
+	dot config status.showUntrackedFiles no
 	dot fetch -q origin
 	dot reset -q --hard origin/master
-elsif
-	# Clone and force checkout.
+else
+	echo "Cloning dotfiles..."
 	git clone -q --bare https://github.com/nicholastmosher/dotfiles.git $HOME/.dot
+	dot config status.showUntrackedFiles no
 	dot checkout -q -f master
 fi
 
-# Download oh-my-zsh into ~/.oh-my-zsh
+echo "Downloading oh-my-zsh..."
 if [ ! -d $HOME/.oh-my-zsh ]; then
 	git clone -q https://github.com/nicholastmosher/oh-my-zsh.git $HOME/.oh-my-zsh
 fi
 
-# Setup vim.
+echo "Setting up vim..."
 $HOME/.vim/setup.sh &> /dev/null
 
 # Finished
-echo "\nInstall complete!"
+echo
+echo "Install complete!"

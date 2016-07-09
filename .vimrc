@@ -1,8 +1,8 @@
 " Setup Vundle
-source ~/.vim/.vimrc_vundle
+source $HOME/.vim/.vimrc_vundle
 
 " Load Bundles
-source ~/.vim/.vimrc_bundles
+source $HOME/.vim/.vimrc_bundles
 
 " Enable mouse
 set mouse=a
