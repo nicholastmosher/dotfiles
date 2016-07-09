@@ -21,7 +21,7 @@ dot checkout -f master
 git clone -q https://github.com/nicholastmosher/oh-my-zsh.git $HOME/.oh-my-zsh
 
 # Setup vim.
-$HOME/.vim/setup.sh
+$HOME/.vim/setup.sh > /dev/null
 
 # Finished
-clear; echo "Install complete!"
+echo "Install complete!"
