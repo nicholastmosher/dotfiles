@@ -1,5 +1,6 @@
 # Path to oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$ZSH/custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -27,7 +28,9 @@ export PATH="$PATH:/home/nick/.rvm/bin"
 
 export EDITOR="vim"
 
-source $ZSH/oh-my-zsh.sh
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+	source $ZSH/oh-my-zsh.sh
+fi
 
 # Source .alias if present
 if [ -f $HOME/.alias ]; then
