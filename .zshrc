@@ -41,3 +41,8 @@ fi
 if [ -f $HOME/.path ]; then
 	source $HOME/.path
 fi
+
+# Source .osx if Darwin
+if [ "$(uname)" = "Darwin" ]; then
+	source $HOME/.osx
+fi

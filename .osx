@@ -1,0 +1,6 @@
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls="ls -Gh"
+alias sl="ls -Gh"
+alias l="ls -la -Gh"
+alias la="ls -la -Gh"
+alias ld="ls -ld */ -Gh"
