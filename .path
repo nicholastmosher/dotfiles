@@ -1,1 +1,2 @@
 export PATH=$PATH:~/.local/bin/:~/.cabal/bin/
+export JAVA_HOME=~/jdk1.8.0_91/

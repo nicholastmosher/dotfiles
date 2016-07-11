@@ -81,6 +81,7 @@ set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme Tomorrow-Night
 syntax on
+autocmd VimEnter * ColorHighlight " Hex and other color highlighting
 
 " NERDTree
 map <C-e> :NERDTreeToggle<CR>
