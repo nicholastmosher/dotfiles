@@ -14,23 +14,22 @@ export EDITOR=vim
 tmux -2; clear # Workstation setting.
 #tmux attach; clear # Server setting.
 
-# Source other dotfiles
-source ~/.env
-source ~/.alias
+# If the user has a .alias file source it.
+if [ -f $HOME/.alias ]; then
+	source $HOME/.alias
+fi
 
 # If the user has a .path file source it.
 if [ -f $HOME/.path ]; then
-	source ~/.path
+	source $HOME/.path
 fi
 
-# If the user has a private alias, source it.
-if [ -f $HOME/.alias.private ]; then
-	source ~/.alias.private
+# If this is Darwin, source .osx
+if [ "$(uname)" = "Darwin" ]; then
+	source $HOME/.osx
 fi
 
 # Prevent screen freeze from control S.
 stty -ixon
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# source ~/.bashrc
