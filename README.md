@@ -5,7 +5,7 @@ setups for zsh, xterm, tmux, vim, i3, etc. If you're in it for a quick install
 and you trust me, you can just run:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolastmosher/dotfiles/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicholastmosher/dotfiles/master/install.sh)"
 ```
 
 ## Now let me explain what you just installed
