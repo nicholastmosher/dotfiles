@@ -32,14 +32,14 @@ if [ -d $HOME/.dot ]; then
 	dot reset -q --hard origin/master
 else
 	echo "Cloning dotfiles..."
-	git clone -q --bare git@github.com:nicholastmosher/dotfiles.git $HOME/.dot
+	git clone -q --bare https://github.com/nicholastmosher/dotfiles.git $HOME/.dot
 	dot config status.showUntrackedFiles no
 	dot checkout -q -f master
 fi
 
 if [ ! -d $HOME/fonts ]; then
 	echo "Installing powerline fonts..."
-	git clone -q git@github.com:powerline/fonts.git ~/fonts
+	git clone -q https://github.com/powerline/fonts.git ~/fonts
 	$HOME/fonts/install.sh
 fi
 
@@ -51,7 +51,7 @@ if [ -n "$(which zsh | grep -F zsh)" ]; then
 	# Detect if OMZ is installed.
 	if [ ! -d $HOME/.oh-my-zsh ]; then
 		echo "Installing oh-my-zsh..."
-		git clone -q git@github.com:nicholastmosher/oh-my-zsh.git $HOME/.oh-my-zsh
+		git clone -q https://github.com/nicholastmosher/oh-my-zsh.git $HOME/.oh-my-zsh
 	else
 		echo "Updating oh-my-zsh..."
 		cd $HOME/.oh-my-zsh; git fetch -q origin; git reset -q --hard origin/master
@@ -61,7 +61,7 @@ if [ -n "$(which zsh | grep -F zsh)" ]; then
 	# Detect if zsh-autosuggestions is installed.
 	if [ ! -d $ZSH_CUSTOM/plugins/zsh-autosuggestions ]; then
 		echo "Cloning zsh-autsuggestions..."
-		git clone -q git@github.com:zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+		git clone -q https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 	else
 		echo "Updating zsh-autosuggestions..."
 		cd $ZSH_CUSTOM/plugins/zsh-autosuggestions; git pull -q --rebase --stat origin master; cd $SCRIPT
