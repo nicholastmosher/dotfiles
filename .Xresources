@@ -91,3 +91,16 @@ XTerm*colorUL        : _colorUL
 XTerm*foreground     : _foreground
 XTerm*background     : _background
 XTerm*cursorColor    : _cursorColor
+
+rofi.color-window: #393939, #393939, #268bd2
+rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
+rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
+rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
+
+rofi.kb-cancel:           Alt+Space,Escape,Control+bracketleft
+rofi.kb-accept-entry:     Return,KP_Enter
+rofi.kb-remove-char-back: BackSpace
+rofi.kb-mode-next:        Control+l,Super+l,Super+right
+rofi.kb-mode-previous:    Control+h,Super+h,Super+left,Shift+left,Control+Shift+Tab
+rofi.kb-row-down:         Control+j,Super+j,Super+down
+rofi.kb-row-up:           Control+k,Super+k,Super+up
