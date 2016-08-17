@@ -36,11 +36,11 @@ bindsym $mod+Return exec xterm
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec "rofi -combi-modi window,drun -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
+bindsym $mod+d exec "rofi -combi-modi window,drun -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
 # bindsym $mod+d exec dmenu_run
 # bindsym Mod1+space exec dmenu_run
 # bindsym Mod1+space exec rofi -show run -font "snap 10" -fg "#505050" -bg "#000000" -hlfg "#ffb964" -hlbg "#000000" -o 85
-bindsym Mod1+space exec "rofi -combi-modi window,drun -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
+bindsym Mod1+space exec "rofi -combi-modi window,drun -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -175,8 +175,12 @@ bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Launch gnome-screensaver so lock works.
+exec --no-startup-id gnome-screensaver
+
 # Logout mode to require two consecutive bindings to cause logout.
 mode "logout" {
+	bindsym $mod+grave exec --no-startup-id gnome-screensaver-command -l
 	bindsym $mod+control+grave exec --no-startup-id pkill gdm
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
