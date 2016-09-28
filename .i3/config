@@ -3,7 +3,6 @@
 #
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
-#
 
 # i3 config file (v4)
 #
@@ -36,15 +35,8 @@ bindsym $mod+Return exec xterm
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec "rofi -combi-modi window,drun -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
-# bindsym $mod+d exec dmenu_run
-# bindsym Mod1+space exec dmenu_run
-# bindsym Mod1+space exec rofi -show run -font "snap 10" -fg "#505050" -bg "#000000" -hlfg "#ffb964" -hlbg "#000000" -o 85
-bindsym Mod1+space exec "rofi -combi-modi window,drun -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec "rofi -combi-modi window,drun,run -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
+bindsym Mod1+space exec "rofi -combi-modi window,drun,run -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
 
 # change focus
 bindsym $mod+h focus left
@@ -92,9 +84,6 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -180,7 +169,7 @@ exec --no-startup-id gnome-screensaver
 
 # Logout mode to require two consecutive bindings to cause logout.
 mode "logout" {
-	bindsym $mod+grave exec --no-startup-id gnome-screensaver-command -l
+	bindsym $mod+grave mode "default";exec --no-startup-id slock
 	bindsym $mod+control+grave exec --no-startup-id pkill gdm
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
@@ -188,6 +177,6 @@ mode "logout" {
 bindsym $mod+grave mode "logout"
 
 # Misc X settings.
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -107 -107
-exec --no-startup-id xset r rate 200 100
-exec --no-startup-id xrandr --output HDMI1 --auto --left-of LVDS1
+exec --no-startup-id xinput set-button-map 13 1 2 3 5 4 7 6 # Natural scroll
+exec --no-startup-id xset r rate 200 100 # Fast key repeat
+exec --no-startup-id xrandr --output HDMI1 --auto --left-of LVDS1 # Ext monitor

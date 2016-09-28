@@ -13,7 +13,6 @@ xterm*termName: xterm-256color
 xterm*eightBitInput: false
 xterm*utf8: 1
 xterm*ScrollBar: false
-xterm*fullscreen: always
  
 !BLK Cursor
 #define _color0        #333333

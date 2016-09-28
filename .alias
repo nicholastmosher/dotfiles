@@ -1,4 +1,5 @@
 alias ls="ls --color"         # Force color for ls.
+alias sl="ls --color"         # Mistake alias
 alias l="ls -lah --color"     # List in long format, include dotfiles.
 alias la="ls -lah --color"    # List in long format, include dotfiles.
 alias ld="ls -ldh */ --color" # List in long format, only directories.
@@ -11,3 +12,5 @@ alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
 alias dot="git --git-dir=$HOME/.dot --work-tree=$HOME"
 alias open='xdg-open'
 alias ]='xdg-open'
+alias xclip='xclip -selection c'
+alias z="bg"
