@@ -150,9 +150,9 @@ bar {
 }
 
 # Pulse Audio volume/mute controls.
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
-bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/bin/volumeup.sh
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/bin/volumedown.sh
+bindsym XF86AudioMute exec --no-startup-id ~/bin/volumemute.sh
 
 # Backlight controls.
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
