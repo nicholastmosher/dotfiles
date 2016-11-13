@@ -35,8 +35,8 @@ bindsym $mod+Return exec xterm
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec "rofi -combi-modi window,drun,run -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
-bindsym Mod1+space exec "rofi -combi-modi window,drun,run -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
+bindsym $mod+d exec "rofi -combi-modi drun,run,window -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
+bindsym Mod1+space exec "rofi -combi-modi drun,run,window -m -2 -show combi -font 'snap 10' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000' -o 85"
 
 # change focus
 bindsym $mod+h focus left
