@@ -10,7 +10,7 @@ ZSH_THEME="agnoster"
 HYPHEN_INSENSITIVE="true"
 
 # Plugins
-plugins=(git tmux sudo zsh-autosuggestions)
+plugins=(git sudo zsh-autosuggestions)
 
 ### User configuration ###
 

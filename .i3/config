@@ -164,8 +164,11 @@ bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Launch gnome-screensaver so lock works.
-exec --no-startup-id gnome-screensaver
+# Launch compton
+exec --no-startup-id compton -CGb
+
+# Network manager applet
+exec --no-startup-id nm-applet
 
 # Logout mode to require two consecutive bindings to cause logout.
 mode "logout" {

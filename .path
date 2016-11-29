@@ -8,6 +8,7 @@ export PATH="/usr/games:$PATH"
 export PATH="/usr/local/games:$PATH"
 export PATH="/snap/bin:$PATH"
 
-export PATH="~/bin/:$PATH"
-export PATH="~/.local/bin/:$PATH"
-export JAVA_HOME=~/jdk1.8.0_101/
+export PATH="$HOME/bin/:$PATH"
+export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/jdk1.8.0_111/bin:$PATH"
+export JAVA_HOME="~/jdk1.8.0_111/"
