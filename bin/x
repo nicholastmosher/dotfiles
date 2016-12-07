@@ -1,0 +1,2 @@
+# Opens a new xterm session in the current directory.
+xterm -e "cd `pwd` && $SHELL" &
