@@ -14,7 +14,10 @@ plugins=(git sudo zsh-autosuggestions)
 
 ### User configuration ###
 
-export EDITOR="vim"
+export EDITOR="kak"
+
+eval "$(fasd --init auto)"
+function k () kak `fasd -f $1`
 
 if [ -f $ZSH/oh-my-zsh.sh ]; then
 	source $ZSH/oh-my-zsh.sh
@@ -34,3 +37,6 @@ fi
 if [ "$(uname)" = "Darwin" ]; then
 	source $HOME/.osx
 fi
+
+# export NVM_DIR="/home/nick/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
