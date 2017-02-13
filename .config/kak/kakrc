@@ -8,7 +8,7 @@ set global tabstop 4
 face Whitespace rgb:464846,default
 
 # Run editorconfig upon opening a new buffer
-hook global WinCreate .* %{
+hook global WinCreate [^*]* %{
 	editorconfig-load
 
 	# Show whitespaces
@@ -65,6 +65,8 @@ hook global WinCreate .* %{
 
 	# Highlight the word under the cursor
 	addhl dynregex '%opt{curword}' 0:CurWord
+
+	hook window InsertChar \t %{ exec -draft -itersel h@ }
 }
 
 hook global NormalIdle .* %{
@@ -79,7 +81,7 @@ map global normal = ':prompt math: %{exec "a%val{text}<lt>esc>|bc<lt>ret>"}<ret>
 
 map global user n ':lint-next<ret>'
 map global user p '!xclip -o<ret>'
-map global user y '<a-|>xclip -i<ret>; :echo -color Information "copied selection to X11 clipboard"<ret>'
+map global user y '<a-|>xclip -selection c -i<ret>; :echo -color Information "copied selection to X11 clipboard"<ret>'
 map global user R '|xclip -o<ret>'
 
 hook global BufOpenFifo '\*grep\*' %{ map -- global normal - ':grep-next<ret>' }

@@ -1,1 +1,0 @@
-/home/nick/Documents/kak-ycmd/ycmd.kak
