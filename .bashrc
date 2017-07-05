@@ -123,3 +123,5 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Add Haskell paths to PATH:
 export PATH="$HOME/.cabal/bin:$HOME/.local/bin:$PATH"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -16,9 +16,6 @@ plugins=(git sudo zsh-autosuggestions)
 
 export EDITOR="kak"
 
-eval "$(fasd --init auto)"
-function k () kak `fasd -f $1`
-
 if [ -f $ZSH/oh-my-zsh.sh ]; then
 	source $ZSH/oh-my-zsh.sh
 fi
@@ -38,5 +35,10 @@ if [ "$(uname)" = "Darwin" ]; then
 	source $HOME/.osx
 fi
 
+# Launch tmux on start. Uncomment the end to attach on start.
+[[ $TERM != *"screen"* ]] && exec tmux new-session # -A -s 0
+
 # export NVM_DIR="/home/nick/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
