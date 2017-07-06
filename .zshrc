@@ -16,22 +16,28 @@ plugins=(git sudo zsh-autosuggestions)
 
 export EDITOR="kak"
 
-if [ -f $ZSH/oh-my-zsh.sh ]; then
+# Custom completions
+fpath+=~/.zfunc
+
+eval "$(fasd --init auto)"
+function k () kak `fasd -f $1`
+
+if [[ -f $ZSH/oh-my-zsh.sh ]]; then
 	source $ZSH/oh-my-zsh.sh
 fi
 
 # Source .alias if present
-if [ -f $HOME/.alias ]; then
+if [[ -f $HOME/.alias ]]; then
 	source $HOME/.alias
 fi
 
 # Source .path if present
-if [ -f $HOME/.path ]; then
+if [[ -f $HOME/.path ]]; then
 	source $HOME/.path
 fi
 
 # Source .osx if Darwin
-if [ "$(uname)" = "Darwin" ]; then
+if [[ "$(uname)" = "Darwin" ]]; then
 	source $HOME/.osx
 fi
 
@@ -42,3 +48,5 @@ fi
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

@@ -7,15 +7,16 @@ set global tabstop 4
 # Set whitespace face
 face Whitespace rgb:464846,default
 
-# Run editorconfig upon opening a new buffer
+# Upon opening a new buffer
 hook global WinCreate [^*]* %{
+	# Load editorconfig
 	editorconfig-load
 
 	# Show whitespaces
 	addhl show_whitespaces -tab > -tabpad - -lf $
 
-	# Vertical grey highlight on column 80.
-	addhl column 80 default,rgb:444444
+	# Highlight colum 80
+	addhl column 80 default,rgb:333333
 }
 
 # Use jj to exit insert mode.
@@ -39,29 +40,31 @@ map global normal <backtab> :bp<ret>
 	"
 }
 
-def -docstring 'invoke fzf to open a file' fzf-file %{ %sh{
-    if [ -z "$TMUX" ]; then
-        echo echo only works inside tmux
-    else
-        FILE=$(ls -1 | fzf-tmux -d 15)
-        if [ -n "$FILE" ]; then
-            printf 'eval -client %%{%s} edit %%{%s}\n' "${kak_client}" "${FILE}" | kak -p "${kak_session}"
-        fi
-    fi
-} }
-
-def -docstring 'invoke fzf to select a buffer' fzf-buffer %{ %sh{
-    if [ -z "$TMUX" ]; then
-        echo echo only works inside tmux
-    else
-        BUFFER=$(printf %s\\n "${kak_buflist}" | tr : '\n' | fzf-tmux -d 15)
-        if [ -n "$BUFFER" ]; then
-            echo "eval -client '$kak_client' 'buffer ${BUFFER}'" | kak -p ${kak_session}
-        fi
-    fi
-} }
-
 # Aliases for fzf
+def -docstring 'invoke fzf to open a file' \
+	fzf-file %{ %sh{
+		if [ -z "$TMUX" ]; then
+			echo echo only works inside tmux
+		else
+			FILE=$(ls -1 | fzf-tmux -d 15)
+			if [ -n "$FILE" ]; then
+				printf 'eval -client %%{%s} edit %%{%s}\n' "${kak_client}" "${FILE}" | kak -p "${kak_session}"
+			fi
+		fi
+} }
+
+def -docstring 'invoke fzf to select a buffer' \
+	fzf-buffer %{ %sh{
+		if [ -z "$TMUX" ]; then
+			echo echo only works inside tmux
+		else
+			BUFFER=$(printf %s\\n "${kak_buflist}" | tr : '\n' | fzf-tmux -d 15)
+			if [ -n "$BUFFER" ]; then
+				echo "eval -client '$kak_client' 'buffer ${BUFFER}'" | kak -p ${kak_session}
+			fi
+		fi
+} }
+
 alias global ff fzf-file
 alias global fb fzf-buffer
 
@@ -94,8 +97,6 @@ hook global WinCreate .* %{
 
 	# Highlight the word under the cursor
 	addhl dynregex '%opt{curword}' 0:CurWord
-
-	hook window InsertChar \t %{ exec -draft -itersel h@ }
 }
 
 hook global NormalIdle .* %{
@@ -117,8 +118,6 @@ hook global BufOpenFifo '\*grep\*' %{ map -- global normal - ':grep-next<ret>' }
 hook global BufOpenFifo '\*make\*' %{ map -- global normal - ':make-next<ret>' }
 
 hook global WinCreate ^[^*]+$ %{ addhl number_lines }
-
-# set global autoinfo 2
 
 set global ui_options ncurses_status_on_top=true
 
