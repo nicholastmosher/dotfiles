@@ -40,16 +40,17 @@ map global normal <backtab> :bp<ret>
 	"
 }
 
-# Aliases for fzf
 def -docstring 'invoke fzf to open a file' \
 	fzf-file %{ %sh{
 		if [ -z "$TMUX" ]; then
 			echo echo only works inside tmux
 		else
-			FILE=$(ls -1 | fzf-tmux -d 15)
+		(
+			FILE=$(rg --files --hidden | fzf-tmux -d 15)
 			if [ -n "$FILE" ]; then
 				printf 'eval -client %%{%s} edit %%{%s}\n' "${kak_client}" "${FILE}" | kak -p "${kak_session}"
 			fi
+		) > /dev/null 2>&1 </dev/null &
 		fi
 } }
 
@@ -58,13 +59,16 @@ def -docstring 'invoke fzf to select a buffer' \
 		if [ -z "$TMUX" ]; then
 			echo echo only works inside tmux
 		else
+		(
 			BUFFER=$(printf %s\\n "${kak_buflist}" | tr : '\n' | fzf-tmux -d 15)
 			if [ -n "$BUFFER" ]; then
 				echo "eval -client '$kak_client' 'buffer ${BUFFER}'" | kak -p ${kak_session}
 			fi
+		) > /dev/null 2>&1 < /dev/null &
 		fi
 } }
 
+# Aliases for fzf
 alias global ff fzf-file
 alias global fb fzf-buffer
 
@@ -72,7 +76,8 @@ alias global fb fzf-buffer
 
 set global makecmd 'make -j8'
 set global grepcmd 'ag --column'
-map global normal <c-p> :lint<ret>
+#map global normal <c-p> :lint<ret>
+map global normal <c-p> :ff<ret>
 
 hook global WinSetOption filetype=(c|cpp) %{
 	clang-enable-autocomplete
