@@ -46,7 +46,7 @@ def -docstring 'invoke fzf to open a file' \
 			echo echo only works inside tmux
 		else
 		(
-			FILE=$(rg --files --hidden | fzf-tmux -d 15)
+			FILE=$(rg --files --hidden | fzf-tmux --bind=ctrl-p:cancel -d 15)
 			if [ -n "$FILE" ]; then
 				printf 'eval -client %%{%s} edit %%{%s}\n' "${kak_client}" "${FILE}" | kak -p "${kak_session}"
 			fi
@@ -60,7 +60,7 @@ def -docstring 'invoke fzf to select a buffer' \
 			echo echo only works inside tmux
 		else
 		(
-			BUFFER=$(printf %s\\n "${kak_buflist}" | tr : '\n' | fzf-tmux -d 15)
+			BUFFER=$(printf %s\\n "${kak_buflist}" | tr : '\n' | fzf-tmux --bind=ctrl-e:cancel -d 15)
 			if [ -n "$BUFFER" ]; then
 				echo "eval -client '$kak_client' 'buffer ${BUFFER}'" | kak -p ${kak_session}
 			fi
@@ -72,12 +72,15 @@ def -docstring 'invoke fzf to select a buffer' \
 alias global ff fzf-file
 alias global fb fzf-buffer
 
+# Ctrl-p for fuzzy-file, Ctrl-e for fuzzy-buffer
+map global normal <c-p> :ff<ret>
+map global normal <c-e> :fb<ret>
+
 # Mawww's kakrc
 
 set global makecmd 'make -j8'
-set global grepcmd 'ag --column'
+#set global grepcmd 'ag --column'
 #map global normal <c-p> :lint<ret>
-map global normal <c-p> :ff<ret>
 
 hook global WinSetOption filetype=(c|cpp) %{
 	clang-enable-autocomplete
@@ -95,10 +98,11 @@ hook global WinSetOption filetype=python %{
 
 decl -hidden regex curword
 face CurWord default,rgb:4a4a4a
+face SearchHl default,rgb:555500
 
 hook global WinCreate .* %{
 	addhl show_matching
-	addhl dynregex '%reg{/}' 0:+u
+	addhl dynregex '%reg{/}' 0:SearchHl
 
 	# Highlight the word under the cursor
 	addhl dynregex '%opt{curword}' 0:CurWord
