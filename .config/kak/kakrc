@@ -46,7 +46,7 @@ def -docstring 'invoke fzf to open a file' \
 			echo echo only works inside tmux
 		else
 		(
-			FILE=$(rg --files --hidden | fzf-tmux --bind=ctrl-p:cancel -d 15)
+			FILE=$(rg --files --hidden | fzf-tmux --bind=ctrl-p:cancel,tab:up,btab:down -d 15)
 			if [ -n "$FILE" ]; then
 				printf 'eval -client %%{%s} edit %%{%s}\n' "${kak_client}" "${FILE}" | kak -p "${kak_session}"
 			fi
@@ -60,13 +60,17 @@ def -docstring 'invoke fzf to select a buffer' \
 			echo echo only works inside tmux
 		else
 		(
-			BUFFER=$(printf %s\\n "${kak_buflist}" | tr : '\n' | fzf-tmux --bind=ctrl-e:cancel -d 15)
+			BUFFER=$(printf %s\\n "${kak_buflist}" | tr : '\n' | fzf-tmux --bind=ctrl-e:cancel,tab:up,btab:down -d 15)
 			if [ -n "$BUFFER" ]; then
 				echo "eval -client '$kak_client' 'buffer ${BUFFER}'" | kak -p ${kak_session}
 			fi
 		) > /dev/null 2>&1 < /dev/null &
 		fi
 } }
+
+# Aliases for tmux-new
+alias global sp tmux-new-vertical
+alias global vsp tmux-new-horizontal
 
 # Aliases for fzf
 alias global ff fzf-file
