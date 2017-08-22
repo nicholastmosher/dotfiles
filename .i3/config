@@ -180,4 +180,4 @@ bindsym $mod+grave mode "logout"
 exec --no-startup-id xinput set-button-map 13 1 2 3 5 4 7 6 # Natural scroll
 exec --no-startup-id xset r rate 200 100 # Fast key repeat
 exec --no-startup-id xrandr --output HDMI1 --auto --left-of LVDS1 # Ext monitor
-exec --no-startup-id /home/nick/bin/xflux -z 14603
+exec --no-startup-id setxkbmap -option caps:escape

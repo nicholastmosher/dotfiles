@@ -1,3 +1,0 @@
-clear Lock
-keysym Caps_Lock = Escape
-add Lock = Caps_Lock
