@@ -1,0 +1,7 @@
+#!/bin/bash
+
+alias ls="ls -Gh"
+alias sl="ls -Gh"
+alias l="ls -la -Gh"
+alias la="ls -la -Gh"
+alias al="ls -la -Gh"

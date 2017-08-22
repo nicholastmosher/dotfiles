@@ -1,16 +1,28 @@
+#!/bin/bash
+
 alias ls="ls --color"         # Force color for ls.
 alias sl="ls --color"         # Mistake alias
 alias l="ls -lah --color"     # List in long format, include dotfiles.
 alias la="ls -lah --color"    # List in long format, include dotfiles.
-alias al="ls -lah --color"
+alias al="ls -lah --color"    # List in long format, include dotfiles.
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias .....="cd ../../../.."
 alias tkl="tmux kill-session -t "
 alias tls="tmux ls"
 alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
-alias dot="git --git-dir=$HOME/.dot --work-tree=$HOME"
+alias dot="git --git-dir=${HOME}/.dot --work-tree=${HOME}"
 alias open='xdg-open'
 alias ]='xdg-open'
 alias xclip='xclip -selection c'
 alias z="bg"
+
+# Alias ff to fzf if fzf is installed.
+[[ -x "$(command -v fzf)" ]] && alias ff="fzf"
+
+# If on OSX, source osx-specific aliases.
+[[ "$(uname)" == "Darwin" ]] && source "${HOME}"/.alias.osx
+
+# If there is a private alias file, source it
+[[ -f "${HOME}/.alias.private" ]] && source "${HOME}/.alias.private"

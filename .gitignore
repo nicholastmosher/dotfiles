@@ -2,3 +2,7 @@
 .dot/
 .vim/
 .oh-my-zsh/
+
+# Private configs
+.alias.private
+.path.private
