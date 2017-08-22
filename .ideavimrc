@@ -1,1 +1,35 @@
 set clipboard+=unnamed
+
+nnoremap U <c-r>
+vnoremap U <c-r>
+imap jj <Esc>
+
+nnoremap gh 0
+nnoremap gj G
+nnoremap gk gg
+nnoremap gl $
+
+nnoremap Gh 0
+nnoremap Gj G
+nnoremap Gk gg
+nnoremap Gl $
+
+nnoremap GH 0
+nnoremap GJ G
+nnoremap GK gg
+nnoremap GL $
+
+vnoremap gh 0
+vnoremap gj G
+vnoremap gk gg
+vnoremap gl $
+
+vnoremap Gh 0
+vnoremap Gj G
+vnoremap Gk gg
+vnoremap Gl $
+
+vnoremap GH 0
+vnoremap GJ G
+vnoremap GK gg
+vnoremap GL $
