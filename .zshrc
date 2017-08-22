@@ -1,5 +1,5 @@
 # Path to oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 export ZSH_CUSTOM=$ZSH/custom
 
 # Set name of the theme to load.
@@ -14,39 +14,32 @@ plugins=(git sudo zsh-autosuggestions)
 
 ### User configuration ###
 
-export EDITOR="kak"
+# Use kakoune as default editor if installed.
+[[ -x "$(command -v kak)" ]] && export EDITOR="kak"
 
 # Custom completions
 fpath+=~/.zfunc
 
-eval "$(fasd --init auto)"
-function k () kak `fasd -f $1`
-
-if [[ -f $ZSH/oh-my-zsh.sh ]]; then
-	source $ZSH/oh-my-zsh.sh
-fi
+# Source "oh-my-zsh" if installed
+[[ -f "${ZSH}/oh-my-zsh.sh" ]] && source "${ZSH}/oh-my-zsh.sh"
 
 # Source .alias if present
-if [[ -f $HOME/.alias ]]; then
-	source $HOME/.alias
-fi
+[[ -f "${HOME}/.alias" ]] && source "${HOME}/.alias"
 
 # Source .path if present
-if [[ -f $HOME/.path ]]; then
-	source $HOME/.path
-fi
+[[ -f "${HOME}/.path" ]] && source "${HOME}/.path"
 
 # Source .osx if Darwin
-if [[ "$(uname)" = "Darwin" ]]; then
-	source $HOME/.osx
-fi
+[[ "$(uname)" == "Darwin" ]] && source "${HOME}/.osx"
 
 # Launch tmux on start. Uncomment the end to attach on start.
-[[ $TERM != *"screen"* ]] && exec tmux new-session # -A -s 0
+[[ "${TERM}" != *"screen"* ]] && exec tmux new-session # -A -s 0
 
-# export NVM_DIR="/home/nick/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# Configure fuzzy finder if installed
+[[ -f "${HOME}/.fzf.zsh" ]] && source "${HOME}/.fzf.zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# If rg is installed, use it as fzf command.
+if [[ -x "$(command -v "rg")" ]]; then
+	export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
+	export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+fi
