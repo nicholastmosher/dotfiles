@@ -1,28 +1,39 @@
 set clipboard+=unnamed
 
+; Map U to redo
 nnoremap U <c-r>
 vnoremap U <c-r>
+
+; Map jj to escape
 imap jj <Esc>
 
+; Use x or X to select line
+nnoremap x V
+vnoremap x V
+nnoremap X V
+vnoremap X V ; What if already in visual-line?
+
+; Map 'goto' keys in normal and visual mode
 nnoremap gh 0
 nnoremap gj G
 nnoremap gk gg
 nnoremap gl $
 
-nnoremap Gh 0
-nnoremap Gj G
-nnoremap Gk gg
-nnoremap Gl $
+vnoremap gh v0
+vnoremap gj vG
+vnoremap gk vgg
+vnoremap gl v$
 
-nnoremap GH 0
-nnoremap GJ G
-nnoremap GK gg
-nnoremap GL $
+; Map 'goto' keys to 'select-move' in normal and visual mode.
+nnoremap Gh v0
+nnoremap Gj vG
+nnoremap Gk vgg
+nnoremap Gl v$
 
-vnoremap gh 0
-vnoremap gj G
-vnoremap gk gg
-vnoremap gl $
+nnoremap GH v0
+nnoremap GJ vG
+nnoremap GK vgg
+nnoremap GL v$
 
 vnoremap Gh 0
 vnoremap Gj G
@@ -33,3 +44,30 @@ vnoremap GH 0
 vnoremap GJ G
 vnoremap GK gg
 vnoremap GL $
+
+; Map homerow movements to 'select-move'
+nnoremap H vh
+nnoremap J vj
+nnoremap K vk
+nnoremap L vl
+
+vnoremap h vh
+vnoremap j vj
+vnoremap k vk
+vnoremap l vl
+
+vnoremap H h
+vnoremap J j
+vnoremap K k
+vnoremap L l
+
+; Map word movements to 'select-move'
+nnoremap w ve
+nnoremap W vw
+nnoremap b vb
+nnoremap B vb
+
+vnoremap w vve
+vnoremap W w
+vnoremap b vvb
+vnoremap B b
