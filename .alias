@@ -9,7 +9,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias tkl="tmux kill-session -t "
 alias tls="tmux ls"
 alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
 alias dot="git --git-dir=${HOME}/.dot --work-tree=${HOME}"
@@ -17,12 +16,21 @@ alias open='xdg-open'
 alias ]='xdg-open'
 alias xclip='xclip -selection c'
 alias z="bg"
+alias ":sp"="tmux split-window"
+alias ":vsp"="tmux split-window -h"
 
-# Alias ff to fzf if fzf is installed.
+# Alias ff to fzf if installed.
 [[ -x "$(command -v fzf)" ]] && alias ff="fzf"
+
+# Assign tab bindings for fzf-tmux if installed.
+[[ -x "$(command -v fzf-tmux)" ]] && alias fzf-tmux="fzf-tmux --bind=tab:up,btab:down"
 
 # If on OSX, source osx-specific aliases.
 [[ "$(uname)" == "Darwin" ]] && source "${HOME}"/.alias.osx
 
 # If there is a private alias file, source it
 [[ -f "${HOME}/.alias.private" ]] && source "${HOME}/.alias.private"
+
+tkl() {
+    tmux kill-session -t "$@"
+}
