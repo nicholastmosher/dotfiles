@@ -19,6 +19,9 @@ alias z="bg"
 alias ":sp"="tmux split-window"
 alias ":vsp"="tmux split-window -h"
 
+# Use git completions for "dot" alias when using zsh
+[[ "${SHELL}" == "/bin/zsh" ]] && compdef dot=git
+
 # Alias ff to fzf if installed.
 [[ -x "$(command -v fzf)" ]] && alias ff="fzf"
 
