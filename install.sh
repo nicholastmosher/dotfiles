@@ -19,11 +19,22 @@ esac
 # If XDG_CONFIG_HOME is not set, set it to $HOME.
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME}"
 
-# Alias "dot" as a special git command with repo and work tree paths.
-alias dot="$(which git) --git-dir=${HOME}/.dot --work-tree=${HOME}"
+install_utils() {
+
+	# Install on Debian
+	if [[ -x "$(command -v apt)" ]]; then
+		yes | apt update
+		yes | apt install git
+		yes | apt install vim
+	fi
+}
 
 # Download dotfiles into "${HOME}/.dot"
 download_dotfiles() {
+
+	# Alias "dot" as a special git command with repo and work tree paths.
+	alias dot="$(which git) --git-dir=${HOME}/.dot --work-tree=${HOME}"
+
 	if [[ -d "${HOME}/.dot" ]]; then
 		echo "Found dotfiles. Updating"
 		dot config status.showUntrackedFiles no
@@ -49,10 +60,10 @@ install_fonts() {
 # Install zsh on osx or some linux distros.
 install_zsh() {
 	echo "Installing zsh"
-	[[ "$(uname)" == "Darwin" ]] && brew install zsh zsh_completions
-	[[ "$(command -v apt)"    ]] && apt install zsh
-	[[ "$(command -v dnf)"    ]] && dnf install zsh
-	[[ "$(command -v pacman)" ]] && pacman -S zsh
+	[[ "$(uname)" == "Darwin"    ]] && yes | brew install zsh zsh_completions
+	[[ -x "$(command -v apt)"    ]] && yes | apt install zsh
+	[[ -x "$(command -v dnf)"    ]] && yes | dnf install zsh
+	[[ -x "$(command -v pacman)" ]] && yes | pacman -S zsh
 
 	# Use zsh as startup shell
 	chsh -s "$(which zsh)"
@@ -186,6 +197,7 @@ configure_vim() {
 }
 
 main() {
+	install_utils;
 	download_dotfiles;
 	install_fonts;
 	install_zsh;

@@ -1,0 +1,2 @@
+install: ./install.sh
+script: ./verify_install.sh
