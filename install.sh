@@ -114,7 +114,7 @@ configure_zsh() {
 # Install ripgrep completions for any installed shells.
 install_ripgrep_completions() {
 	echo "Installing ripgrep completions"
-	local completions_path="$1"; shift
+	local completions_path="$1/complete"; shift
 	local install_dir
 
 	# Install rg completions for bash
