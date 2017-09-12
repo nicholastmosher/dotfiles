@@ -25,9 +25,9 @@ install_utils() {
 
 	# Install on Debian
 	if [[ -x "$(command -v apt)" ]]; then
-		yes | apt update
-		yes | apt install git
-		yes | apt install vim
+		yes | sudo apt update
+		yes | sudo apt install git
+		yes | sudo apt install vim
 	fi
 }
 
@@ -63,9 +63,9 @@ install_fonts() {
 install_zsh() {
 	echo "Installing zsh"
 	[[ "$(uname)" == "Darwin"    ]] && yes | brew install zsh zsh_completions
-	[[ -x "$(command -v apt)"    ]] && yes | apt install zsh
-	[[ -x "$(command -v dnf)"    ]] && yes | dnf install zsh
-	[[ -x "$(command -v pacman)" ]] && yes | pacman -S zsh
+	[[ -x "$(command -v apt)"    ]] && yes | sudo apt install zsh
+	[[ -x "$(command -v dnf)"    ]] && yes | sudo dnf install zsh
+	[[ -x "$(command -v pacman)" ]] && yes | sudo pacman -S zsh
 
 	# Use zsh as startup shell
 	chsh -s "$(which zsh)"
