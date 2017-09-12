@@ -23,9 +23,9 @@ install_utils() {
 
 	# Install on Debian
 	if [[ -x "$(command -v apt)" ]]; then
-		yes | apt update
-		yes | apt install git
-		yes | apt install vim
+		yes | sudo apt update
+		yes | sudo apt install git
+		yes | sudo apt install vim
 	fi
 }
 
@@ -53,7 +53,7 @@ install_fonts() {
 	if [[ ! -d "${HOME}/fonts" ]]; then
 		echo "Installing powerline fonts"
 		git clone -q https://github.com/powerline/fonts.git "${HOME}/fonts"
-		sh "${HOME}/fonts/install.sh"
+		bash "${HOME}/fonts/install.sh"
 	fi
 }
 
@@ -61,9 +61,9 @@ install_fonts() {
 install_zsh() {
 	echo "Installing zsh"
 	[[ "$(uname)" == "Darwin"    ]] && yes | brew install zsh zsh_completions
-	[[ -x "$(command -v apt)"    ]] && yes | apt install zsh
-	[[ -x "$(command -v dnf)"    ]] && yes | dnf install zsh
-	[[ -x "$(command -v pacman)" ]] && yes | pacman -S zsh
+	[[ -x "$(command -v apt)"    ]] && yes | sudo apt install zsh
+	[[ -x "$(command -v dnf)"    ]] && yes | sudo dnf install zsh
+	[[ -x "$(command -v pacman)" ]] && yes | sudo pacman -S zsh
 
 	# Use zsh as startup shell
 	chsh -s "$(which zsh)"
@@ -112,7 +112,7 @@ configure_zsh() {
 # Install ripgrep completions for any installed shells.
 install_ripgrep_completions() {
 	echo "Installing ripgrep completions"
-	local completions_path="$1"; shift
+	local completions_path="$1/complete"; shift
 	local install_dir
 
 	# Install rg completions for bash
@@ -173,10 +173,11 @@ install_ripgrep() {
 	if [[ "$(uname)" == "Linux" ]]; then
 		local rg_release="ripgrep-0.5.2-x86_64-unknown-linux-musl"
 		wget https://github.com/BurntSushi/ripgrep/releases/download/0.5.2/ripgrep-0.5.2-x86_64-unknown-linux-musl.tar.gz > /dev/null
+		tar xf "${rg_release}.tar.gz"
 		cp "${rg_release}/rg" "${HOME}/bin/"
 		install_ripgrep_completions "./${rg_release}";
 		rm "${rg_release}.tar.gz"
-		rm r "${rg_release}"
+		rm -r "${rg_release}"
 	fi
 }
 
@@ -187,13 +188,13 @@ install_fzf() {
 
 	echo "Installing fzf"
 	git clone https://github.com/junegunn/fzf "${HOME}/.fzf"
-	sh "${HOME}/.fzf/install"
+	bash "${HOME}/.fzf/install"
 }
 
 # Set up vim
 configure_vim() {
 	echo "Setting up vim"
-	sh "${HOME}/.vim/setup.sh" &> /dev/null
+	bash "${HOME}/.vim/setup.sh" &> /dev/null
 }
 
 main() {
@@ -204,10 +205,11 @@ main() {
 	configure_zsh;
 	configure_vim;
 	install_ripgrep;
-	configure_fzf;
+	install_fzf;
 
 	# Finished
 	echo
 	echo "Install complete!"
 }
 main
+

@@ -1,2 +1,3 @@
-install: ./install.sh
+sudo: required
+install: yes | sudo bash ./install.sh
 script: ./verify_install.sh
