@@ -23,12 +23,6 @@ fpath+=~/.zfunc
 # Source "oh-my-zsh" if installed
 [[ -f "${ZSH}/oh-my-zsh.sh" ]] && source "${ZSH}/oh-my-zsh.sh"
 
-# Source .alias if present
-[[ -f "${HOME}/.alias" ]] && source "${HOME}/.alias"
-
-# Source .path if present
-[[ -f "${HOME}/.path" ]] && source "${HOME}/.path"
-
 # Source .osx if Darwin
 [[ "$(uname)" == "Darwin" ]] && source "${HOME}/.osx"
 
@@ -43,3 +37,10 @@ if [[ -x "$(command -v "rg")" ]]; then
 	export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 	export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
+
+# Source .alias if present
+[[ -f "${HOME}/.alias" ]] && source "${HOME}/.alias"
+
+# Source .path if present
+[[ -f "${HOME}/.path" ]] && source "${HOME}/.path"
+
