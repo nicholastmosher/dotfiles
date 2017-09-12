@@ -21,7 +21,7 @@ plugins=(git sudo zsh-autosuggestions)
 fpath+=~/.zfunc
 
 # Source "oh-my-zsh" if installed
-[[ -f "${ZSH}/oh-my-zsh.sh" ]] && source "${ZSH}/oh-my-zsh.sh"
+[[ -f "${ZSH}/oh-my-zsh.sh" ]] && DISABLE_AUTO_UPDATE=true source "${ZSH}/oh-my-zsh.sh"
 
 # Source .osx if Darwin
 [[ "$(uname)" == "Darwin" ]] && source "${HOME}/.osx"
