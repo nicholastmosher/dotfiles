@@ -179,7 +179,7 @@ install_ripgrep() {
 		cp "${rg_release}/rg" "${HOME}/bin/"
 		install_ripgrep_completions "./${rg_release}";
 		rm "${rg_release}.tar.gz"
-		rm r "${rg_release}"
+		rm -r "${rg_release}"
 	fi
 }
 

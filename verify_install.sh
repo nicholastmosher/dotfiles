@@ -1,20 +1,15 @@
 #!/bin/bash
 
-set -x
-
+# Verify that git is installed
 [[ -x "$(command -v git)" ]] || exit 1
-echo "GIT"
-echo $(which git)
-[[ -x "$(command -v vim)" ]] || exit 1
-echo "VIM"
-echo $(which vim)
-[[ -x "$(command -v zsh)" ]] || exit 1
-echo "ZSH"
-echo $(which zsh)
-[[ -x "$(command -v rg)"  ]] || exit 1
-echo "RG"
-echo $(which rg)
 
-set +x
+# Verify that vim is installed
+[[ -x "$(command -v vim)" ]] || exit 1
+
+# Verify that zsh is installed
+[[ -x "$(command -v zsh)" ]] || exit 1
+
+# Verify that ripgrep is installed
+[[ -x "$(command -v rg)"  ]] || exit 1
 
 exit 0
