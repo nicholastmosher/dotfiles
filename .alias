@@ -16,6 +16,8 @@ alias open='xdg-open'
 alias ]='xdg-open'
 alias xclip='xclip -selection c'
 alias z="bg"
+alias sp="tmux split-window"
+alias vsp="tmux split-window -h"
 alias ":sp"="tmux split-window"
 alias ":vsp"="tmux split-window -h"
 
