@@ -55,7 +55,7 @@ install_fonts() {
 	if [[ ! -d "${HOME}/fonts" ]]; then
 		echo "Installing powerline fonts"
 		git clone -q https://github.com/powerline/fonts.git "${HOME}/fonts"
-		sh "${HOME}/fonts/install.sh"
+		bash "${HOME}/fonts/install.sh"
 	fi
 }
 
@@ -175,6 +175,7 @@ install_ripgrep() {
 	if [[ "$(uname)" == "Linux" ]]; then
 		local rg_release="ripgrep-0.5.2-x86_64-unknown-linux-musl"
 		wget https://github.com/BurntSushi/ripgrep/releases/download/0.5.2/ripgrep-0.5.2-x86_64-unknown-linux-musl.tar.gz > /dev/null
+		tar xf "${rg_release}.tar.gz"
 		cp "${rg_release}/rg" "${HOME}/bin/"
 		install_ripgrep_completions "./${rg_release}";
 		rm "${rg_release}.tar.gz"
@@ -189,13 +190,13 @@ install_fzf() {
 
 	echo "Installing fzf"
 	git clone https://github.com/junegunn/fzf "${HOME}/.fzf"
-	sh "${HOME}/.fzf/install"
+	bash "${HOME}/.fzf/install"
 }
 
 # Set up vim
 configure_vim() {
 	echo "Setting up vim"
-	sh "${HOME}/.vim/setup.sh" &> /dev/null
+	bash "${HOME}/.vim/setup.sh" &> /dev/null
 }
 
 main() {
@@ -206,7 +207,7 @@ main() {
 	configure_zsh;
 	configure_vim;
 	install_ripgrep;
-	configure_fzf;
+	install_fzf;
 
 	# Finished
 	echo
