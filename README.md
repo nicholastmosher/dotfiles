@@ -1,5 +1,7 @@
 # Dotfiles
 
+[![Build status](https://travis-ci.org/nicholastmosher/dotfiles.svg?branch=master)](https://travis-ci.org/nicholastmosher/dotfiles)
+
 Here's a repo of all of my favorite environment configurations, including
 setups for zsh, xterm, tmux, vim, i3, etc. If you're in it for a quick install
 and you trust me, you can just run:
