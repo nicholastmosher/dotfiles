@@ -9,6 +9,8 @@ echo "/_/ |_/  /_/  \___/ /_/|_|      /_____/ \____/\__/ /_/    /_/  /_/  \___//
 echo "                                                                                 "
 printf "%s" "$(tput sgr0)" # Normal color
 
+set -x
+
 # Prompt confirmation.
 read -p "Are you sure you want to continue? This may overwrite existing files. [y/N] " yn
 case "${yn}" in
@@ -211,3 +213,5 @@ main() {
 	echo "Install complete!"
 }
 main
+
+set +x
