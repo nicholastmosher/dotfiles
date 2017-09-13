@@ -26,9 +26,6 @@ fpath+=~/.zfunc
 # Source .osx if Darwin
 [[ "$(uname)" == "Darwin" ]] && source "${HOME}/.osx"
 
-# Launch tmux on start. Uncomment the end to attach on start.
-[[ "${TERM}" != *"screen"* ]] && exec tmux new-session # -A -s 0
-
 # Configure fuzzy finder if installed
 [[ -f "${HOME}/.fzf.zsh" ]] && source "${HOME}/.fzf.zsh"
 
@@ -43,4 +40,7 @@ fi
 
 # Source .path if present
 [[ -f "${HOME}/.path" ]] && source "${HOME}/.path"
+
+# Launch tmux on start. Uncomment the end to attach on start.
+[[ "${TERM}" != *"screen"* ]] && exec tmux new-session # -A -s 0
 
