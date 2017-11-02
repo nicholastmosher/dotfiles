@@ -1,10 +1,19 @@
 #!/bin/bash
 
-alias ls="ls --color"         # Force color for ls.
-alias sl="ls --color"         # Mistake alias
-alias l="ls -lah --color"     # List in long format, include dotfiles.
-alias la="ls -lah --color"    # List in long format, include dotfiles.
-alias al="ls -lah --color"    # List in long format, include dotfiles.
+if [[ -x "$(command -v exa)" ]]; then
+    alias ls="exa"                # Use exa if installed.
+    alias sl="exa"                # Mistake alias
+    alias l="exa -labh --git"     # List in long format, include dotfiles.
+    alias la="exa -labh --git"    # List in long format, include dotfiles.
+    alias al="exa -labh --git"    # List in long format, include dotfiles.
+else
+    alias ls="ls --color"         # Force color for ls.
+    alias sl="ls --color"         # Mistake alias
+    alias l="ls -lah --color"     # List in long format, include dotfiles.
+    alias la="ls -lah --color"    # List in long format, include dotfiles.
+    alias al="ls -lah --color"    # List in long format, include dotfiles.
+fi
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
