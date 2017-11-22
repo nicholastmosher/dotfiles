@@ -32,6 +32,8 @@ install_utils() {
 # Download dotfiles into "${HOME}/.dot"
 download_dotfiles() {
 
+	shopt -s expand_aliases
+
 	# Alias "dot" as a special git command with repo and work tree paths.
 	alias dot="$(which git) --git-dir=${HOME}/.dot --work-tree=${HOME}"
 
