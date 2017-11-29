@@ -8,10 +8,10 @@ vnoremap U <c-r>
 imap jj <Esc>
 
 ; Use x or X to select line
-nnoremap x V
-vnoremap x V
-nnoremap X V
-vnoremap X V ; What if already in visual-line?
+nnoremap x $V
+vnoremap x <Esc>jV
+nnoremap X $V
+vnoremap X j
 
 ; Map 'goto' keys in normal and visual mode
 nnoremap gh 0
@@ -51,10 +51,10 @@ nnoremap J vj
 nnoremap K vk
 nnoremap L vl
 
-vnoremap h vh
-vnoremap j vj
-vnoremap k vk
-vnoremap l vl
+vnoremap h <Esc>h
+vnoremap j <Esc>j
+vnoremap k <Esc>k
+vnoremap l <Esc>l
 
 vnoremap H h
 vnoremap J j
@@ -67,7 +67,7 @@ nnoremap W vw
 nnoremap b vb
 nnoremap B vb
 
-vnoremap w vve
+vnoremap w <Esc>ve
 vnoremap W w
-vnoremap b vvb
+vnoremap b <Esc>vb
 vnoremap B b
