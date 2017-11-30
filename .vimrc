@@ -94,4 +94,7 @@ let g:airline_powerline_fonts=1
 au BufRead,BufNewFile *.pp
   \ set filetype=puppet
 
+" Use kakoune bindings
+source ~/.vim_kakbindings
+
 filetype plugin indent on
