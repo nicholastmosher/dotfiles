@@ -1,0 +1,71 @@
+" Map U to redo
+nnoremap U <c-r>
+vnoremap U <c-r>
+
+" Map jj to escape
+imap jj <Esc>
+
+" Use x or X to select line
+nnoremap x $V
+vnoremap x <Esc>jV
+nnoremap X $V
+vnoremap X j
+
+" Map 'goto' keys in normal and visual mode
+nnoremap gh 0
+nnoremap gj G
+nnoremap gk gg
+nnoremap gl $
+
+vnoremap gh v0
+vnoremap gj vG
+vnoremap gk vgg
+vnoremap gl v$
+
+" Map 'goto' keys to 'select-move' in normal and visual mode.
+nnoremap Gh v0
+nnoremap Gj vG
+nnoremap Gk vgg
+nnoremap Gl v$
+
+nnoremap GH v0
+nnoremap GJ vG
+nnoremap GK vgg
+nnoremap GL v$
+
+vnoremap Gh 0
+vnoremap Gj G
+vnoremap Gk gg
+vnoremap Gl $
+
+vnoremap GH 0
+vnoremap GJ G
+vnoremap GK gg
+vnoremap GL $
+
+" Map homerow movements to 'select-move'
+nnoremap H vh
+nnoremap J vj
+nnoremap K vk
+nnoremap L vl
+
+vnoremap h <Esc>h
+vnoremap j <Esc>j
+vnoremap k <Esc>k
+vnoremap l <Esc>l
+
+vnoremap H h
+vnoremap J j
+vnoremap K k
+vnoremap L l
+
+" Map word movements to 'select-move'
+nnoremap w ve
+nnoremap W vw
+nnoremap b vb
+nnoremap B vb
+
+vnoremap w <Esc>ve
+vnoremap W w
+vnoremap b <Esc>vb
+vnoremap B b
