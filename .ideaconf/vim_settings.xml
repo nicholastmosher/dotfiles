@@ -1,0 +1,1422 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/main/scala/scratch.sc" timestamp="1511910777275">
+        <mark key="[" line="1" column="20" />
+        <mark key="]" line="2" column="29" />
+        <mark key="^" line="2" column="29" />
+        <mark key="." line="2" column="29" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/http/HttpProcessor.scala" timestamp="1511827072231">
+        <mark key="[" line="10" column="26" />
+        <mark key="]" line="10" column="37" />
+        <mark key="^" line="10" column="37" />
+        <mark key="." line="10" column="37" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/client/webpack.config.prod.js" timestamp="1506023666338">
+        <mark key="[" line="11" column="0" />
+        <mark key="]" line="11" column="0" />
+        <mark key="." line="11" column="0" />
+        <mark key="^" line="16" column="21" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/node_modules/is/index.js" timestamp="1505515481687">
+        <mark key="[" line="743" column="11" />
+        <mark key="]" line="743" column="13" />
+        <mark key="." line="743" column="13" />
+        <mark key="^" line="743" column="13" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/HttpDispatchableEvent.kt" timestamp="1508533255629">
+        <mark key="[" line="4" column="69" />
+        <mark key="]" line="4" column="69" />
+        <mark key="." line="4" column="69" />
+        <mark key="^" line="4" column="69" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/package.scala" timestamp="1511301217537">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
+        <mark key="^" line="9" column="7" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Destinations.scala" timestamp="1510962035108">
+        <mark key="[" line="27" column="14" />
+        <mark key="]" line="27" column="22" />
+        <mark key="." line="27" column="22" />
+        <mark key="^" line="27" column="22" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/config/ClickstreamConfigTest.scala" timestamp="1511222517966">
+        <mark key="[" line="4" column="6" />
+        <mark key="]" line="4" column="17" />
+        <mark key="^" line="4" column="17" />
+        <mark key="." line="4" column="17" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/index.hbs" timestamp="1503697804675">
+        <mark key="[" line="5" column="8" />
+        <mark key="]" line="6" column="13" />
+        <mark key="." line="6" column="13" />
+        <mark key="^" line="6" column="13" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/scratch.sc" timestamp="1510683985814">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="4" column="39" />
+        <mark key="." line="4" column="39" />
+        <mark key="^" line="4" column="39" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/HttpExecutorTest.scala" timestamp="1511897961162">
+        <mark key="[" line="149" column="34" />
+        <mark key="]" line="149" column="34" />
+        <mark key="." line="149" column="34" />
+        <mark key="^" line="149" column="52" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpNoRetryStrategy.scala" timestamp="1511240908498">
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="4" />
+        <mark key="^" line="17" column="4" />
+        <mark key="." line="17" column="4" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/DaemonThread.kt" timestamp="1510603486856">
+        <mark key="[" line="39" column="0" />
+        <mark key="]" line="39" column="0" />
+        <mark key="." line="39" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/rust/kafka/examples/consumer.rs" timestamp="1506704531829">
+        <mark key="[" line="18" column="43" />
+        <mark key="]" line="18" column="50" />
+        <mark key="." line="18" column="50" />
+        <mark key="^" line="18" column="50" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/package.json" timestamp="1501811345469">
+        <mark key="[" line="48" column="42" />
+        <mark key="]" line="48" column="41" />
+        <mark key="^" line="48" column="41" />
+        <mark key="." line="48" column="41" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/HttpExecutor.scala" timestamp="1511810997590">
+        <mark key="'" line="64" column="27" />
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/1b0aa62a6a91e9fa00c16f0a4a2c874804ed3b1e/httpcore-4.3.3-sources.jar!/org/apache/http/message/BasicHttpResponse.java" timestamp="1511242312531">
+        <mark key="'" line="48" column="76" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/config/ConfigTest.scala" timestamp="1510787045394">
+        <mark key="[" line="27" column="0" />
+        <mark key="]" line="27" column="0" />
+        <mark key="." line="27" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/build.gradle" timestamp="1511898483457">
+        <mark key="[" line="22" column="0" />
+        <mark key="]" line="22" column="0" />
+        <mark key="." line="22" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/package.json" timestamp="1504885204116">
+        <mark key="[" line="22" column="24" />
+        <mark key="]" line="22" column="40" />
+        <mark key="^" line="23" column="90" />
+        <mark key="." line="22" column="24" />
+      </file>
+      <file name="/HTML File.txt.ft" timestamp="1511818451023">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/tracking/config/package.scala" timestamp="1511810195667">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="." line="10" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/README.md" timestamp="1512002001182">
+        <mark key="'" line="159" column="0" />
+        <mark key="[" line="8" column="0" />
+        <mark key="]" line="8" column="0" />
+        <mark key="." line="8" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/Http500RetryStrategy.scala" timestamp="1511827690856">
+        <mark key="[" line="24" column="38" />
+        <mark key="]" line="24" column="49" />
+        <mark key="." line="24" column="49" />
+        <mark key="^" line="24" column="49" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/http/AmplitudeHttpEventBuilder.kt" timestamp="1510097088776">
+        <mark key="[" line="7" column="68" />
+        <mark key="]" line="8" column="50" />
+        <mark key="." line="8" column="50" />
+        <mark key="^" line="8" column="50" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/snippet/resources/index.hbs" timestamp="1504885786153">
+        <mark key="[" line="4" column="5" />
+        <mark key="]" line="4" column="10" />
+        <mark key="^" line="4" column="10" />
+        <mark key="." line="4" column="10" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/kotlin/com/intuit/sbseg/tracking/DestinationsTest.kt" timestamp="1510173665668">
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/tracking_service/src/main/java/com/intuit/streams/AmplitudeStream.java" timestamp="1506721787816">
+        <mark key="[" line="6" column="30" />
+        <mark key="]" line="7" column="7" />
+        <mark key="." line="7" column="7" />
+        <mark key="^" line="7" column="7" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/LoggingConfig.scala" timestamp="1511233329289">
+        <mark key="[" line="14" column="2" />
+        <mark key="]" line="14" column="5" />
+        <mark key="." line="14" column="5" />
+        <mark key="^" line="14" column="5" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/example/build.gradle" timestamp="1503437706763">
+        <mark key="[" line="25" column="0" />
+        <mark key="]" line="25" column="0" />
+        <mark key="." line="25" column="0" />
+        <mark key="^" line="22" column="52" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/src/test/scala/com/intuit/sbseg/http/AbstractServerTest.scala" timestamp="1511997673677">
+        <mark key="[" line="14" column="114" />
+        <mark key="]" line="14" column="134" />
+        <mark key="^" line="14" column="134" />
+        <mark key="." line="14" column="134" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/src/test/scala/com/intuit/sbseg/http/HttpExecutorConfigTest.scala" timestamp="1511985908481">
+        <mark key="[" line="150" column="57" />
+        <mark key="]" line="150" column="55" />
+        <mark key="." line="150" column="55" />
+        <mark key="^" line="150" column="55" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/test/scala/com/intuit/sbseg/tracking/http/AbstractServerTest.scala" timestamp="1511822096323">
+        <mark key="[" line="7" column="0" />
+        <mark key="]" line="7" column="0" />
+        <mark key="." line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/main/resources/application.conf" timestamp="1511891135424">
+        <mark key="[" line="10" column="10" />
+        <mark key="]" line="10" column="11" />
+        <mark key="." line="10" column="11" />
+        <mark key="^" line="4" column="20" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/reducers/index.js" timestamp="1501736793762">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+        <mark key="^" line="9" column="16" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/HttpEventFactory.kt" timestamp="1509127777646">
+        <mark key="[" line="8" column="22" />
+        <mark key="]" line="8" column="22" />
+        <mark key="^" line="13" column="7" />
+        <mark key="." line="8" column="22" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/src/main/scala/com/intuit/sbseg/http/DaemonThread.scala" timestamp="1512002691220">
+        <mark key="[" line="48" column="58" />
+        <mark key="]" line="48" column="60" />
+        <mark key="^" line="48" column="60" />
+        <mark key="." line="48" column="60" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/test/scala/com/intuit/sbseg/data/package.scala" timestamp="1511811063301">
+        <mark key="[" line="0" column="29" />
+        <mark key="]" line="0" column="23" />
+        <mark key="." line="0" column="23" />
+        <mark key="^" line="0" column="23" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/components/NewService.js" timestamp="1501857118145">
+        <mark key="[" line="23" column="0" />
+        <mark key="]" line="23" column="0" />
+        <mark key="^" line="41" column="57" />
+        <mark key="." line="23" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/http/RequestBuilderConfig.scala" timestamp="1511821766421">
+        <mark key="[" line="6" column="21" />
+        <mark key="]" line="6" column="21" />
+        <mark key="^" line="6" column="21" />
+        <mark key="." line="6" column="21" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/browserMock.js" timestamp="1506027534602">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="34" />
+        <mark key="^" line="0" column="34" />
+        <mark key="." line="0" column="34" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkDispatcher/src/main/java/com/intuit/sbseg/tracking/KafkaClickStreamEventDeserializer.kt" timestamp="1508453309608">
+        <mark key="[" line="6" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="." line="15" column="0" />
+        <mark key="^" line="15" column="80" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/actions/ServiceActions.js" timestamp="1501857904527">
+        <mark key="[" line="19" column="0" />
+        <mark key="]" line="19" column="0" />
+        <mark key="^" line="14" column="20" />
+        <mark key="." line="19" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/tracking_service/src/main/kotlin/com/intuit/streams/Stream.kt" timestamp="1506709992714">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="3" column="7" />
+        <mark key="^" line="3" column="7" />
+        <mark key="." line="3" column="7" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/AbstractServerTest.scala" timestamp="1511285759608">
+        <mark key="[" line="2" column="25" />
+        <mark key="]" line="2" column="64" />
+        <mark key="^" line="2" column="64" />
+        <mark key="." line="2" column="64" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/build.gradle" timestamp="1511995878111">
+        <mark key="[" line="6" column="40" />
+        <mark key="]" line="6" column="65" />
+        <mark key="." line="6" column="65" />
+        <mark key="^" line="6" column="65" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/.editorconfig" timestamp="1503699541116">
+        <mark key="[" line="3" column="14" />
+        <mark key="]" line="3" column="15" />
+        <mark key="^" line="3" column="15" />
+        <mark key="." line="3" column="15" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/scratch.sc" timestamp="1508779019871">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="12" />
+        <mark key="^" line="0" column="12" />
+        <mark key="." line="0" column="12" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/HttpEventBuilder.kt" timestamp="1510088403076">
+        <mark key="[" line="25" column="40" />
+        <mark key="]" line="26" column="19" />
+        <mark key="." line="26" column="19" />
+        <mark key="^" line="26" column="19" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/bower.json" timestamp="1504305440274">
+        <mark key="[" line="1" column="11" />
+        <mark key="]" line="1" column="11" />
+        <mark key="." line="1" column="11" />
+        <mark key="^" line="1" column="18" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/ClickstreamResponse.scala" timestamp="1511818291354">
+        <mark key="[" line="0" column="38" />
+        <mark key="]" line="2" column="40" />
+        <mark key="^" line="2" column="40" />
+        <mark key="." line="2" column="40" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/HttpExecutorConfigTest.scala" timestamp="1511900433010">
+        <mark key="'" line="163" column="6" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/resources/application.conf" timestamp="1511234252641">
+        <mark key="[" line="5" column="11" />
+        <mark key="]" line="6" column="15" />
+        <mark key="." line="6" column="15" />
+        <mark key="^" line="6" column="15" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/Executor.scala" timestamp="1511828626560">
+        <mark key="[" line="2" column="48" />
+        <mark key="]" line="2" column="57" />
+        <mark key="." line="2" column="57" />
+        <mark key="^" line="2" column="57" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" timestamp="1511293079748">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="123" column="0" />
+        <mark key="]" line="123" column="29" />
+        <mark key="." line="123" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/kotlin_gradle/src/main/kotlin/Main.kt" timestamp="1506553982459">
+        <mark key="[" line="2" column="29" />
+        <mark key="]" line="2" column="27" />
+        <mark key="^" line="2" column="27" />
+        <mark key="." line="2" column="27" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/Destinations.kt" timestamp="1510092273735">
+        <mark key="[" line="9" column="23" />
+        <mark key="]" line="9" column="19" />
+        <mark key="." line="9" column="19" />
+        <mark key="^" line="9" column="19" />
+      </file>
+      <file name="$USER_HOME$/Documents/rust/kafka/Cargo.toml" timestamp="1506977029415">
+        <mark key="[" line="8" column="7" />
+        <mark key="]" line="8" column="8" />
+        <mark key="^" line="8" column="23" />
+        <mark key="." line="8" column="8" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/MultithreadedHttpExecutorTest.scala" timestamp="1511302715875">
+        <mark key="[" line="24" column="21" />
+        <mark key="]" line="24" column="41" />
+        <mark key="^" line="24" column="41" />
+        <mark key="." line="24" column="41" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/INTUAnalytics.js" timestamp="1503590104819">
+        <mark key="[" line="29" column="16" />
+        <mark key="]" line="29" column="11" />
+        <mark key="^" line="29" column="11" />
+        <mark key="." line="29" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/AmplitudeHttpEventBuilder.kt" timestamp="1509127376533">
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="18" column="0" />
+        <mark key="." line="5" column="51" />
+        <mark key="^" line="5" column="51" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/processors/LoggingEventProcessor.kt" timestamp="1510164795688">
+        <mark key="[" line="27" column="55" />
+        <mark key="]" line="27" column="55" />
+        <mark key="." line="27" column="55" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/.idea/runConfigurations/All_Tests.xml" timestamp="1511998379601" />
+      <file name="$USER_HOME$/Documents/tracking_service/src/main/kotlin/com/intuit/Consumer.kt" timestamp="1506703658150">
+        <mark key="[" line="8" column="4" />
+        <mark key="]" line="8" column="7" />
+        <mark key="." line="8" column="7" />
+        <mark key="^" line="8" column="7" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpFixedRequestRetryHandler.scala" timestamp="1511241904664">
+        <mark key="[" line="28" column="23" />
+        <mark key="]" line="29" column="1" />
+        <mark key="^" line="29" column="1" />
+        <mark key="." line="29" column="1" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" timestamp="1511819619106">
+        <mark key="[" line="16" column="11" />
+        <mark key="]" line="16" column="11" />
+        <mark key="." line="16" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/HttpFixedRequestRetryHandler.scala" timestamp="1511810887414">
+        <mark key="'" line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/http/package.scala" timestamp="1511825840015">
+        <mark key="[" line="6" column="48" />
+        <mark key="]" line="7" column="62" />
+        <mark key="." line="7" column="62" />
+        <mark key="^" line="7" column="62" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/kotlin/com/intuit/sbseg/tracking/DaemonThreadSpec.kt" timestamp="1510268404792">
+        <mark key="[" line="9" column="22" />
+        <mark key="]" line="9" column="23" />
+        <mark key="." line="9" column="23" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/example_project/lib/index.js" timestamp="1504649065256">
+        <mark key="[" line="0" column="47" />
+        <mark key="]" line="3" column="20" />
+        <mark key="^" line="3" column="20" />
+        <mark key="." line="3" column="20" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/containers/UserContainer.js" timestamp="1501728925635">
+        <mark key="[" line="8" column="10" />
+        <mark key="]" line="8" column="47" />
+        <mark key="." line="8" column="47" />
+        <mark key="^" line="8" column="47" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/components/core/AppHeader.js" timestamp="1501854113873">
+        <mark key="[" line="7" column="10" />
+        <mark key="]" line="7" column="8" />
+        <mark key="^" line="7" column="8" />
+        <mark key="." line="7" column="8" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/CleaningHttpClientConnectionManager.scala" timestamp="1511200032971">
+        <mark key="[" line="9" column="18" />
+        <mark key="]" line="9" column="38" />
+        <mark key="." line="9" column="38" />
+        <mark key="^" line="9" column="38" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/CleaningHttpClientConnectionManager.kt" timestamp="1510597454627">
+        <mark key="[" line="47" column="0" />
+        <mark key="]" line="50" column="20" />
+        <mark key="." line="50" column="20" />
+        <mark key="^" line="50" column="20" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/client/jest.config.js" timestamp="1506025282643">
+        <mark key="[" line="2" column="15" />
+        <mark key="]" line="2" column="21" />
+        <mark key="." line="2" column="21" />
+        <mark key="^" line="2" column="21" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkDispatcher/src/main/kotlin/MainSpark.kt" timestamp="1507924911175">
+        <mark key="[" line="21" column="27" />
+        <mark key="]" line="21" column="27" />
+        <mark key="." line="21" column="27" />
+        <mark key="^" line="36" column="22" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/dist/snippet.min.js" timestamp="1503616821619">
+        <mark key="[" line="2" column="57" />
+        <mark key="]" line="3" column="0" />
+        <mark key="^" line="3" column="0" />
+        <mark key="." line="3" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/LoggingProcessor.scala" timestamp="1511232692713">
+        <mark key="[" line="13" column="0" />
+        <mark key="]" line="13" column="0" />
+        <mark key="." line="13" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/tracking_service/build.gradle" timestamp="1506978267441">
+        <mark key="[" line="29" column="0" />
+        <mark key="]" line="29" column="80" />
+        <mark key="." line="30" column="3" />
+        <mark key="^" line="30" column="3" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/src/test/scala/com/intuit/sbseg/http/HttpExecutorTest.scala" timestamp="1511994728670">
+        <mark key="[" line="100" column="22" />
+        <mark key="]" line="100" column="35" />
+        <mark key="^" line="100" column="35" />
+        <mark key="." line="100" column="35" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/http/HttpBatchProcessorConfig.scala" timestamp="1511826524757">
+        <mark key="[" line="6" column="17" />
+        <mark key="]" line="6" column="19" />
+        <mark key="^" line="6" column="19" />
+        <mark key="." line="6" column="19" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/client/browserMock.js" timestamp="1506025191899">
+        <mark key="[" line="2" column="2" />
+        <mark key="]" line="2" column="2" />
+        <mark key="^" line="2" column="2" />
+        <mark key="." line="2" column="2" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/package.scala" timestamp="1511820082238">
+        <mark key="[" line="12" column="0" />
+        <mark key="]" line="12" column="0" />
+        <mark key="." line="12" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/HttpNoRetryStrategy.scala" timestamp="1511827725830">
+        <mark key="[" line="25" column="38" />
+        <mark key="]" line="25" column="49" />
+        <mark key="." line="25" column="49" />
+        <mark key="^" line="25" column="49" />
+      </file>
+      <file name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/4969730c661fff76fa7f9d4c7c61545817f5b033/httpclient-4.5.3-sources.jar!/org/apache/http/impl/conn/PoolingHttpClientConnectionManager.java" timestamp="1511994893963">
+        <mark key="'" line="120" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/spark/example/settings.gradle" timestamp="1507918868553">
+        <mark key="[" line="17" column="20" />
+        <mark key="]" line="17" column="32" />
+        <mark key="." line="17" column="32" />
+        <mark key="^" line="17" column="32" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1511997165243">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/rust/kafka-rust/examples/example-produce.rs" timestamp="1508178808852">
+        <mark key="[" line="21" column="40" />
+        <mark key="]" line="21" column="40" />
+        <mark key="." line="21" column="40" />
+        <mark key="^" line="21" column="40" />
+      </file>
+      <file name="$USER_HOME$/Documents/tracking-server/index.js" timestamp="1506448843592">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="32" />
+        <mark key="^" line="0" column="32" />
+        <mark key="." line="0" column="32" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/ClickstreamConfig.scala" timestamp="1511231082615">
+        <mark key="[" line="9" column="21" />
+        <mark key="]" line="9" column="21" />
+        <mark key="." line="9" column="21" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" timestamp="1511810611547">
+        <mark key="'" line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/EventSequence.kt" timestamp="1510103609372">
+        <mark key="[" line="8" column="24" />
+        <mark key="]" line="8" column="25" />
+        <mark key="." line="8" column="25" />
+        <mark key="^" line="8" column="25" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Clickstream.scala" timestamp="1511806195839">
+        <mark key="[" line="30" column="0" />
+        <mark key="]" line="30" column="0" />
+        <mark key="." line="30" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/client/webpack.config.dev.js" timestamp="1506023660691">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="." line="10" column="0" />
+        <mark key="^" line="16" column="35" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkDispatcher/src/main/kotlin/com/intuit/sbseg/tracking/SegmentDispatcher.kt" timestamp="1508190615353">
+        <mark key="[" line="11" column="0" />
+        <mark key="]" line="11" column="0" />
+        <mark key="^" line="15" column="41" />
+        <mark key="." line="11" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/KafkaDeserializer.scala" timestamp="1508870101214">
+        <mark key="[" line="18" column="0" />
+        <mark key="]" line="18" column="0" />
+        <mark key="^" line="17" column="57" />
+        <mark key="." line="18" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/SimpleConnectionKeepAliveStrategy.scala" timestamp="1510957787765">
+        <mark key="[" line="12" column="33" />
+        <mark key="]" line="12" column="65" />
+        <mark key="^" line="12" column="65" />
+        <mark key="." line="12" column="65" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/store/configureStore.js" timestamp="1501810763318">
+        <mark key="[" line="6" column="58" />
+        <mark key="]" line="6" column="65" />
+        <mark key="^" line="6" column="65" />
+        <mark key="." line="6" column="65" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/DaemonThreadTest.scala" timestamp="1511238865898">
+        <mark key="[" line="8" column="0" />
+        <mark key="]" line="8" column="0" />
+        <mark key="." line="8" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1511998199309">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/.gitignore" timestamp="1511998647334">
+        <mark key="[" line="1" column="24" />
+        <mark key="]" line="1" column="24" />
+        <mark key="^" line="1" column="24" />
+        <mark key="." line="1" column="24" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/ClickstreamEvent.kt" timestamp="1510162521998">
+        <mark key="[" line="4" column="8" />
+        <mark key="]" line="4" column="10" />
+        <mark key="." line="4" column="10" />
+        <mark key="^" line="4" column="10" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/package.scala" timestamp="1511236242086">
+        <mark key="[" line="37" column="0" />
+        <mark key="]" line="37" column="0" />
+        <mark key="." line="37" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/ClickstreamEventTest.scala" timestamp="1510698459785">
+        <mark key="[" line="11" column="0" />
+        <mark key="]" line="11" column="0" />
+        <mark key="^" line="12" column="36" />
+        <mark key="." line="11" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/index.html" timestamp="1503614760974">
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
+        <mark key="^" line="4" column="55" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/circle.yml" timestamp="1510702088133">
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="." line="5" column="0" />
+        <mark key="^" line="12" column="8" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/containers/LandingContainer.js" timestamp="1501804621030">
+        <mark key="[" line="11" column="0" />
+        <mark key="]" line="11" column="0" />
+        <mark key="^" line="11" column="30" />
+        <mark key="." line="11" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/package.json" timestamp="1506099246691">
+        <mark key="[" line="22" column="0" />
+        <mark key="]" line="22" column="0" />
+        <mark key="." line="22" column="0" />
+        <mark key="^" line="38" column="2" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/Clickstream.scala" timestamp="1511818111956">
+        <mark key="[" line="4" column="17" />
+        <mark key="]" line="5" column="1" />
+        <mark key="." line="5" column="1" />
+        <mark key="^" line="5" column="1" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/Event.scala" timestamp="1511822017410">
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="." line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/http/BatchHttpProcessor.scala" timestamp="1511822645558">
+        <mark key="[" line="8" column="26" />
+        <mark key="]" line="9" column="1" />
+        <mark key="^" line="9" column="1" />
+        <mark key="." line="9" column="1" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/CleaningHttpClientConnectionManagerTest.scala" timestamp="1511238814769">
+        <mark key="[" line="54" column="5" />
+        <mark key="]" line="55" column="3" />
+        <mark key="." line="55" column="3" />
+        <mark key="^" line="55" column="3" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/resources/runtime.conf" timestamp="1510690467514">
+        <mark key="[" line="0" column="7" />
+        <mark key="]" line="0" column="7" />
+        <mark key="^" line="0" column="7" />
+        <mark key="." line="0" column="7" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/logging/LoggingProcessor.scala" timestamp="1511826442440">
+        <mark key="[" line="24" column="49" />
+        <mark key="]" line="24" column="57" />
+        <mark key="." line="24" column="57" />
+        <mark key="^" line="24" column="57" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/.idea/modules.xml" timestamp="1511996332597">
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/circle.yml" timestamp="1511900637426">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/DaemonThread.scala" timestamp="1510714193969">
+        <mark key="[" line="43" column="19" />
+        <mark key="]" line="43" column="19" />
+        <mark key="." line="43" column="19" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/scratch.sc" timestamp="1511812044476">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="2" column="38" />
+        <mark key="^" line="2" column="38" />
+        <mark key="." line="2" column="38" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/README.md" timestamp="1511987770824">
+        <mark key="[" line="7" column="24" />
+        <mark key="]" line="7" column="24" />
+        <mark key="^" line="5" column="22" />
+        <mark key="." line="7" column="24" />
+      </file>
+      <file name="$USER_HOME$/Documents/metricsreporter/src/main/scala/com/intuit/sb/metrics/http/DemonHttpConnectionPoolManager.scala" timestamp="1511994538958">
+        <mark key="[" line="115" column="47" />
+        <mark key="]" line="115" column="48" />
+        <mark key="." line="115" column="48" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/package.scala" timestamp="1510694474647">
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="4" column="53" />
+        <mark key="." line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/snippet/resources/build.js" timestamp="1504643549328">
+        <mark key="[" line="30" column="28" />
+        <mark key="]" line="30" column="28" />
+        <mark key="^" line="30" column="28" />
+        <mark key="." line="30" column="28" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/ClickstreamEvent.scala" timestamp="1510856930495">
+        <mark key="[" line="9" column="57" />
+        <mark key="]" line="9" column="77" />
+        <mark key="^" line="9" column="77" />
+        <mark key="." line="9" column="77" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/Http500RetryStrategy.scala" timestamp="1510957074256">
+        <mark key="[" line="24" column="28" />
+        <mark key="]" line="24" column="72" />
+        <mark key="." line="24" column="72" />
+        <mark key="^" line="24" column="72" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/.babelrc" timestamp="1506020771087">
+        <mark key="[" line="4" column="3" />
+        <mark key="]" line="8" column="41" />
+        <mark key="^" line="8" column="41" />
+        <mark key="." line="8" column="41" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/Destination.kt" timestamp="1510095050938">
+        <mark key="[" line="23" column="13" />
+        <mark key="]" line="23" column="19" />
+        <mark key="." line="23" column="19" />
+        <mark key="^" line="23" column="19" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/EventProcessor.scala" timestamp="1511820049411">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/MultithreadedHttpExecutorTest.scala" timestamp="1511897724296">
+        <mark key="[" line="28" column="63" />
+        <mark key="]" line="29" column="59" />
+        <mark key="." line="29" column="59" />
+        <mark key="^" line="29" column="59" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/test.kt" timestamp="1510248845598">
+        <mark key="[" line="4" column="29" />
+        <mark key="]" line="4" column="29" />
+        <mark key="^" line="5" column="21" />
+        <mark key="." line="4" column="29" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/README.md" timestamp="1501802515940">
+        <mark key="[" line="25" column="39" />
+        <mark key="]" line="25" column="37" />
+        <mark key="^" line="25" column="37" />
+        <mark key="." line="25" column="37" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/settings.gradle" timestamp="1508369168380">
+        <mark key="[" line="17" column="20" />
+        <mark key="]" line="17" column="36" />
+        <mark key="." line="17" column="36" />
+        <mark key="^" line="17" column="36" />
+      </file>
+      <file name="$USER_HOME$/Documents/tracking-server/webpack.config.js" timestamp="1506448979892">
+        <mark key="[" line="9" column="0" />
+        <mark key="]" line="12" column="30" />
+        <mark key="^" line="12" column="30" />
+        <mark key="." line="12" column="30" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/resources/application.conf" timestamp="1510784362317">
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="." line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/Config.kt" timestamp="1509552280677">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="." line="10" column="0" />
+        <mark key="^" line="10" column="38" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkDispatcher/src/main/kotlin/com/intuit/sbseg/tracking/Dispatcher.kt" timestamp="1508189911503">
+        <mark key="[" line="3" column="22" />
+        <mark key="]" line="3" column="22" />
+        <mark key="^" line="3" column="22" />
+        <mark key="." line="3" column="22" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/docker/docker-compose.yml" timestamp="1510088702468">
+        <mark key="[" line="38" column="0" />
+        <mark key="]" line="38" column="0" />
+        <mark key="^" line="10" column="4" />
+        <mark key="." line="38" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/tracking/package.scala" timestamp="1511810232121">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/tracking_service/src/main/kotlin/com/intuit/App.kt" timestamp="1506722055916">
+        <mark key="[" line="2" column="31" />
+        <mark key="]" line="3" column="3" />
+        <mark key="." line="3" column="3" />
+        <mark key="^" line="3" column="3" />
+      </file>
+      <file name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/1b0aa62a6a91e9fa00c16f0a4a2c874804ed3b1e/httpcore-4.3.3-sources.jar!/org/apache/http/HttpResponse.java" timestamp="1511242319672">
+        <mark key="'" line="153" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/rust/kafka/examples/producer_multi.rs" timestamp="1510081926138">
+        <mark key="[" line="40" column="34" />
+        <mark key="]" line="40" column="35" />
+        <mark key="." line="40" column="35" />
+        <mark key="^" line="40" column="35" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/HttpEventBuilder.scala" timestamp="1508958270131">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="4" />
+        <mark key="." line="10" column="4" />
+        <mark key="^" line="10" column="4" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/Scratch.sc" timestamp="1510594889798">
+        <mark key="[" line="1" column="23" />
+        <mark key="]" line="1" column="30" />
+        <mark key="^" line="1" column="30" />
+        <mark key="." line="1" column="30" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-analytics/karma.config.js" timestamp="1504297038976">
+        <mark key="[" line="4" column="16" />
+        <mark key="]" line="20" column="31" />
+        <mark key="." line="20" column="31" />
+        <mark key="^" line="20" column="31" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/package.scala" timestamp="1511890245588">
+        <mark key="[" line="7" column="0" />
+        <mark key="]" line="7" column="0" />
+        <mark key="." line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/Event.kt" timestamp="1509130644164">
+        <mark key="[" line="6" column="30" />
+        <mark key="]" line="6" column="31" />
+        <mark key="^" line="12" column="48" />
+        <mark key="." line="6" column="31" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" timestamp="1511911267984">
+        <mark key="'" line="57" column="49" />
+        <mark key="[" line="164" column="0" />
+        <mark key="]" line="164" column="0" />
+        <mark key="." line="164" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/src/main/scala/com/intuit/sbseg/http/CleaningHttpClientConnectionManager.scala" timestamp="1511995005920">
+        <mark key="[" line="54" column="0" />
+        <mark key="]" line="54" column="0" />
+        <mark key="." line="54" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Destination.scala" timestamp="1510273078512">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/dfc-sdk/example/src/main/java/Main.java" timestamp="1503435375700">
+        <mark key="[" line="17" column="29" />
+        <mark key="]" line="17" column="29" />
+        <mark key="." line="17" column="29" />
+        <mark key="^" line="17" column="29" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/build.gradle" timestamp="1511810776042">
+        <mark key="[" line="43" column="32" />
+        <mark key="]" line="43" column="32" />
+        <mark key="^" line="43" column="32" />
+        <mark key="." line="43" column="32" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/.idea/gradle.xml" timestamp="1511996550147">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="." line="10" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/constants/UserActionTypes.js" timestamp="1501735543141">
+        <mark key="[" line="1" column="17" />
+        <mark key="]" line="1" column="20" />
+        <mark key="." line="1" column="20" />
+        <mark key="^" line="1" column="20" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/ClickstreamResponse.scala" timestamp="1511810544048">
+        <mark key="[" line="2" column="67" />
+        <mark key="]" line="3" column="40" />
+        <mark key="^" line="3" column="40" />
+        <mark key="." line="3" column="40" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/SimpleConnectionKeepAliveStrategy.scala" timestamp="1511827735299">
+        <mark key="[" line="17" column="46" />
+        <mark key="]" line="17" column="57" />
+        <mark key="." line="17" column="57" />
+        <mark key="^" line="17" column="57" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/reducers/ServiceReducer.js" timestamp="1501849881657">
+        <mark key="[" line="58" column="0" />
+        <mark key="]" line="58" column="0" />
+        <mark key="." line="58" column="0" />
+        <mark key="^" line="51" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/build.gradle" timestamp="1511810685132">
+        <mark key="[" line="42" column="0" />
+        <mark key="]" line="42" column="0" />
+        <mark key="." line="42" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/application.conf" timestamp="1509559896548">
+        <mark key="[" line="0" column="10" />
+        <mark key="]" line="0" column="8" />
+        <mark key="^" line="0" column="8" />
+        <mark key="." line="0" column="8" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/build.gradle" timestamp="1511997898962">
+        <mark key="[" line="29" column="0" />
+        <mark key="]" line="29" column="36" />
+        <mark key="." line="29" column="0" />
+        <mark key="^" line="29" column="77" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/CleaningHttpClientConnectionManager.scala" timestamp="1511810716738">
+        <mark key="[" line="9" column="18" />
+        <mark key="]" line="9" column="18" />
+        <mark key="." line="9" column="18" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/Destinations.scala" timestamp="1510856979323">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/CleaningHttpClientConnectionManager.scala" timestamp="1511890728645">
+        <mark key="[" line="57" column="0" />
+        <mark key="]" line="57" column="0" />
+        <mark key="." line="57" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/actions/UserActions.js" timestamp="1501735518591">
+        <mark key="[" line="21" column="17" />
+        <mark key="]" line="21" column="20" />
+        <mark key="." line="21" column="20" />
+        <mark key="^" line="21" column="20" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/resources/clickstream.properties" timestamp="1509478091993">
+        <mark key="[" line="0" column="18" />
+        <mark key="]" line="0" column="5" />
+        <mark key="^" line="0" column="5" />
+        <mark key="." line="0" column="5" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/PoolingCleaningHttpClientConnectionManager.kt" timestamp="1510255076393">
+        <mark key="[" line="18" column="6" />
+        <mark key="]" line="18" column="6" />
+        <mark key="." line="18" column="6" />
+        <mark key="^" line="42" column="29" />
+      </file>
+      <file name="$USER_HOME$/Documents/hue/apps/oozie/src/oozie/templates/editor2/coordinator_editor.mako" timestamp="1507846495815">
+        <mark key="[" line="177" column="44" />
+        <mark key="]" line="177" column="53" />
+        <mark key="." line="177" column="53" />
+        <mark key="^" line="177" column="53" />
+      </file>
+      <file name="$USER_HOME$/Documents/kotlin_gradle/src/main/kotlin/App.kt" timestamp="1506620534913">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="1" column="27" />
+        <mark key="^" line="1" column="27" />
+        <mark key="." line="1" column="27" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/ConfigTest.scala" timestamp="1510692729160">
+        <mark key="[" line="22" column="45" />
+        <mark key="]" line="23" column="26" />
+        <mark key="." line="23" column="26" />
+        <mark key="^" line="23" column="26" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/dfc-sdk/example/build.gradle" timestamp="1503357758665">
+        <mark key="[" line="27" column="44" />
+        <mark key="]" line="27" column="67" />
+        <mark key="." line="27" column="67" />
+        <mark key="^" line="27" column="67" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/webpack.config.js" timestamp="1501814801611">
+        <mark key="[" line="40" column="7" />
+        <mark key="]" line="40" column="5" />
+        <mark key="." line="40" column="5" />
+        <mark key="^" line="40" column="5" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/DaemonThreadTest.scala" timestamp="1510691314052">
+        <mark key="[" line="22" column="67" />
+        <mark key="]" line="22" column="5" />
+        <mark key="." line="22" column="5" />
+        <mark key="^" line="22" column="5" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/LoggingProcessor.scala" timestamp="1511824033584">
+        <mark key="[" line="16" column="0" />
+        <mark key="]" line="16" column="0" />
+        <mark key="." line="16" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/constants/ServiceActionTypes.js" timestamp="1501845257317">
+        <mark key="[" line="1" column="14" />
+        <mark key="]" line="1" column="12" />
+        <mark key="." line="1" column="12" />
+        <mark key="^" line="1" column="12" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/example_project/package.json" timestamp="1504648988579">
+        <mark key="[" line="6" column="33" />
+        <mark key="]" line="6" column="31" />
+        <mark key="^" line="6" column="31" />
+        <mark key="." line="6" column="31" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" timestamp="1511995583900">
+        <mark key="[" line="163" column="49" />
+        <mark key="]" line="163" column="58" />
+        <mark key="." line="163" column="58" />
+        <mark key="^" line="163" column="58" />
+      </file>
+      <file name="$USER_HOME$/Documents/kotlin_gradle/src/test/java/AppTest.java" timestamp="1506621137344">
+        <mark key="[" line="9" column="13" />
+        <mark key="]" line="9" column="11" />
+        <mark key="^" line="9" column="11" />
+        <mark key="." line="9" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/containers/ServiceContainer.js" timestamp="1501728878166">
+        <mark key="[" line="8" column="10" />
+        <mark key="]" line="8" column="53" />
+        <mark key="." line="8" column="53" />
+        <mark key="^" line="8" column="53" />
+      </file>
+      <file name="$USER_HOME$/Documents/tracking_service/src/main/kotlin/com/intuit/streams/AmplitudeStream.kt" timestamp="1506978165513">
+        <mark key="[" line="13" column="0" />
+        <mark key="]" line="13" column="0" />
+        <mark key="." line="13" column="0" />
+        <mark key="^" line="12" column="13" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/circle.yml" timestamp="1511992517153">
+        <mark key="[" line="2" column="35" />
+        <mark key="]" line="2" column="35" />
+        <mark key="." line="2" column="35" />
+        <mark key="^" line="2" column="35" />
+      </file>
+      <file name="$USER_HOME$/Documents/kotlin_gradle/src/main/kotlin/com/intuit/Main.kt" timestamp="1506619461175">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="^" line="5" column="0" />
+        <mark key="." line="3" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" timestamp="1511893015436">
+        <mark key="[" line="82" column="17" />
+        <mark key="]" line="82" column="18" />
+        <mark key="." line="82" column="18" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/HttpDispatcher.kt" timestamp="1509657281237">
+        <mark key="[" line="8" column="0" />
+        <mark key="]" line="8" column="0" />
+        <mark key="." line="8" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/package.scala" timestamp="1511237619866">
+        <mark key="[" line="15" column="0" />
+        <mark key="]" line="15" column="0" />
+        <mark key="." line="15" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpRequestMaxRetryHandler.scala" timestamp="1510773632261">
+        <mark key="[" line="8" column="73" />
+        <mark key="]" line="8" column="73" />
+        <mark key="^" line="8" column="73" />
+        <mark key="." line="8" column="73" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/.idea/modules/http/http.iml" timestamp="1511996394460">
+        <mark key="'" line="96" column="8" />
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="." line="10" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/WorkUnit.kt" timestamp="1510002126117">
+        <mark key="[" line="6" column="25" />
+        <mark key="]" line="6" column="30" />
+        <mark key="." line="6" column="30" />
+        <mark key="^" line="6" column="30" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/common/test/utils.test.js" timestamp="1506114428042">
+        <mark key="[" line="25" column="17" />
+        <mark key="]" line="25" column="18" />
+        <mark key="." line="25" column="18" />
+        <mark key="^" line="21" column="60" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/Config.scala" timestamp="1510692579162">
+        <mark key="[" line="12" column="0" />
+        <mark key="]" line="16" column="77" />
+        <mark key="." line="33" column="42" />
+        <mark key="^" line="33" column="42" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Dispatcher.scala" timestamp="1508968544274">
+        <mark key="[" line="18" column="35" />
+        <mark key="]" line="18" column="40" />
+        <mark key="." line="18" column="40" />
+        <mark key="^" line="18" column="40" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/client/test/index.test.js" timestamp="1506114904791">
+        <mark key="[" line="67" column="0" />
+        <mark key="]" line="67" column="0" />
+        <mark key="^" line="16" column="3" />
+        <mark key="." line="67" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/client/lib/trinity.js" timestamp="1506545613592">
+        <mark key="[" line="12" column="40" />
+        <mark key="]" line="12" column="40" />
+        <mark key="." line="12" column="40" />
+        <mark key="^" line="12" column="40" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/dfc-sdk/example/src/main/java/com/example/Main.java" timestamp="1503434619766">
+        <mark key="[" line="19" column="29" />
+        <mark key="]" line="19" column="29" />
+        <mark key="." line="19" column="29" />
+        <mark key="^" line="19" column="29" />
+      </file>
+      <file name="/sbtShell" timestamp="1511890468774">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/java/Thing.java" timestamp="1511800214504">
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="." line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/AbstractServerTest.scala" timestamp="1511897574570">
+        <mark key="[" line="22" column="10" />
+        <mark key="]" line="22" column="11" />
+        <mark key="." line="22" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/Scratch.sc" timestamp="1509740653376">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/common/lib/utils.js" timestamp="1506029153477">
+        <mark key="[" line="51" column="6" />
+        <mark key="]" line="53" column="20" />
+        <mark key="^" line="53" column="20" />
+        <mark key="." line="53" column="20" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/scratch.sc" timestamp="1510594498988">
+        <mark key="[" line="0" column="7" />
+        <mark key="]" line="0" column="11" />
+        <mark key="^" line="0" column="11" />
+        <mark key="." line="0" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/analytics/intuit-segment-analytics/client/webpack.config.js" timestamp="1505161918657">
+        <mark key="[" line="27" column="2" />
+        <mark key="]" line="27" column="15" />
+        <mark key="." line="27" column="15" />
+        <mark key="^" line="27" column="15" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/resources/cilckstream.properties" timestamp="1509398660335">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="10" />
+        <mark key="^" line="0" column="10" />
+        <mark key="." line="0" column="10" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/Example.scala" timestamp="1511905148750">
+        <mark key="[" line="14" column="2" />
+        <mark key="]" line="14" column="16" />
+        <mark key="." line="14" column="16" />
+        <mark key="^" line="14" column="16" />
+      </file>
+      <file name="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/ResponseUtils.scala" timestamp="1511904982531">
+        <mark key="[" line="16" column="58" />
+        <mark key="]" line="19" column="57" />
+        <mark key="." line="21" column="40" />
+        <mark key="^" line="21" column="40" />
+      </file>
+      <file name="$USER_HOME$/Documents/metricsreporter/src/main/scala/com/intuit/sb/metrics/util/DemonThread.scala" timestamp="1510256062097">
+        <mark key="[" line="33" column="0" />
+        <mark key="]" line="33" column="0" />
+        <mark key="." line="33" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/AutoOnboarding-Frontend/src/js/constants/TeamActionTypes.js" timestamp="1501797743938">
+        <mark key="[" line="2" column="28" />
+        <mark key="]" line="2" column="28" />
+        <mark key="." line="2" column="28" />
+        <mark key="^" line="2" column="28" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/kotlin/com/intuit/sbseg/tracking/processors/HttpEventProcessorForeach.scala" timestamp="1510165689993">
+        <mark key="[" line="8" column="53" />
+        <mark key="]" line="8" column="53" />
+        <mark key="." line="8" column="53" />
+        <mark key="^" line="8" column="43" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/AbstractServerTest.scala" timestamp="1511298570196">
+        <mark key="[" line="17" column="4" />
+        <mark key="]" line="27" column="32" />
+        <mark key="." line="27" column="32" />
+        <mark key="^" line="27" column="32" />
+      </file>
+      <file name="$USER_HOME$/Documents/SBGUtils/http/src/test/resources/log4j.properties" timestamp="1511995607521">
+        <mark key="[" line="8" column="0" />
+        <mark key="]" line="8" column="0" />
+        <mark key="^" line="11" column="42" />
+        <mark key="." line="8" column="0" />
+      </file>
+      <file name="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/kafka-0.6.2/src/producer.rs" timestamp="1508179827609">
+        <mark key="[" line="204" column="35" />
+        <mark key="]" line="204" column="14" />
+        <mark key="^" line="204" column="14" />
+        <mark key="." line="204" column="14" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/AmplitudeConfig.scala" timestamp="1511230769650">
+        <mark key="[" line="11" column="27" />
+        <mark key="]" line="11" column="25" />
+        <mark key="^" line="11" column="25" />
+        <mark key="." line="11" column="25" />
+      </file>
+      <file name="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/Response.scala" timestamp="1511828436071">
+        <mark key="[" line="14" column="30" />
+        <mark key="]" line="14" column="18" />
+        <mark key="." line="14" column="18" />
+        <mark key="^" line="14" column="18" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/EventProcessor.scala" timestamp="1510271768558">
+        <mark key="[" line="7" column="20" />
+        <mark key="]" line="7" column="20" />
+        <mark key="." line="7" column="20" />
+        <mark key="^" line="7" column="22" />
+      </file>
+      <file name="$USER_HOME$/Documents/rust/kafka/src/main.rs" timestamp="1506636647181">
+        <mark key="[" line="8" column="32" />
+        <mark key="]" line="8" column="49" />
+        <mark key="." line="8" column="49" />
+        <mark key="^" line="8" column="49" />
+      </file>
+      <file name="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/package.scala" timestamp="1511236442811">
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="^" line="5" column="75" />
+        <mark key="." line="5" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="82" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/HttpConfig.scala" />
+      <jump line="861" column="39" filename="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/af4d76be0c46ee26b0d9d1d4a34d244a633cac84/httpclient-4.3.6-sources.jar!/org/apache/http/impl/client/HttpClientBuilder.java" />
+      <jump line="4" column="41" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="38" column="21" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/HttpConfig.scala" />
+      <jump line="117" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/HttpConfig.scala" />
+      <jump line="51" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/HttpConfig.scala" />
+      <jump line="5" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/config/HttpConfig.scala" />
+      <jump line="30" column="26" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Clickstream.scala" />
+      <jump line="34" column="52" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Clickstream.scala" />
+      <jump line="14" column="28" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Clickstream.scala" />
+      <jump line="36" column="33" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/Clickstream.scala" />
+      <jump line="60" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/processors/EventProcessorTest.scala" />
+      <jump line="1" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/processors/EventProcessorTest.scala" />
+      <jump line="89" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="4" column="48" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/ClickstreamResponse.scala" />
+      <jump line="48" column="76" filename="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/1b0aa62a6a91e9fa00c16f0a4a2c874804ed3b1e/httpcore-4.3.3-sources.jar!/org/apache/http/message/BasicHttpResponse.java" />
+      <jump line="153" column="0" filename="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/1b0aa62a6a91e9fa00c16f0a4a2c874804ed3b1e/httpcore-4.3.3-sources.jar!/org/apache/http/HttpResponse.java" />
+      <jump line="156" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="3" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="137" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="1" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="48" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="60" column="60" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="61" column="3" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="4" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="113" column="3" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="118" column="12" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="15" column="10" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="105" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="46" column="18" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="62" column="18" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="78" column="18" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="99" column="18" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="104" column="18" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="13" column="18" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="30" column="18" filename="$USER_HOME$/Documents/SparkClickstream/src/test/scala/com/intuit/sbseg/tracking/http/HttpExecutorTest.scala" />
+      <jump line="56" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/EventProcessor.scala" />
+      <jump line="55" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/EventProcessor.scala" />
+      <jump line="22" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="45" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="41" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="55" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="4" column="0" filename="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/HttpConfig.scala" />
+      <jump line="87" column="0" filename="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/HttpConfig.scala" />
+      <jump line="39" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="1" column="0" filename="$USER_HOME$/Documents/SparkClickstream/src/main/scala/com/intuit/sbseg/tracking/processors/AmplitudeProcessor.scala" />
+      <jump line="59" column="27" filename="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/HttpExecutor.scala" />
+      <jump line="5" column="0" filename="$USER_HOME$/Documents/HttpScala/src/main/scala/com/intuit/sbseg/data/HttpFixedRequestRetryHandler.scala" />
+      <jump line="65" column="20" filename="$USER_HOME$/Documents/EventProcessor/build.gradle" />
+      <jump line="28" column="33" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/Clickstream.scala" />
+      <jump line="63" column="0" filename="$USER_HOME$/Documents/EventProcessor/build.gradle" />
+      <jump line="32" column="0" filename="$USER_HOME$/Documents/EventProcessor/build.gradle" />
+      <jump line="21" column="63" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/HttpProcessor.scala" />
+      <jump line="2" column="0" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutorConfig.scala" />
+      <jump line="87" column="0" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutorConfig.scala" />
+      <jump line="29" column="0" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/HttpProcessor.scala" />
+      <jump line="8" column="46" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/http/RequestBuilderByConfig.scala" />
+      <jump line="10" column="0" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="10" column="0" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/logging/LoggingProcessorConfig.scala" />
+      <jump line="16" column="51" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/processors/http/HttpBatchProcessor.scala" />
+      <jump line="113" column="38" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="2" column="0" filename="$USER_HOME$/Documents/EventProcessor/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutor.scala" />
+      <jump line="4" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/tracking/http/HttpExecutorConfig.scala" />
+      <jump line="2" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="6" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="97" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="28" column="2" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="116" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="3" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/MultithreadedHttpExecutorTest.scala" />
+      <jump line="27" column="19" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="112" column="91" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="3" column="31" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="117" column="14" filename="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.6/57cc0a7af46d66754e632bddc558a913b9e66ac3/httpcore-4.4.6-sources.jar!/org/apache/http/HttpResponse.java" />
+      <jump line="30" column="26" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/BufferedResponse.scala" />
+      <jump line="115" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="117" column="32" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="144" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="35" column="28" filename="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/HttpExecutorConfigTest.scala" />
+      <jump line="163" column="6" filename="$USER_HOME$/Documents/HttpExecutor/src/test/scala/com/intuit/sbseg/http/HttpExecutorConfigTest.scala" />
+      <jump line="181" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="168" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="47" column="42" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="31" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="166" column="0" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="11" column="23" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="57" column="49" filename="$USER_HOME$/Documents/HttpExecutor/src/main/scala/com/intuit/sbseg/http/HttpExecutor.scala" />
+      <jump line="80" column="0" filename="$USER_HOME$/Documents/SBGUtils/http/README.md" />
+      <jump line="27" column="46" filename="$USER_HOME$/Documents/SBGUtils/http/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="116" column="0" filename="$USER_HOME$/Documents/SBGUtils/http/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="6" column="0" filename="$USER_HOME$/Documents/SBGUtils/http/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="61" column="0" filename="$USER_HOME$/Documents/SBGUtils/http/src/main/scala/com/intuit/sbseg/http/HttpExecutorConfig.scala" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/SBGUtils/build.gradle" />
+      <jump line="47" column="0" filename="$USER_HOME$/Documents/SBGUtils/build.gradle" />
+      <jump line="71" column="0" filename="$USER_HOME$/Documents/SBGUtils/build.gradle" />
+      <jump line="27" column="0" filename="$USER_HOME$/Documents/SBGUtils/build.gradle" />
+      <jump line="120" column="11" filename="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/4969730c661fff76fa7f9d4c7c61545817f5b033/httpclient-4.5.3-sources.jar!/org/apache/http/impl/conn/PoolingHttpClientConnectionManager.java" />
+      <jump line="96" column="8" filename="$USER_HOME$/Documents/SBGUtils/.idea/modules/http/http.iml" />
+    </jumps>
+    <registers>
+      <register name="-" type="4">
+        <text>2.11</text>
+      </register>
+      <register name="/" type="4">
+        <text>close</text>
+      </register>
+      <register name="0" type="4">
+        <text>${scala_minor_version}</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">aW1wb3J0IGNvbS5pbnR1aXQuc2JzZWcuaHR0cC5IdHRwRXhlY3V0b3JDb25maWcK</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIGRlZiBzY2FsYV9taW5vcl92ZXJzaW9uID0gIjIuMTEiCg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICBjb21waWxlICJvcmcuc2NhbGEtbGFuZzpzY2FsYS1jb21waWxlOjIuMTEuMSIK</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iJFBST0pFQ1RfRElSJCIgLz4K</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgPHNvdXJjZUZvbGRlciB1cmw9ImZpbGU6Ly8kTU9EVUxFX0RJUiQvLi4vLi4vLi4vaHR0cC9zcmMvc2NvdmVyYWdlL3Jlc291cmNlcyIgdHlwZT0iamF2YS1yZXNvdXJjZSIgLz4K</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgPHNvdXJjZUZvbGRlciB1cmw9ImZpbGU6Ly8kTU9EVUxFX0RJUiQvLi4vLi4vLi4vaHR0cC9zcmMvc2NvdmVyYWdlL3NjYWxhIiBpc1Rlc3RTb3VyY2U9ImZhbHNlIiAvPgo=</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgPHNvdXJjZUZvbGRlciB1cmw9ImZpbGU6Ly8kTU9EVUxFX0RJUiQvLi4vLi4vLi4vaHR0cC9zcmMvdGVzdFNjb3ZlcmFnZS9zY2FsYSIgaXNUZXN0U291cmNlPSJmYWxzZSIgLz4K</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgPHNvdXJjZUZvbGRlciB1cmw9ImZpbGU6Ly8kTU9EVUxFX0RJUiQvLi4vLi4vLi4vaHR0cC9zcmMvdGVzdFNjb3ZlcmFnZS9yZXNvdXJjZXMiIHR5cGU9ImphdmEtcmVzb3VyY2UiIC8+Cg==</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgPHNvdXJjZUZvbGRlciB1cmw9ImZpbGU6Ly8kTU9EVUxFX0RJUiQvLi4vLi4vLi4vaHR0cC9zcmMvdGVzdC9qYXZhIiBpc1Rlc3RTb3VyY2U9InRydWUiIC8+Cg==</text>
+      </register>
+      <register name=":" type="4">
+        <text>w</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>close</last-search>
+      <last-offset />
+      <last-pattern>close</last-pattern>
+      <last-replace>&quot;</last-replace>
+      <last-substitute>'</last-substitute>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry encoding="base64">cHJvY2Vzc29yID0g</entry>
+        <entry>.min</entry>
+        <entry>\.min</entry>
+        <entry>pageViewAdapter</entry>
+        <entry>workflowParameters</entry>
+        <entry>new Coordinator</entry>
+        <entry>coordinator_json</entry>
+        <entry>Workflow</entry>
+        <entry>Coordinator</entry>
+        <entry>Document2</entry>
+        <entry encoding="base64">XDxhXD4=</entry>
+        <entry>to</entry>
+        <entry encoding="base64">XDw0MDQwXD4=</entry>
+        <entry>UnmodifiableList</entry>
+        <entry>assert\((.*) == (.*)\)</entry>
+        <entry>aResponse\(\)</entry>
+        <entry>aResponse</entry>
+        <entry>retryIOCount</entry>
+        <entry>'</entry>
+        <entry>close</entry>
+      </history-search>
+      <history-cmd>
+        <entry>%s/  /    /g</entry>
+        <entry>%s/    /  /g</entry>
+        <entry>%s/intuit_analytics.factory/factory/gc</entry>
+        <entry>sp</entry>
+        <entry>set wrap</entry>
+        <entry>set nowrap</entry>
+        <entry>nowrap</entry>
+        <entry>wq</entry>
+        <entry encoding="base64">JXMvdG8vLT4vZw==</entry>
+        <entry>w'</entry>
+        <entry>%s/assert\((.*) == (.*)\)/\(\1 shouldBe \2\)/gc</entry>
+        <entry>%s/assert\((.*) == (.*)\)/\1 shouldBe \2/gc</entry>
+        <entry>qw</entry>
+        <entry>%s/aResponse\(\)/aResponse/gc</entry>
+        <entry>we</entry>
+        <entry>%s/retryIOCount/retryIoCount/g</entry>
+        <entry>source ~/.ideavimrc</entry>
+        <entry encoding="base64">JzwsJz53</entry>
+        <entry>%s/'/&quot;/g</entry>
+        <entry>w</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed H</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed T</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed N</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed P</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>
