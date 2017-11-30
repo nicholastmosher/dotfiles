@@ -26,10 +26,9 @@ set splitright
 
 " Relative line numbers
 set nu
-set rnu
 
 " Whitespace
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,space:·
 set list
 
 " Tabs
