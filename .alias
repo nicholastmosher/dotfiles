@@ -20,6 +20,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias tls="tmux ls"
 alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
+alias gds="git diff --staged"
 alias dot="git --git-dir=${HOME}/.dot --work-tree=${HOME}"
 alias open='xdg-open'
 alias ]='xdg-open'
