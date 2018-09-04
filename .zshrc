@@ -42,5 +42,7 @@ fi
 [[ -f "${HOME}/.path" ]] && source "${HOME}/.path"
 
 # Launch tmux on start. Uncomment the end to attach on start.
-[[ "${TERM}" != *"screen"* ]] && exec tmux new-session # -A -s 0
+if [[ "${TERM}" != *"screen"* && "${TERM}" != "dumb" ]]; then
+	exec tmux new-session # -A -s 0
+fi
 
