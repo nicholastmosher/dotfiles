@@ -73,7 +73,7 @@ install_zsh() {
 	# Install on Debian
 	if [[ -x "$(command -v apt-get)" ]]; then
 		sudo apt-get install -y zsh
-		chsh -s "$(which zsh)"
+		sudo chsh -s "$(which zsh)"
 	fi
 
 	# Install on Fedora
