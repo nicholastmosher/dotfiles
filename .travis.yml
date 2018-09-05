@@ -1,3 +1,8 @@
 sudo: required
-install: yes | sudo bash ./install.sh
-script: ./verify_install.sh
+
+sercices:
+  - docker
+
+script:
+  - docker build .dotfiles_test/fedora/ -t local/fedora
+  - docker build .dotfiles_test/debian/ -t local/debian
