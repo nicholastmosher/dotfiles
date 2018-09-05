@@ -1,9 +1,10 @@
-FROM fedora:27
+FROM debian:buster
 
 MAINTAINER Nick Mosher <nicholastmosher@gmail.com>
 
-RUN dnf install -y sudo \
-    && adduser user \
+RUN apt-get update -y \
+    && apt-get install -y sudo curl \
+    && yes | adduser user \
     && mkdir -p /home/user \
     && echo "user ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/user \
     && chmod 0440 /etc/sudoers.d/user
