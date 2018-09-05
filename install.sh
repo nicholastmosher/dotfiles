@@ -1,13 +1,15 @@
 #!/bin/bash
 
-printf "%s" "$(tput setaf 4)" # Blue
+set -e
+
+[[ -x "$(command -v tput)" ]] && printf "%s" "$(tput setaf 4)" # Blue
 echo "_____   ______      ______      ________      _______________________            "
 echo "___  | / /__(_)________  /__    ___  __ \_______  /___  __/__(_)__  /____________"
 echo "__   |/ /__  /_  ___/_  //_/    __  / / /  __ \  __/_  /_ __  /__  /_  _ \_  ___/"
 echo "_  /|  / _  / / /__ _  ,<       _  /_/ // /_/ / /_ _  __/ _  / _  / /  __/(__  ) "
 echo "/_/ |_/  /_/  \___/ /_/|_|      /_____/ \____/\__/ /_/    /_/  /_/  \___//____/  "
 echo "                                                                                 "
-printf "%s" "$(tput sgr0)" # Normal color
+[[ -x "$(command -v tput)" ]] && printf "%s" "$(tput sgr0)" # Normal color
 
 # Prompt confirmation.
 read -p "Are you sure you want to continue? This may overwrite existing files. [y/N] " yn
@@ -19,24 +21,28 @@ esac
 # If XDG_CONFIG_HOME is not set, set it to $HOME.
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME}"
 
+dot() {
+	git --git-dir="${HOME}/.dot" --work-tree="${HOME}" "$@"
+}
+
 install_utils() {
 
 	# Install on Debian
-	if [[ -x "$(command -v apt)" ]]; then
-		yes | sudo apt update
-		yes | sudo apt install git
-		yes | sudo apt install vim
+	if [[ -x "$(command -v apt-get)" ]]; then
+		sudo apt-get update -y
+		sudo apt-get install -y git vim tmux wget
+		return
+	fi
+
+	# Install on Fedora
+	if [[ -x "$(command -v dnf)" ]]; then
+		sudo dnf install -y which git vim tmux wget findutils
+		return
 	fi
 }
 
 # Download dotfiles into "${HOME}/.dot"
 download_dotfiles() {
-
-	shopt -s expand_aliases
-
-	# Alias "dot" as a special git command with repo and work tree paths.
-	alias dot="$(which git) --git-dir=${HOME}/.dot --work-tree=${HOME}"
-
 	if [[ -d "${HOME}/.dot" ]]; then
 		echo "Found dotfiles. Updating"
 		dot config status.showUntrackedFiles no
@@ -44,7 +50,7 @@ download_dotfiles() {
 		dot reset -q --hard origin/master
 	else
 		echo "Cloning dotfiles"
-		git clone -q --bare https://github.com/nicholastmosher/dotfiles.git "${HOME}/.dot"
+		git clone --bare https://github.com/nicholastmosher/dotfiles.git "${HOME}/.dot"
 		dot config status.showUntrackedFiles no
 		dot checkout -q -f master
 	fi
@@ -62,13 +68,19 @@ install_fonts() {
 # Install zsh on osx or some linux distros.
 install_zsh() {
 	echo "Installing zsh"
-	[[ "$(uname)" == "Darwin"    ]] && yes | brew install zsh zsh_completions
-	[[ -x "$(command -v apt)"    ]] && yes | sudo apt install zsh
-	[[ -x "$(command -v dnf)"    ]] && yes | sudo dnf install zsh
-	[[ -x "$(command -v pacman)" ]] && yes | sudo pacman -S zsh
+	[[ "$(uname)" == "Darwin" ]] && brew install -y zsh zsh_completions
 
-	# Use zsh as startup shell
-	chsh -s "$(which zsh)"
+	# Install on Debian
+	if [[ -x "$(command -v apt-get)" ]]; then
+		sudo apt-get install -y zsh
+		chsh -s "$(which zsh)"
+	fi
+
+	# Install on Fedora
+	if [[ -x "$(command -v dnf)" ]];then
+		sudo dnf install -y zsh
+		sudo usermod -s "$(which zsh)" "${USER}"
+	fi
 }
 
 # Configure ZSH with oh-my-zsh
@@ -80,10 +92,10 @@ configure_zsh() {
 	fi
 
 	echo "Zsh is installed. Installing plugins"
-	source "${HOME}/.zshrc"
+	source "${HOME}/.zshrc" || true
 
 	# Detect if OMZ is installed.
-	if [[ ! -d "${HOME}/.oh-my-zsh" ]]; then
+	if [[ ! -d "${HOME}/.oh-my-zsh/README.md" ]]; then
 		echo "Installing oh-my-zsh"
 		git clone -q https://github.com/nicholastmosher/oh-my-zsh.git "${HOME}/.oh-my-zsh"
 	else
@@ -94,7 +106,6 @@ configure_zsh() {
 			git reset -q --hard origin/master
 		)
 	fi
-	source "${HOME}/.zshrc" # Now resolves .oh-my-zsh
 
 	# Detect if zsh-autosuggestions is installed.
 	if [[ ! -d "${ZSH_CUSTOM}/plugins/zsh-autosuggestions" ]]; then
@@ -114,28 +125,34 @@ configure_zsh() {
 # Install ripgrep completions for any installed shells.
 install_ripgrep_completions() {
 	echo "Installing ripgrep completions"
-	local completions_path="$1/complete"; shift
-	local install_dir
+	local RG_VERSION="0.9.0-x86_64-unknown-linux-musl"
+	wget "https://github.com/BurntSushi/ripgrep/releases/download/0.9.0/ripgrep-${RG_VERSION}.tar.gz"
+	tar xf "ripgrep-${RG_VERSION}.tar.gz"
+	local COMPLETIONS_PATH="ripgrep-${RG_VERSION}/complete"; shift || true
+	local INSTALL_DIR
 
 	# Install rg completions for bash
 	if [[ -x "$(command -v bash)" ]]; then
-		install_dir="${XDG_CONFIG_HOME}/bash_completion"
-		[[ ! -d "${install_dir}" ]] && mkdir -p "${install_dir}"
-		cp "${completions_path}/rg.bash-completion" "${install_dir}/"
+		echo "Installing rg completions for bash"
+		INSTALL_DIR="${XDG_CONFIG_HOME}/bash_completion"
+		[[ ! -d "${INSTALL_DIR}" ]] && mkdir -p "${INSTALL_DIR}"
+		cp "${COMPLETIONS_PATH}/rg.bash" "${INSTALL_DIR}/"
 	fi
 
 	# Install rg completions for fish
 	if [[ -x "$(command -v fish)" ]]; then
-		install_dir="${HOME}/.config/fish/completions"
-		[[ ! -d "${install_dir}" ]] && mkdir -p "${install_dir}"
-		cp "${completions_path}/rg.fish" "${install_dir}/"
+		echo "Installing rg completions for fish"
+		INSTALL_DIR="${HOME}/.config/fish/completions"
+		[[ ! -d "${INSTALL_DIR}" ]] && mkdir -p "${INSTALL_DIR}"
+		cp "${COMPLETIONS_PATH}/rg.fish" "${INSTALL_DIR}/"
 	fi
 
 	# Install rg completions for zsh
 	if [[ -x "$(command -v zsh)" ]]; then
-		install_dir="${HOME}/.zfunc"
-		[[ ! -d "${install_dir}" ]] && mkdir -p "${install_dir}"
-		cp "${completions_path}/_rg" "${install_dir}/"
+		echo "Installing rg completions for zsh"
+		INSTALL_DIR="${HOME}/.zfunc"
+		[[ ! -d "${INSTALL_DIR}" ]] && mkdir -p "${INSTALL_DIR}"
+		cp "${COMPLETIONS_PATH}/_rg" "${INSTALL_DIR}/"
 	fi
 }
 
@@ -155,8 +172,9 @@ install_ripgrep() {
 
 	# How to install on Fedora
 	if [[ -x "$(command -v dnf)" ]]; then
-		dnf copr enable carlwgeorge/ripgrep
-		dnf install ripgrep
+		sudo dnf install -y dnf-"command(copr)"
+		sudo dnf copr enable -y carlwgeorge/ripgrep
+		sudo dnf install -y ripgrep
 		return
 	fi
 	if [[ -x "$(command -v yum)" ]]; then
@@ -207,11 +225,12 @@ main() {
 	configure_zsh;
 	configure_vim;
 	install_ripgrep;
+	install_ripgrep_completions;
 	install_fzf;
 
 	# Finished
 	echo
-	echo "Install complete!"
+	echo "Install complete! Please restart your shell for changes to take effect."
 }
 main
 
