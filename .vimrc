@@ -12,7 +12,7 @@ set foldlevelstart=99
 set scrolloff=2
 
 " Remap window navigation
-nnoremap <C-J> <C-W><C-J>
+nnoremap <c-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
