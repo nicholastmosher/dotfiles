@@ -14,8 +14,7 @@ plugins=(git sudo zsh-autosuggestions)
 
 ### User configuration ###
 
-# Use kakoune as default editor if installed.
-[[ -x "$(command -v kak)" ]] && export EDITOR="kak"
+export EDITOR="vim"
 
 # Custom completions
 fpath+=~/.zfunc
