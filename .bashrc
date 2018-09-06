@@ -125,3 +125,16 @@ export PATH="$HOME/.cabal/bin:$HOME/.local/bin:$PATH"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+nvm() {
+	if [[ ! -d "${HOME}/.nvm" ]]; then
+		echo "Nvm is not installed"
+		return
+	fi
+
+	unset -f nvm
+	export NVM_DIR="$HOME/.nvm"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+	nvm "$@"
+}
