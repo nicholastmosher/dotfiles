@@ -44,10 +44,7 @@ install_utils() {
 # Download dotfiles into "${HOME}/.dot"
 download_dotfiles() {
 	if [[ -d "${HOME}/.dot" ]]; then
-		echo "Found dotfiles. Updating"
-		dot config status.showUntrackedFiles no
-		dot fetch -q origin
-		dot reset -q --hard origin/master
+		echo "Dotfiles already installed"
 	else
 		echo "Cloning dotfiles"
 		git clone --bare https://github.com/nicholastmosher/dotfiles.git "${HOME}/.dot"
