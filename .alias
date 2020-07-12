@@ -22,6 +22,7 @@ alias tls="tmux ls"
 alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
 alias gds="git diff --staged"
 alias glgg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias glggw="watch -xcn0.2 git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --color"
 alias dot="git --git-dir=${HOME}/.dot --work-tree=${HOME}"
 alias open='xdg-open'
 alias ]='xdg-open'
@@ -31,7 +32,6 @@ alias sp="tmux split-window"
 alias vsp="tmux split-window -h"
 alias ":sp"="tmux split-window"
 alias ":vsp"="tmux split-window -h"
-alias glgg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
 # Use git completions for "dot" alias when using zsh
 [[ "${SHELL}" == "/bin/zsh" ]] && compdef dot=git
