@@ -32,6 +32,7 @@ alias sp="tmux split-window"
 alias vsp="tmux split-window -h"
 alias ":sp"="tmux split-window"
 alias ":vsp"="tmux split-window -h"
+alias kgaw="watch -n1 kubectl get all"
 
 # Use git completions for "dot" alias when using zsh
 [[ "${SHELL}" == "/bin/zsh" ]] && compdef dot=git
