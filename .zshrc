@@ -10,7 +10,7 @@ ZSH_THEME="agnoster"
 HYPHEN_INSENSITIVE="true"
 
 # Plugins
-plugins=(git sudo zsh-autosuggestions)
+plugins=(git sudo zsh-autosuggestions kubectl)
 
 ### User configuration ###
 
@@ -57,3 +57,7 @@ nvm() {
 	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 	nvm "$@"
 }
+
+if [[ -x "$(command -v "starship")" ]]; then
+	eval "$(starship init zsh)"
+fi
