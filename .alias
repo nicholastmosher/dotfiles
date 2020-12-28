@@ -6,12 +6,14 @@ if [[ -x "$(command -v exa)" ]]; then
     alias l="exa -labh --git"     # List in long format, include dotfiles.
     alias la="exa -labh --git"    # List in long format, include dotfiles.
     alias al="exa -labh --git"    # List in long format, include dotfiles.
+    alias law="watch -cn0.2 exa -labh --git --color=always"
 else
     alias ls="ls --color"         # Force color for ls.
     alias sl="ls --color"         # Mistake alias
     alias l="ls -lah --color"     # List in long format, include dotfiles.
     alias la="ls -lah --color"    # List in long format, include dotfiles.
     alias al="ls -lah --color"    # List in long format, include dotfiles.
+    alias law="watch -cn0.2 ls -lah --color"
 fi
 
 alias ..="cd .."
