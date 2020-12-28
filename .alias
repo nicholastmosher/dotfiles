@@ -26,8 +26,6 @@ alias gds="git diff --staged"
 alias glgg="git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -S"
 alias glggw="watch -xcn0.2 git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --color"
 alias dot="git --git-dir=${HOME}/.dot --work-tree=${HOME}"
-alias open='xdg-open'
-alias ]='xdg-open'
 alias xclip='xclip -selection c'
 alias z="bg"
 alias sp="tmux split-window"
@@ -35,6 +33,18 @@ alias vsp="tmux split-window -h"
 alias ":sp"="tmux split-window"
 alias ":vsp"="tmux split-window -h"
 alias kgaw="watch -n1 kubectl get all"
+alias kgaaw="watch -n1 kubectl get all --all-namespaces"
+
+# Alias only if not on OSX
+[[ "$(uname)" == "Darwin" ]] || alias open='xdg-open'
+[[ "$(uname)" == "Darwin" ]] || alias ]='xdg-open'
+[[ "$(uname)" == "Darwin" ]] || alias tp='tee >(xclip)'
+
+# Cargo docs and test
+alias cdt="cargo doc --no-deps && cargo test --doc"
+
+# Cargo watch docs and test
+alias cdtw="cargo watch -s 'cargo doc --no-deps && cargo test --doc'"
 
 # Use git completions for "dot" alias when using zsh
 [[ "${SHELL}" == "/bin/zsh" ]] && compdef dot=git

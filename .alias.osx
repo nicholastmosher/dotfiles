@@ -7,3 +7,6 @@ if [[ ! -x "$(command -v exa)" ]]; then
     alias la="ls -la -Gh"
     alias al="ls -la -Gh"
 fi
+
+alias ]='open'
+alias tp='tee >(pbcopy)'
