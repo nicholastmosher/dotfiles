@@ -10,14 +10,11 @@ ZSH_THEME="agnoster"
 HYPHEN_INSENSITIVE="true"
 
 # Plugins
-plugins=(git sudo zsh-autosuggestions kubectl)
+plugins=(git vi-mode zsh-autosuggestions kubectl)
 
 ### User configuration ###
 
 export EDITOR="vim"
-
-# Custom completions
-fpath+=~/.zfunc
 
 # Source "oh-my-zsh" if installed
 [[ -f "${ZSH}/oh-my-zsh.sh" ]] && DISABLE_AUTO_UPDATE=true source "${ZSH}/oh-my-zsh.sh"
