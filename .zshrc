@@ -14,7 +14,11 @@ plugins=(git vi-mode zsh-autosuggestions kubectl)
 
 ### User configuration ###
 
+# Use vim as EDITOR by default
 export EDITOR="vim"
+
+# Use kak as EDITOR if it is installed
+[[ -x "$(command -v "kak")" ]] && export EDITOR="kak"
 
 # Source "oh-my-zsh" if installed
 [[ -f "${ZSH}/oh-my-zsh.sh" ]] && DISABLE_AUTO_UPDATE=true source "${ZSH}/oh-my-zsh.sh"
