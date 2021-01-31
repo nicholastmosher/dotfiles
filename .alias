@@ -34,6 +34,7 @@ alias ":sp"="tmux split-window"
 alias ":vsp"="tmux split-window -h"
 alias kgaw="watch -n1 kubectl get all"
 alias kgaaw="watch -n1 kubectl get all --all-namespaces"
+alias mint="sudo true && (sudo nohup minikube tunnel >/tmp/tunnel.out 2>/tmp/tunnel.out &)"
 
 # Alias only if not on OSX
 [[ "$(uname)" == "Darwin" ]] || alias open='xdg-open'
