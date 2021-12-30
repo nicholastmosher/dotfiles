@@ -16,6 +16,11 @@ else
     alias law="watch -cn0.2 ls -lah --color"
 fi
 
+# If hyperfine is installed, alias it to hf
+if [[ -x "$(command -v hyperfine)" ]]; then
+    alias hf=hyperfine
+fi
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
