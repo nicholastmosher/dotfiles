@@ -10,12 +10,16 @@ ZSH_THEME="agnoster"
 HYPHEN_INSENSITIVE="true"
 
 # Plugins
-plugins=(git vi-mode zsh-autosuggestions kubectl)
+
+plugins=(git sudo zsh-autosuggestions vi-mode kubectl)
 
 ### User configuration ###
 
-# Use vim as EDITOR by default
-export EDITOR="vim"
+if [[ -x "$(command -v kak)" ]]; then
+	export EDITOR="kak"
+else
+	export EDITOR="vim"
+fi
 
 # Use kak as EDITOR if it is installed
 [[ -x "$(command -v "kak")" ]] && export EDITOR="kak"
