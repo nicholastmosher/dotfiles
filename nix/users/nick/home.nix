@@ -26,6 +26,7 @@
     tmux
     jq
     procs
+    signal-desktop
   ];
 
   # Let Home Manager install and manage itself.
