@@ -37,11 +37,6 @@
     enable = true;
     enableAutosuggestions = true;
 
-    initExtraFirst = ''
-      export ZSH_TMUX_AUTOSTART=true
-      export ZSH_TMUX_AUTOCONNECT=false
-    '';
-
     shellAliases = {
       ls = "exa";
       sl = "exa";
@@ -132,6 +127,7 @@
 
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
+    shell.program = "tmux";
     colors = {
       primary = {
         background = "0x1f1f1f";
