@@ -48,7 +48,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "sudo" "git" "kubectl" "tmux" ];
+      plugins = [ "sudo" "git" "kubectl" "tmux" "vim" ];
     };
   };
 
