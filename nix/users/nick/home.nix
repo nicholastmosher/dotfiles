@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the
@@ -28,6 +28,7 @@
     procs
     signal-desktop
     spotify
+    gnome3.gnome-tweaks
   ];
 
   # Let Home Manager install and manage itself.
@@ -163,5 +164,26 @@
     enable = true;
     userEmail = "nicholastmosher@gmail.com";
     userName = "Nick Mosher";
+  };
+
+  dconf.settings = with lib.hm.gvariant; {
+    # Gnome shell settings
+    "org/gnome/shell" = {
+      "enabled-extensions" = mkArray type.string [ "vertical-overview@RensAlthuis.github.com" ];
+      "favorite-apps" = mkArray type.string [ "firefox.desktop" "org.gnome.Nautilus.desktop" ];
+    };
+
+    # Gnome window shortcuts
+    "org/gnome/desktop/wm/keybindings" = {
+      "switch-to-workspace-up" = mkArray type.string [ "<Super>k" ];
+      "switch-to-workspace-down" = mkArray type.string [ "<Super>j" ];
+      "move-to-workspace-up" = mkArray type.string [ "<Super><Shift>k" ];
+      "move-to-workspace-down" = mkArray type.string [ "<Super><Shift>j" ];
+      "close" = mkArray type.string [ "<Super>q" ];
+      "minimize" = mkEmptyArray type.string;
+      "switch-input-source" = mkEmptyArray type.string;
+      "switch-input-source-backward" = mkEmptyArray type.string;
+      "toggle-fullscreen" = mkArray type.string [ "<Shift><Super>space" ];
+    };
   };
 }
