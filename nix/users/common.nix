@@ -190,6 +190,24 @@
       "switch-input-source" = mkEmptyArray type.string;
       "switch-input-source-backward" = mkEmptyArray type.string;
       "toggle-fullscreen" = mkArray type.string [ "<Shift><Super>space" ];
+      "toggle-overview" = mkArray type.string [ "<Super>space" ];
+    };
+
+    "org/gnome-settings-daemon/plugins/media-keys" = {
+      # Custom shortcut: Lock = Super+`
+      "screensaver" = mkArray type.string [ "<Primary>grave" ];
+
+      # Custom shortcut link: Alacritty -> custom0
+      "custom-keybindings" = mkArray type.string [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+      ];
+    };
+
+    # Custom shortcut: Alacritty = Super+Return
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      "name" = mkString "Alacritty";
+      "command" = mkString "alacritty";
+      "binding" = mkString "<Super>Return";
     };
   };
 }
