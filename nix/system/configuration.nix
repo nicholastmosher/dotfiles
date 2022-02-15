@@ -45,7 +45,6 @@
 
   # Configure keymap in X11
   services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "caps:swapescape";
 
   services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.gdm.enable = true;
@@ -81,6 +80,8 @@
     starship
     rustup
     jetbrains.idea-ultimate
+    gnome.gnome-tweaks
+    appimage-run
   ];
 
   nix = {
