@@ -173,6 +173,11 @@
       "delay" = mkUint32 200;
     };
 
+    # Set CapsLock to Escape, set Shift+CapsLock to CapsLock
+    "org/gnome/desktop/input-sources" = {
+      "xkb-options" = mkArray type.string [ "terminate:ctrl_alt_bksp" "caps:escape_shifted_capslock" ];
+    };
+
     # Gnome shell settings
     "org/gnome/shell" = {
       "enabled-extensions" = mkArray type.string [ "vertical-overview@RensAlthuis.github.com" ];
