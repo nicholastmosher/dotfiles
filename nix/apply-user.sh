@@ -1,5 +1,8 @@
 #!/bin/sh
+
+USER=${1?' Usage: ./apply-user USERNAME'}
+
 pushd ~/.dotfiles/nix
-nix build .#homeManagerConfigurations.nick.activationPackage
+nix build ".#homeManagerConfigurations.${USER}.activationPackage"
 ./result/activate
 popd

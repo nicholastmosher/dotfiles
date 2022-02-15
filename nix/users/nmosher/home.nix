@@ -3,12 +3,12 @@
 {
   imports = [ ../common.nix ];
 
-  home.username = "nick";
-  home.homeDirectory = "/home/nick";
+  home.username = "nmosher";
+  home.homeDirectory = "/home/nmosher";
 
   programs.git = {
     enable = true;
-    userEmail = "nicholastmosher@gmail.com";
+    userEmail = "nmosher@geisel-software.com";
     userName = "Nick Mosher";
   };
 }

@@ -32,6 +32,17 @@
           ];
         };
       };
+
+      nmosher = home-manager.lib.homeManagerConfiguration {
+        inherit system pkgs;
+        username = "nmosher";
+        homeDirectory = "/home/nmosher";
+        configuration = {
+          imports = [
+            ./users/nmosher/home.nix
+          ];
+        };
+      };
     };
 
     nixosConfigurations = {
@@ -39,7 +50,15 @@
         inherit system;
 
         modules = [
-          ./system/configuration.nix
+          ./system/thinkpad/configuration.nix
+        ];
+      };
+
+      black-pearl = lib.nixosSystem {
+        inherit system;
+
+        modules = [
+          ./system/black-pearl/configuration.nix
         ];
       };
     };
