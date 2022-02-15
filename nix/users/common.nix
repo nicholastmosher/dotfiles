@@ -116,6 +116,15 @@
 
   programs.gh.enable = true;
 
+  programs.git = {
+    delta = {
+      enable = true;
+      options = {
+        side-by-side = true;
+      };
+    };
+  };
+
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
@@ -158,6 +167,12 @@
   };
 
   dconf.settings = with lib.hm.gvariant; {
+    # Keyboard repeat rate
+    "org/gnome/desktop/peripherals/keyboard" = {
+      "repeat-interval" = mkUint32 15;
+      "delay" = mkUint32 200;
+    };
+
     # Gnome shell settings
     "org/gnome/shell" = {
       "enabled-extensions" = mkArray type.string [ "vertical-overview@RensAlthuis.github.com" ];

@@ -56,11 +56,14 @@
     ripgrep
     starship
     rustup
+    jetbrains.clion
     jetbrains.idea-ultimate
     appimage-run
     gnome.gnome-tweaks
     gnomeExtensions.vertical-overview
     samba
+    awscli2
+    nodejs
   ];
 
   nix = {
@@ -70,7 +73,7 @@
     '';
   };
 
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [ "idea-ultimate" ];
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [ "idea-ultimate" "clion" ];
 
   services.gvfs.enable = true;
   services.samba = {
