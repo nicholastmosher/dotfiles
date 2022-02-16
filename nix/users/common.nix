@@ -30,6 +30,8 @@
     EDITOR = "kak";
   };
 
+  home.file.".ideavimrc".source = ../../.ideavimrc;
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
