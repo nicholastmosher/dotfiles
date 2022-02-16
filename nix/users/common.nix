@@ -26,6 +26,10 @@
     gnome3.gnome-tweaks
   ];
 
+  home.sessionVariables = {
+    EDITOR = "kak";
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -46,7 +50,18 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "sudo" "git" "kubectl" "tmux" ];
+      plugins = [
+        "aws"
+        "fd"
+        "git"
+        "kubectl"
+        "npm"
+        "ripgrep"
+        "rust"
+        "sudo"
+        "tmux"
+        "vi-mode"
+      ];
     };
   };
 
