@@ -209,7 +209,7 @@
       "minimize" = mkEmptyArray type.string;
       "switch-input-source" = mkEmptyArray type.string;
       "switch-input-source-backward" = mkEmptyArray type.string;
-      "toggle-fullscreen" = mkArray type.string [ "<Shift><Super>space" ];
+      "toggle-maximized" = mkArray type.string [ "<Shift><Super>space" ];
       "toggle-overview" = mkArray type.string [ "<Super>space" ];
     };
 
