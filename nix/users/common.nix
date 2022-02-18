@@ -24,6 +24,7 @@
     signal-desktop
     spotify
     gnome3.gnome-tweaks
+    xclip
   ];
 
   home.sessionVariables = {
@@ -48,6 +49,8 @@
       law = "watch -cn0.2 exa -labh --git";
       glgg = "git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -S";
       glggw = "watch -xcn0.2 git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --color";
+      tp = "tee >(xclip -sel clipboard)";
+      tpp = "xclip -sel clipboard -o";
     };
 
     oh-my-zsh = {
