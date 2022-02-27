@@ -218,7 +218,7 @@
       "toggle-overview" = mkArray type.string [ "<Super>space" ];
     };
 
-    "org/gnome-settings-daemon/plugins/media-keys" = {
+    "org/gnome/settings-daemon/plugins/media-keys" = {
       # Custom shortcut: Lock = Super+`
       "screensaver" = mkArray type.string [ "<Primary>grave" ];
 
