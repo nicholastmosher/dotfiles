@@ -11,13 +11,15 @@
   ];
 
   networking.hostName = "black-pearl";
+  services.sshd.enable = true;
+  services.openssh.forwardX11 = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nmosher = {
     isNormalUser = true;
     home = "/home/nmosher";
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networkmanager" "docker" ];
   };
 }
 

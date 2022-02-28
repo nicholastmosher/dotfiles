@@ -17,7 +17,7 @@
     isNormalUser = true;
     home = "/home/nick";
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "docker" ];
   };
 }
 

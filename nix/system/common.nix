@@ -64,6 +64,8 @@
     samba
     awscli2
     nodejs
+    docker
+    docker-compose_2
   ];
 
   nix = {
@@ -73,7 +75,11 @@
     '';
   };
 
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [ "idea-ultimate" "clion" ];
+  nixpkgs.config.allowUnfree = true;
+  virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  users.extraGroups.vboxusers.members = [ "nmosher" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
