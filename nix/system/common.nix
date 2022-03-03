@@ -65,7 +65,7 @@
     awscli2
     nodejs
     docker
-    docker-compose_2
+    docker-compose
   ];
 
   nix = {
