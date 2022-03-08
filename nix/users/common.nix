@@ -31,6 +31,10 @@
     EDITOR = "kak";
   };
 
+  home.sessionPath = [
+    "$HOME/.cargo/bin"
+  ];
+
   home.file.".ideavimrc".source = ../../.ideavimrc;
 
   # Let Home Manager install and manage itself.
@@ -63,6 +67,7 @@
       enable = true;
       plugins = [
         "aws"
+        "docker"
         "fd"
         "git"
         "kubectl"
@@ -147,6 +152,7 @@
       enable = true;
       options = {
         side-by-side = true;
+        plus-style = ''syntax "#003700"'';
       };
     };
   };

@@ -65,7 +65,9 @@
     awscli2
     nodejs
     docker
-    docker-compose
+    kubectl
+    minikube
+    clang_12
   ];
 
   nix = {
