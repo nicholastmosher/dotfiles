@@ -194,13 +194,6 @@
     };
   };
 
-  services.spotifyd.enable = true;
-
-  services.spotifyd.settings.global = {
-    username = "codewhisperer97";
-    device_name = "nix";
-  };
-
   dconf.settings = with lib.hm.gvariant; {
     # Keyboard repeat rate
     "org/gnome/desktop/peripherals/keyboard" = {
