@@ -61,7 +61,7 @@
     appimage-run
     gnome.gnome-tweaks
     gnomeExtensions.vertical-overview
-    samba
+    openconnect
     awscli2
     nodejs
     docker
