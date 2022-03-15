@@ -20,65 +20,42 @@
     '';
   };
 
+  imports = [
+    ./modules/docker.nix
+    ./modules/virtualbox.nix
+    ./modules/x11.nix
+  ];
+
+  # Networking
   networking.useDHCP = false;
   networking.interfaces.enp0s25.useDHCP = true;
   networking.interfaces.wlp3s0.useDHCP = true;
   networking.networkmanager.enable = true;
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.layout = "us";
-  services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
 
   # System packages
   environment.systemPackages = with pkgs; [
     vim
     git
     wget
-    firefox
-    alacritty
     tmux
-    ripgrep
-    starship
     rustup
-    jetbrains.clion
-    jetbrains.idea-ultimate
-    appimage-run
-    gnome.gnome-tweaks
-    gnomeExtensions.vertical-overview
-    openconnect
-    awscli2
     nodejs
     docker
     kubectl
-    minikube
+    firefox
+    ripgrep
+    awscli2
     clang_12
+    starship
+    minikube
+    alacritty
+    openconnect
+    appimage-run
+    jetbrains.clion
+    jetbrains.idea-ultimate
+    gnome.gnome-tweaks
+    gnomeExtensions.vertical-overview
   ];
-
-  virtualisation.docker.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
-  users.extraGroups.vboxusers.members = [ "nmosher" ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
