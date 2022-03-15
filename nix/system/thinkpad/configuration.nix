@@ -12,6 +12,10 @@
 
   networking.hostName = "thinkpad";
 
+  environment.systemPackages = with pkgs; [
+    openconnect
+  ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nick = {
     isNormalUser = true;

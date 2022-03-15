@@ -14,6 +14,13 @@
   services.sshd.enable = true;
   services.openssh.forwardX11 = true;
 
+  environment.systemPackages = with pkgs; [
+    awscli2
+    docker
+    kubectl
+    minikube
+  ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nmosher = {
     isNormalUser = true;
