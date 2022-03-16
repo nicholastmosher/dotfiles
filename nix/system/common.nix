@@ -22,6 +22,7 @@
 
   imports = [
     ./modules/docker.nix
+    ./modules/update.nix
     ./modules/virtualbox.nix
     ./modules/x11.nix
   ];

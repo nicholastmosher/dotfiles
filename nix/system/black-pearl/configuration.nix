@@ -7,12 +7,14 @@
 {
   imports = [
     ../common.nix
+    ../modules/sssd.nix
     ./hardware-configuration.nix
   ];
 
   networking.hostName = "black-pearl";
   services.sshd.enable = true;
   services.openssh.forwardX11 = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   environment.systemPackages = with pkgs; [
     awscli2
