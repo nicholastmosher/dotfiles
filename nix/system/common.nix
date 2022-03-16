@@ -34,9 +34,11 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
+    dig
     vim
     git
     wget
+    file
     tmux
     rustup
     nodejs

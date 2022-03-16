@@ -40,6 +40,7 @@
     xclip
     ripgrep
     spotify
+    asciinema
     signal-desktop
     gnome3.gnome-tweaks
   ];
