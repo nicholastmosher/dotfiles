@@ -33,6 +33,17 @@
         };
       };
 
+      davyjones = home-manager.lib.homeManagerConfiguration {
+        inherit system pkgs;
+        username = "davyjones";
+        homeDirectory = "/home/davyjones";
+        configuration = {
+          imports = [
+            ./users/davyjones/home.nix
+          ];
+        };
+      };
+
       nmosher = home-manager.lib.homeManagerConfiguration {
         inherit system pkgs;
         username = "nmosher";
@@ -51,6 +62,14 @@
 
         modules = [
           ./system/thinkpad/configuration.nix
+        ];
+      };
+
+      dutchman = lib.nixosSystem {
+        inherit system;
+
+        modules = [
+          ./system/dutchman/configuration.nix
         ];
       };
 
