@@ -44,6 +44,9 @@
     home = "/home/davyjones";
     shell = pkgs.zsh;
     extraGroups = [ "wheel" "networkmanager" ];
+    openssh.authorizedKeys.keyFiles = [
+      ./ssh-keys/from-thinkpad.pub
+    ];
   };
 
   # This value determines the NixOS release from which the default

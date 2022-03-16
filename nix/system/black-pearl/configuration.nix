@@ -29,6 +29,9 @@
     home = "/home/nmosher";
     shell = pkgs.zsh;
     extraGroups = [ "wheel" "networkmanager" "docker" ];
+    openssh.authorizedKeys.keyFiles = [
+      ./ssh-keys/from-thinkpad.pub
+    ];
   };
 }
 
