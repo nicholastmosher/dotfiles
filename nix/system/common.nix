@@ -34,6 +34,10 @@
   networking.interfaces.wlp3s0.useDHCP = true;
   networking.networkmanager.enable = true;
 
+  # Keybase
+  services.keybase.enable = true;
+  services.kbfs.enable = true;
+
   # System packages
   environment.systemPackages = with pkgs; [
     dig
@@ -45,14 +49,15 @@
     rustup
     nodejs
     docker
-    kubectl
-    firefox
-    ripgrep
     awscli2
     clang_12
-    starship
+    firefox
+    kubectl
+    ripgrep
     minikube
+    starship
     alacritty
+    keybase-gui
     openconnect
     appimage-run
     jetbrains.clion
