@@ -40,6 +40,9 @@
       "custom-keybindings" = mkArray type.string [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
       ];
+
+      # Allow screen recordings to run 1h rather than 30s
+      "max-screencast-length" = mkUint32 3600;
     };
 
     # Custom shortcut: Alacritty = Super+Return
