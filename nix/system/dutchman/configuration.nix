@@ -8,6 +8,7 @@
   imports =
     [
       ../common.nix
+      ../modules/steam.nix
       ./hardware-configuration.nix
     ];
 

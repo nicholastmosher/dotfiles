@@ -23,7 +23,7 @@
   imports = [
     ./modules/docker.nix
     ./modules/gpg.nix
-    ./modules/update.nix
+    # ./modules/update.nix
     ./modules/x11.nix
   ];
 
