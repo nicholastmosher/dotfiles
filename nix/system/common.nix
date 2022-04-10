@@ -45,14 +45,14 @@
     wget
     file
     tmux
-    rustup
-    nodejs
     docker
+    nodejs
+    rustup
     awscli2
-    clang_12
     firefox
     kubectl
     ripgrep
+    clang_12
     minikube
     starship
     alacritty
