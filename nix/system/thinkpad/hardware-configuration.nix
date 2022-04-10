@@ -8,24 +8,56 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "ehci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ehci_pci" "ahci" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/5afb1665-5fcb-4ca2-b1ab-9a2b6e0ed3ce";
-      fsType = "ext4";
+    { device = "rpool/local/root";
+      fsType = "zfs";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/DE0B-ECCA";
+    { device = "/dev/disk/by-uuid/D7E5-DA5F";
       fsType = "vfat";
     };
 
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/72486b89-de6c-45bd-a00e-0fba2605733c"; }
-    ];
+  fileSystems."/nix" =
+    { device = "rpool/local/nix";
+      fsType = "zfs";
+    };
+
+  fileSystems."/home" =
+    { device = "rpool/safe/home";
+      fsType = "zfs";
+    };
+
+  fileSystems."/persist" =
+    { device = "rpool/safe/persist";
+      fsType = "zfs";
+    };
+
+  swapDevices = [ ];
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  boot.supportedFilesystems = [ "zfs" ];
+  networking.hostId = "deadbeef";
+  networking.networkmanager.enable = true;
+
+  boot.loader.grub = {
+    enable = true;
+    version = 2;
+    device = "nodev";
+    efiSupport = true;
+    enableCryptodisk = true;
+  };
+
+  boot.initrd.luks.devices = {
+    root = {
+      device = "/dev/disk/by-id/ata-LITEON_LCH-256V2S_SD0F66157L2TH5A10F4V-part2";
+      preLVM = true;
+    };
+  };
 }
