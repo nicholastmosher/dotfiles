@@ -11,6 +11,7 @@
     ./hardware-configuration.nix
   ];
 
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
   networking.hostName = "thinkpad";
   programs.steam.enable = true;
 
