@@ -18,9 +18,12 @@
       };
     };
 
-    lib = nixpkgs.lib;
+  in rec {
+    lib = {
+      systemCommon = pkgs.callPackage ./system/common.nix {};
+      homeCommon = pkgs.callPackage ./users/common.nix {};
+    };
 
-  in {
     homeManagerConfigurations = {
       nick = home-manager.lib.homeManagerConfiguration {
         inherit system pkgs;
@@ -57,25 +60,22 @@
     };
 
     nixosConfigurations = {
-      thinkpad = lib.nixosSystem {
+      thinkpad = nixpkgs.lib.nixosSystem {
         inherit system;
-
         modules = [
           ./system/thinkpad/configuration.nix
         ];
       };
 
-      dutchman = lib.nixosSystem {
+      dutchman = nixpkgs.lib.nixosSystem {
         inherit system;
-
         modules = [
           ./system/dutchman/configuration.nix
         ];
       };
 
-      black-pearl = lib.nixosSystem {
+      black-pearl = nixpkgs.lib.nixosSystem {
         inherit system;
-
         modules = [
           ./system/black-pearl/configuration.nix
         ];
