@@ -7,6 +7,7 @@
 {
   imports = [
     ../common.nix
+    ../modules/qemu.nix
     ../modules/virtualbox.nix
     ./hardware-configuration.nix
   ];
