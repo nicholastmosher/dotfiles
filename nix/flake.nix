@@ -81,5 +81,10 @@
         ];
       };
     };
+
+    defaultTemplate = {
+      path = ./template;
+      description = "A minimal NixOS configuration with my common preferences";
+    };
   };
 }

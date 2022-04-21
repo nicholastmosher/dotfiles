@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
-    dotfiles.url = "git+file:///home/nick/.dotfiles?dir=nix&ref=modular";
+    dotfiles.url = "github:nicholastmosher/dotfiles?dir=nix&ref=modular";
     home-manager.url = "github:nix-community/home-manager/release-21.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
