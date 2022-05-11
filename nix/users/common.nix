@@ -36,12 +36,19 @@
     jq
     bat
     exa
+    git
     xsv
+    vim
+    file
+    tmux
+    wget
     procs
     tokei
     xclip
+    kakoune
     ripgrep
     spotify
+    alacritty
     asciinema
     signal-desktop
     gnome3.gnome-tweaks
@@ -49,5 +56,6 @@
 
   home.sessionPath = [
     "$HOME/.cargo/bin"
+    "$HOME/.local/bin"
   ];
 }
