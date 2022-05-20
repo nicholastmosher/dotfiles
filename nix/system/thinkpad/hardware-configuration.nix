@@ -19,7 +19,7 @@
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/D7E5-DA5F";
+    { device = "/dev/disk/by-id/ata-LITEON_LCH-256V2S_SD0F66157L2TH5A10F4V-part1";
       fsType = "vfat";
     };
 
@@ -37,8 +37,6 @@
     { device = "rpool/safe/persist";
       fsType = "zfs";
     };
-
-  swapDevices = [ ];
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
@@ -60,4 +58,8 @@
       preLVM = true;
     };
   };
+
+  swapDevices = [
+    { device = "/dev/disk/by-id/ata-LITEON_LCH-256V2S_SD0F66157L2TH5A10F4V-part3"; }
+  ];
 }
