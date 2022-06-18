@@ -7,8 +7,9 @@
 {
   imports = [
     ../common.nix
-    ../modules/sssd.nix
-    ../modules/update.nix
+    # ../modules/sssd.nix
+    ../modules/qemu.nix
+    ../modules/virtualbox.nix
     ./hardware-configuration.nix
   ];
 
