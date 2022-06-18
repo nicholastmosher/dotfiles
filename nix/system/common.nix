@@ -33,8 +33,6 @@
   networking.interfaces.wlp3s0.useDHCP = true;
   networking.networkmanager.enable = true;
 
-  virtualisation.podman.enable = true;
-
   # Keybase
   services.keybase.enable = true;
   services.kbfs.enable = true;
