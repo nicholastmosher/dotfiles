@@ -27,7 +27,7 @@
     ./modules/kakoune.nix
     ./modules/starship.nix
     ./modules/tmux.nix
-    # ./modules/vscode.nix
+    ./modules/vscode.nix
     ./modules/zsh.nix
   ];
 
