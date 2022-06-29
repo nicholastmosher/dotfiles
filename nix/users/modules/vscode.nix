@@ -39,8 +39,15 @@
     userSettings = {
       # Fixes capslock as escape
       "keyboard.dispatch" = "keyCode";
-      # "workbench.colorTheme" = "Darcula Theme from IntelliJ";
-      "workbench.colorTheme" = "Ayu Mirage";
+      "workbench.colorTheme" = "Ayu Mirage Bordered";
+      "editor.semanticTokenColorCustomizations" = {
+        "[Ayu Mirage Bordered]" = {
+          enabled = true;
+          rules = {
+            typeParameter = "#00ff9d";
+          };
+        };
+      };
       "vim.vimrc.enable" = true;
       "vim.vimrc.path" = "${config.home.homeDirectory}/.ideavimrc";
       "files.autoSave" = "onFocusChange";
