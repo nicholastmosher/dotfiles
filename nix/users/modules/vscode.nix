@@ -8,7 +8,13 @@
     enable = true;
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
+      jnoortheen.nix-ide
       matklad.rust-analyzer
+      bungcip.better-toml
+      ms-azuretools.vscode-docker
+      ms-python.python
+      ms-vscode-remote.remote-ssh
+      ms-vsliveshare.vsliveshare
     ];
     keybindings = [
       {
