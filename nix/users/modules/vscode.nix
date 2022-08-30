@@ -31,6 +31,14 @@
         command = "editor.action.goToDeclaration";
       }
       {
+        key = "ctrl+t";
+        command = "workbench.action.navigateBack";
+      }
+      {
+        key = "ctrl+shift+]";
+        command = "workbench.files.action.showActiveFileInExplorer";
+      }
+      {
         key = "ctrl+[";
         command = "editor.action.goToTypeDefinition";
       }
@@ -68,6 +76,7 @@
         "[Ayu Mirage Bordered]" = {
           enabled = true;
           rules = {
+            "*.documentation" = "#68DF6C";
             typeParameter = "#00ff9d";
           };
         };
@@ -82,7 +91,12 @@
       "update.mode" = "none";
       "vim.vimrc.enable" = true;
       "vim.vimrc.path" = "${config.home.homeDirectory}/.ideavimrc";
+      "vim.handleKeys" = {
+        "<C-w>" = false;
+      };
+      "workbench.tree.indent" = 20;
       "workbench.colorTheme" = "Ayu Mirage Bordered";
+      "terminal.integrated.defaultProfile.linux" = "tmux";
     };
   };
 }
