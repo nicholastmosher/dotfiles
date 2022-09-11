@@ -1,8 +1,10 @@
+{ pkgs, ... }:
 {
   programs.alacritty = {
     enable = true;
     settings = {
-      shell.program = "tmux";
+      shell.program = "${pkgs.zsh}/bin/zsh";
+      shell.args = [ "-l" "-c" "${pkgs.tmux}/bin/tmux" ];
       colors = {
         primary = {
           background = "0x1f1f1f";

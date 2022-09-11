@@ -5,9 +5,11 @@
     nixpkgs.url = "nixpkgs/nixos-21.11";
     home-manager.url = "github:nix-community/home-manager/release-21.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    darwin.url = "github:lnl7/nix-darwin/master";
+    darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, darwin, ... }:
   let
     system = "x86_64-linux";
 
@@ -54,6 +56,18 @@
           ];
         };
       };
+    };
+
+    darwinConfigurations."interceptor" = darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
+      modules = [
+        ./system/interceptor/configuration.nix
+        home-manager.darwinModules.home-manager {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.nick = import ./users/nick/darwin.nix;
+        }
+      ];
     };
 
     nixosConfigurations = {

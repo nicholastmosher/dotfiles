@@ -9,12 +9,9 @@
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
       jnoortheen.nix-ide
-      matklad.rust-analyzer
       bungcip.better-toml
       ms-azuretools.vscode-docker
-      ms-python.python
       ms-vscode-remote.remote-ssh
-      ms-vsliveshare.vsliveshare
     ];
     keybindings = [
       {
@@ -89,8 +86,7 @@
       "rust-analyzer.checkOnSave.command" = "clippy";
       "rust-analyzer.assist.allowMergingIntoGlobImports" = false;
       "update.mode" = "none";
-      "vim.vimrc.enable" = true;
-      "vim.vimrc.path" = "${config.home.homeDirectory}/.ideavimrc";
+      "vim.useSystemClipboard" = true;
       "vim.handleKeys" = {
         "<C-w>" = false;
       };

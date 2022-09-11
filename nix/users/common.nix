@@ -14,7 +14,6 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   programs.exa.enable = true;
-  home.file.".ideavimrc".source = ../../.ideavimrc;
   home.file.".gnupg/gpg.conf".source = ../../.gnupg/gpg.conf;
   home.file.".gnupg/gpg-agent.conf".source = ../../.gnupg/gpg-agent.conf;
 
@@ -58,4 +57,8 @@
     "$HOME/.cargo/bin"
     "$HOME/.local/bin"
   ];
+
+  home.sessionVariables = {
+    EDITOR = "kak";
+  };
 }

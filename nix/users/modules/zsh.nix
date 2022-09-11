@@ -1,7 +1,12 @@
+{ config, ... }:
 {
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
+    initExtra = ''
+      source /etc/static/bashrc &>/dev/null
+      [[ -f "${config.home.homeDirectory}/.path.private" ]] && source "${config.home.homeDirectory}/.path.private"
+    '';
 
     shellAliases = {
       ls = "exa";
