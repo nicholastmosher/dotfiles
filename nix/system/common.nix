@@ -23,7 +23,6 @@
   imports = [
     ./modules/docker.nix
     ./modules/gpg.nix
-    # ./modules/update.nix
     ./modules/x11.nix
   ];
 
@@ -33,8 +32,6 @@
   networking.interfaces.wlp3s0.useDHCP = true;
   networking.networkmanager.enable = true;
 
-  virtualisation.podman.enable = true;
-
   # Keybase
   services.keybase.enable = true;
   services.kbfs.enable = true;
@@ -42,18 +39,13 @@
   # System packages
   environment.systemPackages = with pkgs; [
     dig
-    vim
     git
-    wget
-    file
-    tmux
     docker
     nodejs
     rustup
     awscli2
     firefox
     kubectl
-    ripgrep
     clang_12
     minikube
     obsidian

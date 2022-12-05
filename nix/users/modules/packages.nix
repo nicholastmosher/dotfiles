@@ -8,9 +8,11 @@
     bat
     exa
     git
+    vim
     xsv
     file
     ipfs
+    tmux
     wget
     procs
     tokei

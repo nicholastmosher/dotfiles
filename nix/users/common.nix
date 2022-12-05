@@ -24,6 +24,7 @@
     ./modules/git.nix
     ./modules/gnome.nix
     ./modules/kakoune.nix
+    ./modules/packages.nix
     ./modules/starship.nix
     ./modules/tmux.nix
     ./modules/vscode.nix
@@ -31,24 +32,11 @@
   ];
 
   home.packages = with pkgs; [
-    fd
-    jq
-    bat
-    exa
-    git
-    xsv
     vim
-    file
-    tmux
-    wget
-    procs
-    tokei
     xclip
     kakoune
-    ripgrep
     spotify
     alacritty
-    asciinema
     signal-desktop
     gnome3.gnome-tweaks
   ];
