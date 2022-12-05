@@ -5,7 +5,6 @@
     ../modules/direnv.nix
     ../modules/fzf.nix
     ../modules/git.nix
-    ../modules/kakoune.nix
     ../modules/packages.nix
     ../modules/starship.nix
     ../modules/tmux.nix

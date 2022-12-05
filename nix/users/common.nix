@@ -23,7 +23,6 @@
     ./modules/fzf.nix
     ./modules/git.nix
     ./modules/gnome.nix
-    ./modules/kakoune.nix
     ./modules/packages.nix
     ./modules/starship.nix
     ./modules/tmux.nix
@@ -34,7 +33,7 @@
   home.packages = with pkgs; [
     vim
     xclip
-    kakoune
+    ripgrep
     spotify
     alacritty
     signal-desktop
@@ -45,8 +44,4 @@
     "$HOME/.cargo/bin"
     "$HOME/.local/bin"
   ];
-
-  home.sessionVariables = {
-    EDITOR = "kak";
-  };
 }
