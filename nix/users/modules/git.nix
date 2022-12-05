@@ -1,6 +1,10 @@
 {
   programs.gh.enable = true;
   programs.git = {
+    extraConfig = {
+      safe.directory = "/home/nmosher/.dotfiles";
+    };
+
     delta = {
       enable = true;
       options = {

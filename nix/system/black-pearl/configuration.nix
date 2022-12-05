@@ -26,6 +26,10 @@
     minikube
   ];
 
+  programs.git.config = {
+    safe.directory = "/home/nmosher/.dotfiles";
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nmosher = {
     isNormalUser = true;
