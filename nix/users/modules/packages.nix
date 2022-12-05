@@ -14,9 +14,11 @@
     ipfs
     tmux
     wget
+    yarn
     procs
     tokei
     watch
+    nodejs
     ripgrep
     asciinema
   ];
