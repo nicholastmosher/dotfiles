@@ -4,6 +4,7 @@
     enable = true;
     enableAutosuggestions = true;
     initExtra = ''
+      source ~/.alias
       source /etc/static/bashrc &>/dev/null
       [[ -f "${config.home.homeDirectory}/.path.private" ]] && source "${config.home.homeDirectory}/.path.private"
     '';
