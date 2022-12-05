@@ -9,6 +9,7 @@
     ../common.nix
     # ../modules/sssd.nix
     ../modules/qemu.nix
+    ../modules/synergy.nix
     ../modules/virtualbox.nix
     ./hardware-configuration.nix
   ];
