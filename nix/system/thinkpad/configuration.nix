@@ -9,6 +9,7 @@
     ../common.nix
     ../modules/qemu.nix
     ../modules/virtualbox.nix
+    ../modules/pihole.nix
     ./hardware-configuration.nix
   ];
 

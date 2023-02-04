@@ -55,6 +55,7 @@
     clang_12
     minikube
     obsidian
+    python39
     starship
     alacritty
     keybase-gui

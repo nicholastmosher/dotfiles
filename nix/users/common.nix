@@ -50,6 +50,8 @@
     spotify
     alacritty
     asciinema
+    platformio
+    google-chrome
     signal-desktop
     gnome3.gnome-tweaks
   ];

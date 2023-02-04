@@ -10,6 +10,7 @@
       vscodevim.vim
       jnoortheen.nix-ide
       matklad.rust-analyzer
+      serayuzgur.crates
       bungcip.better-toml
       ms-azuretools.vscode-docker
       ms-python.python
