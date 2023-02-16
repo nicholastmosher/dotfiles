@@ -9,55 +9,31 @@
     darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, home-manager, darwin, ... }:
-  let
-    system = "x86_64-linux";
-
-    pkgs = import nixpkgs {
-      inherit system;
-      config = {
-        allowUnfree = true;
-      };
-    };
-
-    lib = nixpkgs.lib;
-
-  in {
-    homeManagerConfigurations = {
-      nick = home-manager.lib.homeManagerConfiguration {
-        inherit system pkgs;
-        username = "nick";
-        homeDirectory = "/home/nick";
-        configuration = {
-          imports = [
-            ./users/nick/home.nix
-          ];
+  outputs = { nixpkgs, home-manager, darwin, ... }: {
+    # Vanilla home-manager profiles
+    homeManagerConfigurations = 
+      let
+        system = "x86_64-linux";
+        pkgs = import nixpkgs {
+          inherit system;
+          config = {
+            allowUnfree = true;
+          };
+        };
+      in {
+        nick = home-manager.lib.homeManagerConfiguration {
+          inherit system pkgs;
+          username = "nick";
+          homeDirectory = "/home/nick";
+          configuration = {
+            imports = [
+              ./users/nick/home.nix
+            ];
+          };
         };
       };
 
-      davyjones = home-manager.lib.homeManagerConfiguration {
-        inherit system pkgs;
-        username = "davyjones";
-        homeDirectory = "/home/davyjones";
-        configuration = {
-          imports = [
-            ./users/davyjones/home.nix
-          ];
-        };
-      };
-
-      nmosher = home-manager.lib.homeManagerConfiguration {
-        inherit system pkgs;
-        username = "nmosher";
-        homeDirectory = "/home/nmosher";
-        configuration = {
-          imports = [
-            ./users/nmosher/home.nix
-          ];
-        };
-      };
-    };
-
+    # Darwin home-manager profiles
     darwinConfigurations."interceptor" = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
@@ -70,30 +46,17 @@
       ];
     };
 
-    nixosConfigurations = {
-      thinkpad = lib.nixosSystem {
-        inherit system;
+    nixosConfigurations = 
+      let
+        system = "x86_64-linux";
+      in {
+        thinkpad = nixpkgs.lib.nixosSystem {
+          inherit system;
 
-        modules = [
-          ./system/thinkpad/configuration.nix
-        ];
+          modules = [
+            ./system/thinkpad/configuration.nix
+          ];
+        };
       };
-
-      dutchman = lib.nixosSystem {
-        inherit system;
-
-        modules = [
-          ./system/dutchman/configuration.nix
-        ];
-      };
-
-      black-pearl = lib.nixosSystem {
-        inherit system;
-
-        modules = [
-          ./system/black-pearl/configuration.nix
-        ];
-      };
-    };
   };
 }
