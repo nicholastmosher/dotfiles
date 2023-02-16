@@ -3,6 +3,7 @@
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
+    enableSyntaxHighlighting = true;
     initExtra = ''
       source ~/.alias
       source /etc/static/bashrc &>/dev/null
