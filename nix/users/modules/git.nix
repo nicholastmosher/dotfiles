@@ -1,6 +1,10 @@
 {
-  programs.gh.enable = true;
+  programs.gh = {
+    enable = true;
+    enableGitCredentialHelper = true;
+  };
   programs.git = {
+    lfs.enable = true;
     extraConfig = {
       safe.directory = "/home/nmosher/.dotfiles";
     };
