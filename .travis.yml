@@ -1,8 +1,0 @@
-sudo: required
-
-sercices:
-  - docker
-
-script:
-  - docker build .dotfiles_test/fedora/ -t local/fedora
-  - docker build .dotfiles_test/debian/ -t local/debian

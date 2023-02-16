@@ -14,8 +14,8 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   programs.exa.enable = true;
-  home.file.".gnupg/gpg.conf".source = ../../.gnupg/gpg.conf;
-  home.file.".gnupg/gpg-agent.conf".source = ../../.gnupg/gpg-agent.conf;
+  home.file.".gnupg/gpg.conf".source = ../../home/.gnupg/gpg.conf;
+  home.file.".gnupg/gpg-agent.conf".source = ../../home/.gnupg/gpg-agent.conf;
 
   imports = [
     ./modules/alacritty.nix
