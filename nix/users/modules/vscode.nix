@@ -85,6 +85,111 @@
       "php.validate.executablePath" = "${pkgs.php80}/bin/php";
       "rust-analyzer.checkOnSave.command" = "clippy";
       "rust-analyzer.assist.allowMergingIntoGlobImports" = false;
+      "rust-analyzer.completion.privateEditable.enable" = true;
+      "rust-analyzer.completion.snippets.custom" = {
+        "Arc::new" = {
+          postfix = "arc";
+          body = "Arc::new(\${receiver})";
+          requires = "std::sync::Arc";
+          description = "Put the expression into an Arc";
+          scope = "expr";
+        };
+        "Rc::new" = {
+          postfix = "rc";
+          body = "Rc::new(\${receiver})";
+          requires = "std::rc::Rc";
+          description = "Put the expression into an Rc";
+          scope = "expr";
+        };
+        "Box::pin" = {
+          postfix = "pinbox";
+          body = "Box::pin(\${receiver})";
+          requires = "std::box::Boxed";
+          description = "Put the expression into a Pinned Box";
+          scope = "expr";
+        };
+        "Ok" = {
+          postfix = "ok";
+          body = "Ok(\${receiver})";
+          description = "Put the expression into a Result::Ok";
+          scope = "expr";
+        };
+        "Err" = {
+          postfix = "err";
+          body = "Err(\${receiver})";
+          description = "Put the expression into a Result::Err";
+          scope = "expr";
+        };
+        "Some" = {
+          postfix = "some";
+          body = "Some(\${receiver})";
+          description = "Put the expression into a Option::Some";
+          scope = "expr";
+        };
+        "dotenv" = {
+          prefix = "dotenv";
+          scope = "expr";
+          description = "Load environment variables";
+          body = "let _ = dotenv::dotenv();";
+        };
+        "tracing_subscriber" = {
+          prefix = [
+            "tracing_subscriber::Registry::default"
+            "Registry::default"
+          ];
+          description = "Initialize tracing subscriber";
+          scope = "expr";
+          requires = "tracing_subscriber::Registry";
+          body = [
+            "Registry::default()"
+            "    .with(tracing_subscriber::fmt::layer())"
+            "    .with(tracing_subscriber::EnvFilter::from_default_env())"
+            "    .try_init()?;"
+            "    tracing::info!(\"Initialized tracing!\");"
+          ];
+        };
+        "Cli" = {
+          prefix = "Cli";
+          scope = "item";
+          requires = [
+            "clap::Parser"
+            "clap::Args"
+            "clap::Subcommand"
+          ];
+          body = [
+            "#[derive(Debug, Parser)]"
+            "pub struct Cli {"
+            "    /// Global args"
+            "    #[clap(flatten)]"
+            "    pub args: Args,"
+            "    /// Subcommands"
+            "    #[clap(subcommand)]"
+            "    pub cmd: Cmd,"
+            "}"
+            ""
+            "#[derive(Debug, Args)]"
+            "pub struct Args {}"
+            ""
+            "#[derive(Debug, Subcommand)]"
+            "pub enum Cmd {"
+            "    Help,"
+            "}"
+          ];
+        };
+        "tokio::task::spawn" = {
+          prefix = [
+            "tokio::task::spawn"
+            "tokio::spawn"
+            "spawn"
+          ];
+          scope = "expr";
+          body = [
+            "tokio::task::spawn(async move {"
+            "    todo!()"
+            "});"
+          ];
+        };
+      };
       "update.mode" = "none";
       "vim.useSystemClipboard" = true;
       "vim.handleKeys" = {
