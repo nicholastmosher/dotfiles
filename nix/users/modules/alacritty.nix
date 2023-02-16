@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       shell.program = "${pkgs.zsh}/bin/zsh";
-      shell.args = [ "-l" "-c" "${pkgs.tmux}/bin/tmux" ];
+      shell.args = [ "-l" "-c" "${pkgs.zellij}/bin/zellij" ];
       colors = {
         primary = {
           background = "0x1f1f1f";
