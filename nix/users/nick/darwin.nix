@@ -12,6 +12,7 @@
     ../modules/zsh.nix
   ];
 
+  home.file.".config/zellij/config.kdl".source = ../../../.config/zellij/config.kdl;
   home.packages = [
     pkgs.rustup
   ];
