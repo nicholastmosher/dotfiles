@@ -5,14 +5,15 @@
     ../modules/direnv.nix
     ../modules/fzf.nix
     ../modules/git.nix
+    ../modules/nushell.nix
     ../modules/packages.nix
     ../modules/starship.nix
     ../modules/tmux.nix
     ../modules/vscode.nix
+    ../modules/zellij.nix
     ../modules/zsh.nix
   ];
 
-  home.file.".config/zellij/config.kdl".source = ../../../.config/zellij/config.kdl;
   home.packages = [
     pkgs.rustup
   ];
