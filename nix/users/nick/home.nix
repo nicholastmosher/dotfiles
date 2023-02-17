@@ -41,6 +41,9 @@
 
   home.file.".gnupg/gpg.conf".source = ../../home/.gnupg/gpg.conf;
   home.file.".gnupg/gpg-agent.conf".source = ../../home/.gnupg/gpg-agent.conf;
+  home.sessionVariables = {
+    EDITOR = "vim";
+  };
   home.sessionPath = [
     "$HOME/.cargo/bin"
     "$HOME/.local/bin"

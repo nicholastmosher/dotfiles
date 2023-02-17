@@ -18,6 +18,9 @@
     pkgs.rustup
   ];
 
+  home.sessionVariables = {
+    EDITOR = "vim";
+  };
   home.sessionPath = [
     "$HOME/.cargo/bin"
     "$HOME/.local/bin"

@@ -1,9 +1,5 @@
 { pkgs, config, ... }:
 {
-  home.packages = with pkgs; [
-    php80
-  ];
-
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
@@ -82,7 +78,6 @@
       # Fixes capslock as escape
       "keyboard.dispatch" = "keyCode";
       "nix.enableLanguageServer" = true;
-      "php.validate.executablePath" = "${pkgs.php80}/bin/php";
       "rust-analyzer.checkOnSave.command" = "clippy";
       "rust-analyzer.assist.allowMergingIntoGlobImports" = false;
       "rust-analyzer.completion.privateEditable.enable" = true;
