@@ -1,10 +1,13 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
+  home.stateVersion = "22.11";
+
   imports = [
     ../modules/alacritty.nix
     ../modules/direnv.nix
     ../modules/fzf.nix
     ../modules/git.nix
+    ../modules/kind.nix
     ../modules/nushell.nix
     ../modules/packages.nix
     ../modules/starship.nix
@@ -22,13 +25,17 @@
     EDITOR = "vim";
   };
   home.sessionPath = [
-    "$HOME/.cargo/bin"
-    "$HOME/.local/bin"
+    "${config.home.homeDirectory}/.cargo/bin"
+    "${config.home.homeDirectory}/.local/bin"
   ];
 
   programs.git = {
     enable = true;
-    userEmail = "nicholastmosher@gmail.com";
+    userEmail = "nick.mosher@ditto.live";
     userName = "Nick Mosher";
+  };
+
+  programs.starship.settings = {
+    kubernetes.disabled = false;
   };
 }

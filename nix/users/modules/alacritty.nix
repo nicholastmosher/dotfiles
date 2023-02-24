@@ -4,7 +4,10 @@
     enable = true;
     settings = {
       shell.program = "${pkgs.zsh}/bin/zsh";
-      shell.args = [ "-l" "-c" "${config.home.homeDirectory}/.cargo/bin/zellij" ];
+      # Use tmux on launch
+      shell.args = [ "-l" "-c" "${pkgs.tmux}/bin/tmux" ];
+      # Use zellij on launch
+      # shell.args = [ "-l" "-c" "${config.home.homeDirectory}/.cargo/bin/zellij" ];
 
       font.size = 24;
       colors = {
@@ -12,12 +15,12 @@
           background = "0x1f1f1f";
           foreground = "0xeaeaea";
         };
-  
+
         cursor = {
           text = "0x000000";
           cursor = "0xffffff";
         };
-  
+
         normal = {
           black = "0x000000";
           red = "0xf87373";

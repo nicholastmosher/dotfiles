@@ -1,29 +1,19 @@
 { config, ... }:
 {
+  home.file.".alias".source = ../../../home/.alias;
+  home.file.".alias.osx".source = ../../../home/.alias.osx;
+  home.file.".path".source = ../../../home/.path;
+
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
     enableSyntaxHighlighting = true;
     initExtra = ''
-      source ~/.alias
       source /etc/static/bashrc &>/dev/null
-      [[ -f "${config.home.homeDirectory}/.path.private" ]] && source "${config.home.homeDirectory}/.path.private"
+      [[ -f "${config.home.homeDirectory}/.alias" ]] && source "${config.home.homeDirectory}/.alias"
+      [[ -f "${config.home.homeDirectory}/.path" ]] && source "${config.home.homeDirectory}/.path"
+      [[ -f "${config.home.homeDirectory}/.zshrc.private" ]] && source "${config.home.homeDirectory}/.zshrc.private"
     '';
-
-    shellAliases = {
-      ls = "exa";
-      sl = "exa";
-      l = "exa -labh --git";
-      la = "exa -labh --git";
-      al = "exa -labh --git";
-      law = "watch -cn0.2 exa -labh --git";
-      kak = "vim";
-      glgg = "git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -S";
-      glggw = "watch -xcn0.2 git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --color";
-      tp = "tee >(xclip -sel clipboard)";
-      tpp = "xclip -sel clipboard -o";
-      "]" = "xdg-open";
-    };
 
     oh-my-zsh = {
       enable = true;

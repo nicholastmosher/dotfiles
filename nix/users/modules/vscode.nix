@@ -2,13 +2,6 @@
 {
   programs.vscode = {
     enable = true;
-    extensions = with pkgs.vscode-extensions; [
-      vscodevim.vim
-      jnoortheen.nix-ide
-      bungcip.better-toml
-      ms-azuretools.vscode-docker
-      ms-vscode-remote.remote-ssh
-    ];
     keybindings = [
       {
         key = "ctrl+b";
@@ -64,7 +57,7 @@
         };
       };
       "editor.formatOnSave" = true;
-      "editor.rulers" = [100];
+      "editor.rulers" = [ 100 ];
       "editor.semanticTokenColorCustomizations" = {
         "[Ayu Mirage Bordered]" = {
           enabled = true;

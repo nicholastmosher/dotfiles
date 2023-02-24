@@ -5,10 +5,6 @@
   };
   programs.git = {
     lfs.enable = true;
-    extraConfig = {
-      safe.directory = "/home/nmosher/.dotfiles";
-    };
-
     delta = {
       enable = true;
       options = {

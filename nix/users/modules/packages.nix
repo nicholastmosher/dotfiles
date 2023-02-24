@@ -20,6 +20,7 @@
     watch
     nodejs
     ripgrep
+    rnix-lsp
     asciinema
   ];
 }
