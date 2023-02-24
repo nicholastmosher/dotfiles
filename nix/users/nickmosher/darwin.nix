@@ -1,7 +1,6 @@
 { pkgs, config, ... }:
 {
   home.stateVersion = "22.11";
-
   imports = [
     ../modules/alacritty.nix
     ../modules/direnv.nix
