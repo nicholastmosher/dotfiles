@@ -28,8 +28,10 @@
           yellow = "0xffeb3d";
           blue = "0x03a9f4";
           magenta = "0xc397d8";
-          cyan = "0xdfaf8f";
+          cyan = "0x2dd4bf"; # TW teal-400
           white = "0xffffff";
+
+          # cyan = "0xdfaf8f"; # Old cyan (brown)
         };
       };
 
