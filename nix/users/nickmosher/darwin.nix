@@ -19,6 +19,8 @@
 
   home.packages = [
     pkgs.rustup
+    pkgs.kafkactl
+    pkgs.graphviz
   ];
 
   home.sessionVariables = {
