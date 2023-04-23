@@ -1,4 +1,4 @@
-theme = "onedark-custom"
+theme = "ayu_mirage_custom"
 
 [editor]
 rulers = [80, 100]
@@ -8,7 +8,7 @@ display-inlay-hints = true
 
 [editor.file-picker]
 hidden = false
-max-depth = 5
+max-depth = 8
 
 [keys.normal]
 C-s = ":w"

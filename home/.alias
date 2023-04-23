@@ -67,7 +67,7 @@ gxc() {
 }
 
 hx() {
-    cargo run --manifest-path="${HOME}/git/github.com/helix-editor/helix/helix-term/Cargo.toml" -- "$@"
+    cargo run --release --manifest-path="${HOME}/git/github.com/helix-editor/helix/helix-term/Cargo.toml" -- "$@"
 }
 
 # Alias only if on OSX

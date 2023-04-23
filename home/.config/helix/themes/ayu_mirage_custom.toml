@@ -1,0 +1,8 @@
+inherits = "ayu_mirage"
+
+"comment" = { fg = "#7f7f75" }
+"ui.virtual.inlay-hint" = { fg = "#FFCC66", bg="#48433F" }
+
+[palette]
+background = "#1f1f1f"
+black = "#0f0f0f"
