@@ -23,7 +23,7 @@
   ];
 
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = "hx";
   };
   home.sessionPath = [
     "${config.home.homeDirectory}/.cargo/bin"

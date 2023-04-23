@@ -4,6 +4,7 @@
   home.file.".alias.osx".source = ../../../home/.alias.osx;
   home.file.".path".source = ../../../home/.path;
   home.file.".config/helix/config.toml".source = ../../../home/.config/helix/config.toml;
+  home.file.".config/helix/themes/onedark-custom.toml".source = ../../../home/.config/helix/themes/onedark-custom.toml;
 
   programs.zsh = {
     enable = true;
