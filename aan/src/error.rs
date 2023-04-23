@@ -1,9 +1,5 @@
-use thiserror::Error;
-
-pub type Result<T, E = Error> = core::result::Result<T, E>;
-
-#[derive(Debug, Error)]
-pub enum Error {
+#[derive(Debug, thiserror::Error)]
+pub enum GitError {
     #[error("Shell error")]
     Shell(#[from] xshell::Error),
 

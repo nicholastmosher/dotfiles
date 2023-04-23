@@ -13,7 +13,7 @@ pub struct WatchKit {
 }
 
 impl WatchKit {
-    pub async fn new() -> crate::Result<Self> {
+    pub async fn new() -> color_eyre::Result<Self> {
         let mut init = InitConfig::default();
         init.on_error(PrintDebug(std::io::stderr()));
 

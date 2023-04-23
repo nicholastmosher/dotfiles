@@ -1,7 +1,6 @@
-use std::path::PathBuf;
-
-use crate::{watch_kit::WatchKit, Result};
+use crate::watch_kit::WatchKit;
 use blackhat::cli::Cmd as BlackhatCmd;
+use std::path::PathBuf;
 
 /// An easy toolbox
 #[derive(Debug, clap::Parser)]
@@ -16,7 +15,7 @@ pub struct Cli {
 }
 
 impl Cli {
-    pub async fn run(&self) -> Result<()> {
+    pub async fn run(&self) -> color_eyre::Result<()> {
         self.cmd.run(&self.args).await?;
         Ok(())
     }
@@ -49,7 +48,7 @@ pub enum Cmd {
 }
 
 impl Cmd {
-    pub async fn run(&self, _args: &Args) -> Result<()> {
+    pub async fn run(&self, _args: &Args) -> color_eyre::Result<()> {
         match self {
             Self::GitWatch { path } => {
                 // Clear screen and println
@@ -59,19 +58,19 @@ impl Cmd {
                 };
 
                 // Print the graph at startup
-                let graph = crate::git_graph(path, true)?;
+                let graph = crate::git_graph::git_graph(path, true)?;
                 print(graph);
 
                 // Rerender the graph on any change in .git/
                 let mut watchkit = WatchKit::new().await?;
-                let rx = crate::git_watch(&mut watchkit, path, true).await?;
+                let rx = crate::git_watch::git_watch(&mut watchkit, path, true).await?;
                 loop {
                     let graph = rx.recv_async().await.expect("should receive git-graph");
                     print(graph);
                 }
             }
             Self::GitGraph { path } => {
-                let graph = crate::git_graph(path, true)?;
+                let graph = crate::git_graph::git_graph(path, true)?;
                 println!("{graph}");
             }
             Self::Symlink => {
