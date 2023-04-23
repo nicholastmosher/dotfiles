@@ -1,0 +1,27 @@
+theme = "onedark"
+
+[editor]
+rulers = [80, 100]
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+C-s = ":w"
+C-o = ":open ~/.config/helix/config.toml"
+C-p = ":config-reload"
+C-e = "file_picker"
+G = "goto_last_line"
+
+[keys.normal.g]
+k = "goto_file_start"
+j = "goto_last_line"
+
+[keys.normal.b]
+b = "buffer_picker"
+n = "goto_next_buffer"
+p = "goto_previous_buffer"
+
+[keys.insert]
+j = { j = "normal_mode" }
+

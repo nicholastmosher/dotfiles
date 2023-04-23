@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# If exa is installed, bind common ls aliases to exa
 if [[ -x "$(command -v exa)" ]]; then
     alias ls="exa"                # Use exa if installed.
     alias sl="exa"                # Mistake alias
@@ -7,6 +8,7 @@ if [[ -x "$(command -v exa)" ]]; then
     alias la="exa -labh --git"    # List in long format, include dotfiles.
     alias al="exa -labh --git"    # List in long format, include dotfiles.
     alias law="watch -cn0.2 exa -labh --git --color=always"
+# If exa is not installed, define common ls aliases
 else
     alias ls="ls --color"         # Force color for ls.
     alias sl="ls --color"         # Mistake alias
@@ -21,21 +23,32 @@ if [[ -x "$(command -v hyperfine)" ]]; then
     alias hf=hyperfine
 fi
 
+alias cdg="cd ~/git/"
+alias cdd="cd ~/git/github.com/nicholastmosher/dotfiles"
+alias cddn="cd ~/git/github.com/nicholastmosher/dotfiles/nix"
+alias apply-darwin="(cd ~/git/github.com/nicholastmosher/dotfiles/nix && ./apply-darwin.sh)"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias tls="tmux ls"
-alias gitlog="git --no-pager log --date=local --format=\" * %h [%cd] %s\""
-alias gds="git diff --staged"
-alias glgg="git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -S"
-alias glggw="watch -xcn0.2 git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --color"
 alias sp="tmux split-window"
 alias vsp="tmux split-window -h"
 alias ":sp"="tmux split-window"
 alias ":vsp"="tmux split-window -h"
 alias kgaw="watch -n1 kubectl get all"
 alias kgaaw="watch -n1 kubectl get all --all-namespaces"
+alias gds="git diff --staged"
+alias glgg="git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -S"
+alias glggw="watch -xcn0.2 git log --graph --abbrev-commit --decorate --color=always --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --color"
+
+# My shorthand for a sort of "gix clone" due to using ein
+gxc() {
+    (mkdir -p ~/git \
+        && cd ~/git \
+        && git clone "$@" \
+        && ein tool organize --execute)
+}
 
 # Alias only if on OSX
 [[ "$(uname)" == "Darwin" ]] && alias ]='open'
@@ -44,6 +57,7 @@ alias kgaaw="watch -n1 kubectl get all --all-namespaces"
 [[ "$(uname)" == "Darwin" ]] || alias open='xdg-open'
 [[ "$(uname)" == "Darwin" ]] || alias ]='xdg-open'
 [[ "$(uname)" == "Darwin" ]] || alias tp='tee >(xclip)'
+[[ "$(uname)" == "Darwin" ]] || alias xclip='xclip -selection c'
 
 # Cargo docs and test
 alias cdt="cargo doc --no-deps && cargo test --doc"

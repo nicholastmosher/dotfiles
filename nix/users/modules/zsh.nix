@@ -3,6 +3,7 @@
   home.file.".alias".source = ../../../home/.alias;
   home.file.".alias.osx".source = ../../../home/.alias.osx;
   home.file.".path".source = ../../../home/.path;
+  home.file.".config/helix/config.toml".source = ../../../home/.config/helix/config.toml;
 
   programs.zsh = {
     enable = true;
