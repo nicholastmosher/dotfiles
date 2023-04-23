@@ -20,6 +20,7 @@
     tokei
     watch
     nodejs
+    zoxide
     ripgrep
     rnix-lsp
     asciinema
