@@ -3,14 +3,20 @@ theme = "onedark"
 [editor]
 rulers = [80, 100]
 
+[editor.lsp]
+display-inlay-hints = true
+
 [editor.file-picker]
 hidden = false
+max-depth = 5
 
 [keys.normal]
 C-s = ":w"
-C-o = ":open ~/.config/helix/config.toml"
-C-p = ":config-reload"
-C-e = "file_picker"
+C-g = ":open ~/git/"
+C-d = ":open ~/git/github.com/nicholastmosher/dotfiles/"
+C-p = ":open ~/git/github.com/nicholastmosher/dotfiles/home/.config/helix/config.toml"
+C-r = ":config-reload ~/git/github.com/nicholastmosher/dotfiles/home/.config/helix/config.toml"
+C-e = "file_picker_in_current_directory"
 G = "goto_last_line"
 
 [keys.normal.g]
