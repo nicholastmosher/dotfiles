@@ -5,6 +5,9 @@
   };
   programs.git = {
     lfs.enable = true;
+    aliases = {
+      root = "rev-parse --show-toplevel";
+    };
     delta = {
       enable = true;
       options = {
