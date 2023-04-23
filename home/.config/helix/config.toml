@@ -32,6 +32,12 @@ j = "jump_view_down"
 k = "jump_view_up"
 l = "jump_view_right"
 
+# Use ]] and [[ to cycle through diagnostics
+[keys.normal."]"]
+"]" = "goto_next_diag"
+[keys.normal."["]
+"[" = "goto_prev_diag"
+
 [keys.insert]
 j = { j = "normal_mode" }
 
