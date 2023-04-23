@@ -8,6 +8,7 @@
     bat
     exa
     git
+    nil
     vim
     xsv
     file
