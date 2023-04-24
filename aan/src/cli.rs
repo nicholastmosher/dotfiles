@@ -1,5 +1,4 @@
 use crate::watch_kit::WatchKit;
-use blackhat::cli::Cmd as BlackhatCmd;
 use std::path::PathBuf;
 
 /// An easy toolbox
@@ -42,9 +41,6 @@ pub enum Cmd {
     },
     #[clap(alias = "sym")]
     Symlink,
-
-    #[clap(flatten)]
-    Blackhat(blackhat::cli::Cmd),
 }
 
 impl Cmd {
@@ -75,12 +71,6 @@ impl Cmd {
             }
             Self::Symlink => {
                 crate::install_symlinks()?;
-            }
-            me @ Self::Blackhat(BlackhatCmd::Subdomain(it)) => {
-                println!("Blackhat command! {me:?}, {it:?}");
-            }
-            _ => {
-                todo!("Not yet!");
             }
         }
 

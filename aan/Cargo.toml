@@ -8,7 +8,6 @@ name = "aan"
 path = "src/bin/main.rs"
 
 [dependencies]
-blackhat = { version = "0.1.0", path = "/Users/nick/Documents/black-hat-rust-exercises/crates/blackhat" }
 clap = { version = "4.1.4", features = ["derive"] }
 clearscreen = "2.0.0"
 color-eyre = "0.6.2"

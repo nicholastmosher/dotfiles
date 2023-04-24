@@ -1,5 +1,5 @@
 use aan::cli::Cli;
-use clap::{CommandFactory, FromArgMatches};
+use clap::Parser;
 use tracing_subscriber::prelude::*;
 use tracing_subscriber::Registry;
 
@@ -18,10 +18,7 @@ async fn main() -> color_eyre::Result<()> {
         .try_init()?;
     tracing::info!("Initialized tracing!");
 
-    let clap_args = aan::argx(std::env::args());
-    let command = Cli::command();
-    let matches = command.get_matches_from(clap_args);
-    let cli = Cli::from_arg_matches(&matches)?;
+    let cli = Cli::parse_from(aan::argx(std::env::args()));
     cli.run().await?;
     Ok(())
 }

@@ -16,11 +16,17 @@ pub enum GitError {
     FlumeRx(#[from] flume::RecvError),
 
     #[error("Failed to find git repo")]
-    GitDiscovery(#[from] gix::discover::Error),
+    GitDiscovery(#[from] Box<gix::discover::Error>),
 
     #[error("Clap error")]
     Clap(#[from] clap::Error),
 
     #[error(transparent)]
     Io(#[from] std::io::Error),
+}
+
+impl From<gix::discover::Error> for GitError {
+    fn from(value: gix::discover::Error) -> Self {
+        Self::GitDiscovery(Box::new(value))
+    }
 }
