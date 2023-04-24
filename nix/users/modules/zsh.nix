@@ -6,6 +6,7 @@
   home.file.".config/helix/config.toml".source = ../../../home/.config/helix/config.toml;
   home.file.".config/helix/themes/onedark_custom.toml".source = ../../../home/.config/helix/themes/onedark_custom.toml;
   home.file.".config/helix/themes/ayu_mirage_custom.toml".source = ../../../home/.config/helix/themes/ayu_mirage_custom.toml;
+  home.file."Library/Application Support/org.dystroy.bacon/prefs.toml".source = ../../.. + "/home/Library/Application Support/org.dystroy.bacon/prefs.toml";
 
   programs.zsh = {
     enable = true;
