@@ -6,7 +6,7 @@ use xshell::{cmd, Shell};
 /// Generate a pretty git history graph for the repository at the given path
 pub fn git_graph(path: &Path, color: bool) -> Result<String, crate::error::GitError> {
     let discover_path = path.resolve().canonicalize()?;
-    let repo = git_repository::discover(discover_path)?;
+    let repo = gix::discover(discover_path)?;
     let repo_path = repo.path().resolve().canonicalize()?;
 
     // Spawn a shell in the repo dir to run the git graph

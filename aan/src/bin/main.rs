@@ -16,9 +16,9 @@ async fn main() -> color_eyre::Result<()> {
         .with(tracing_subscriber::fmt::layer())
         .with(tracing_subscriber::EnvFilter::from_default_env())
         .try_init()?;
-    tracing::debug!("Initialized tracing!");
+    tracing::info!("Initialized tracing!");
 
-    let clap_args = aan::preprocessed_args();
+    let clap_args = aan::argx(std::env::args());
     let command = Cli::command();
     let matches = command.get_matches_from(clap_args);
     let cli = Cli::from_arg_matches(&matches)?;

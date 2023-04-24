@@ -16,7 +16,7 @@ pub enum GitError {
     FlumeRx(#[from] flume::RecvError),
 
     #[error("Failed to find git repo")]
-    GitDiscovery(#[from] git_repository::discover::Error),
+    GitDiscovery(#[from] gix::discover::Error),
 
     #[error("Clap error")]
     Clap(#[from] clap::Error),

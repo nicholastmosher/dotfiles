@@ -19,7 +19,7 @@ pub async fn git_watch(
     let (tx, rx) = flume::bounded(10);
 
     let discover_path = path.resolve();
-    let repo = git_repository::discover(discover_path).map_err(GitError::from)?;
+    let repo = gix::discover(discover_path).map_err(GitError::from)?;
     let repo_path = repo.path().resolve().canonicalize()?;
 
     watch.config.pathset([repo_path.clone()]);
