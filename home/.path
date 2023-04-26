@@ -1,18 +1,15 @@
 #!/bin/bash
 
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/sbin:$PATH"
-export PATH="/usr/bin:$PATH"
-export PATH="/sbin:$PATH"
 export PATH="/bin:$PATH"
-export PATH="/usr/games:$PATH"
-export PATH="/usr/local/games:$PATH"
-export PATH="/snap/bin:$PATH"
+export PATH="/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+
+export PATH="/sbin:$PATH"
+export PATH="/usr/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # If a private path directory exists, source it.
