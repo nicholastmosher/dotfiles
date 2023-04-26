@@ -101,15 +101,7 @@ pub fn install_symlinks() -> color_eyre::Result<()> {
         sh.remove_path(&dst)?;
         let _ = cmd!(sh, "git rm {dst} -f").ignore_stderr().quiet().run();
         sh.hard_link("./target/release/aan", &dst)?;
-    }
-
-    let root = env!("CARGO_MANIFEST_DIR");
-    let parent = format!("{root}/target/release");
-    let an_executable = format!("{parent}/an");
-    for alias in &aliases {
-        let alias_executable = format!("{parent}/{alias}");
-        #[allow(clippy::needless_borrow)]
-        let _ = symlink::symlink_file(&an_executable, alias_executable);
+        tracing::info!("Linking {} -> ./target/release/aan", dst.display());
     }
 
     Ok(())
