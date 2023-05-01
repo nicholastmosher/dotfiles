@@ -1,8 +1,4 @@
 {
-  programs.gh = {
-    enable = true;
-    enableGitCredentialHelper = true;
-  };
   programs.git = {
     lfs.enable = true;
     aliases = {
