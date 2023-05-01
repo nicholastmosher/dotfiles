@@ -6,3 +6,9 @@ comment-token = "#"
 indent = { tab-width = 2, unit = "  " }
 language-server = { command = "rnix-lsp" }
 auto-format = true
+
+[[language]]
+name = "rust"
+scope = "source.rust"
+file-types = "rust"
+language-server = { command = "rustup", args = ["run", "stable", "rust-analyzer"] }

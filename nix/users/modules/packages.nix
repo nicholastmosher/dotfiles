@@ -17,11 +17,13 @@
     wget
     yarn
     procs
+    taplo
     tokei
     watch
     nodejs
     zoxide
     ripgrep
+    marksman
     rnix-lsp
     asciinema
   ];
