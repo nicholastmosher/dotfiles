@@ -17,7 +17,7 @@ wrap = false
 reverse = false
 
 [jobs.nextest]
-command = ["cargo", "nextest", "r", "--color", "always"]
+command = ["cargo", "nextest", "run", "--color", "always"]
 
 # Uncomment this to have bacon always export locations
 # This is equivalent to always adding -e to bacon commands
