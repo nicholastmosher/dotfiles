@@ -47,7 +47,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias bb="bacon"
 alias tls="tmux ls"
 alias sp="tmux split-window"
 alias vsp="tmux split-window -h"
@@ -65,10 +64,6 @@ gxc() {
         && cd ~/git \
         && git clone "$@" \
         && ein tool organize --execute)
-}
-
-hxx() {
-    cargo run --release --manifest-path="${HOME}/git/github.com/helix-editor/helix/helix-term/Cargo.toml" -- "$@"
 }
 
 # Alias only if on OSX
