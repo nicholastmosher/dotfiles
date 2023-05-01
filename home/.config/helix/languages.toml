@@ -5,3 +5,4 @@ file-types = ["nix"]
 comment-token = "#"
 indent = { tab-width = 2, unit = "  " }
 language-server = { command = "rnix-lsp" }
+auto-format = true

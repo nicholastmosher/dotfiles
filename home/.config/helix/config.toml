@@ -15,6 +15,7 @@ C-s = ":w"
 C-g = ":open ~/git/"
 C-d = ":open ~/git/github.com/nicholastmosher/dotfiles/"
 C-p = ":open ~/git/github.com/nicholastmosher/dotfiles/home/.config/helix/config.toml"
+C-q = ":buffer-close"
 C-r = [":reload", ":config-reload ~/git/github.com/nicholastmosher/dotfiles/home/.config/helix/config.toml"]
 C-e = "file_picker_in_current_directory"
 G = "goto_last_line"
