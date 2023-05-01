@@ -67,7 +67,7 @@ gxc() {
         && ein tool organize --execute)
 }
 
-hx() {
+hxx() {
     cargo run --release --manifest-path="${HOME}/git/github.com/helix-editor/helix/helix-term/Cargo.toml" -- "$@"
 }
 
