@@ -10,5 +10,5 @@ auto-format = true
 [[language]]
 name = "rust"
 scope = "source.rust"
-file-types = "rust"
+file-types = ["rs"]
 language-server = { command = "rustup", args = ["run", "stable", "rust-analyzer"] }
