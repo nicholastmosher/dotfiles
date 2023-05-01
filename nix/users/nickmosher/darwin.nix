@@ -37,6 +37,6 @@
   };
 
   programs.starship.settings = {
-    kubernetes.disabled = false;
+    kubernetes.disabled = true;
   };
 }
