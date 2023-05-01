@@ -10,6 +10,12 @@
       # shell.args = [ "-l" "-c" "${config.home.homeDirectory}/.cargo/bin/zellij" ];
 
       font.size = 24;
+      font = {
+        normal = {
+          family = "RobotoMono Nerd Font Mono";
+          style = "Regular";
+        };
+      };
       colors = {
         primary = {
           background = "0x1f1f1f";
