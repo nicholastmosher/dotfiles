@@ -62,11 +62,13 @@
         "[Ayu Mirage Bordered]" = {
           enabled = true;
           rules = {
+            "*.attribute" = "#FDE047";
             "*.documentation" = "#68DF6C";
             typeParameter = "#00ff9d";
           };
         };
       };
+      "editor.accessibilitySupport" = "off";
       "files.autoSave" = "onFocusChange";
       # Fixes capslock as escape
       "keyboard.dispatch" = "keyCode";
@@ -74,6 +76,8 @@
       "rust-analyzer.checkOnSave.command" = "clippy";
       "rust-analyzer.assist.allowMergingIntoGlobImports" = false;
       "rust-analyzer.completion.privateEditable.enable" = true;
+      "rust-analyzer.imports.prefer.no.std" = true;
+      "rust-analyzer.inlayHints.closureReturnTypeHints.enable" = "with_block";
       "rust-analyzer.completion.snippets.custom" = {
         "Arc::new" = {
           postfix = "arc";
@@ -186,6 +190,7 @@
       "workbench.tree.indent" = 20;
       "workbench.colorTheme" = "Ayu Mirage Bordered";
       "terminal.integrated.defaultProfile.linux" = "tmux";
+      "terminal.integrated.enableBell" = false;
     };
   };
 }
