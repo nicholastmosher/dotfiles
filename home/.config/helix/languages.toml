@@ -1,0 +1,7 @@
+[[language]]
+name = "nix"
+scope = "source.nix"
+file-types = ["nix"]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+language-server = { command = "rnix-lsp" }
