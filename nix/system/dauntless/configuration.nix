@@ -11,6 +11,7 @@
     '';
   };
   services.nix-daemon.enable = true;
+  services.activate-system.enable = true;
 
   system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
   system.defaults.NSGlobalDomain.InitialKeyRepeat = 10;
