@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     fd
     jq
+    sd
     bat
     exa
     git
