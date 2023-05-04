@@ -17,6 +17,7 @@
     tmux
     wget
     yarn
+    ngrok
     procs
     taplo
     tokei
