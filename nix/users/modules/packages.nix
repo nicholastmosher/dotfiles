@@ -27,5 +27,7 @@
     marksman
     rnix-lsp
     asciinema
+    shellcheck
+    nodePackages.bash-language-server
   ];
 }
