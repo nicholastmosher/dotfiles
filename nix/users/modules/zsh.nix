@@ -4,6 +4,9 @@
   home.file.".alias.osx".source = ../../../home/.alias.osx;
   home.file.".path".source = ../../../home/.path;
 
+  # Shim for rustup rust-analyzer
+  home.file.".cargo/bin/rust-analyzer".source = ../../../home/.cargo/bin/rust-analyzer;
+
   # Helix config and languages
   home.file.".config/helix/config.toml".source = ../../../home/.config/helix/config.toml;
   home.file.".config/helix/languages.toml".source = ../../../home/.config/helix/languages.toml;

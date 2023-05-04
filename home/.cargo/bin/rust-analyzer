@@ -1,0 +1,3 @@
+#!/bin/bash
+set -euo pipefail
+exec rustup run "$(rustup show active-toolchain | cut -d' ' -f1)" rust-analyzer "$@"
