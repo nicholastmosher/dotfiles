@@ -14,6 +14,7 @@
     vim
     xsv
     file
+    glow
     ipfs
     skim
     tmux
