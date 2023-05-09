@@ -9,11 +9,13 @@
     bat
     exa
     git
+    k9s
     nil
     vim
     xsv
     file
     ipfs
+    skim
     tmux
     wget
     yarn
