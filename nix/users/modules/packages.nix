@@ -6,6 +6,7 @@
     fd
     jq
     sd
+    xh
     bat
     exa
     git
@@ -25,6 +26,7 @@
     taplo
     tokei
     watch
+    dogdns
     nodejs
     zoxide
     ripgrep
