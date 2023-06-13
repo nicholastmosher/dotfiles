@@ -1,7 +1,13 @@
 #!/bin/bash
 
+if [[ -x "$(command -v erd)" ]]; then
+    alias ls="erd -.IHL1 -y inverted -s name"
+    alias sl="erd -.IHL1 -y inverted -s name"
+    alias l="erd -.IHL1 -y inverted -l -s name"
+    alias la="erd -.IHL1 -y inverted -l -s name"
+    alias al="erd -.IHL1 -y inverted -l -s name"
 # If exa is installed, bind common ls aliases to exa
-if [[ -x "$(command -v exa)" ]]; then
+elif [[ -x "$(command -v exa)" ]]; then
     alias ls="exa"                # Use exa if installed.
     alias sl="exa"                # Mistake alias
     alias l="exa -labh --git"     # List in long format, include dotfiles.
