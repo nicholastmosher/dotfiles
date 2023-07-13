@@ -45,7 +45,6 @@
         "ripgrep"
         "rust"
         "sudo"
-        "tmux"
         "vi-mode"
       ];
     };
