@@ -8,4 +8,4 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 #   <system hostname> default: NIX_HOSTNAME or "interceptor"
 NIX_HOSTNAME="${1:-${NIX_HOSTNAME:-"interceptor"}}"
 
-NIXPKGS_ALLOW_UNFREE=1 darwin-rebuild switch --flake ".#${NIX_HOSTNAME}" --impure
+NIXPKGS_ALLOW_UNFREE=1 darwin-rebuild switch --flake ".#${NIX_HOSTNAME}" --impure --show-trace

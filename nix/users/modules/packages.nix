@@ -26,6 +26,7 @@
     tmux
     wget
     yarn
+    bacon
     dasel
     gopls
     jdk17
@@ -37,6 +38,7 @@
     awscli
     cachix
     dogdns
+    mdbook
     nodejs
     zoxide
     kakoune
