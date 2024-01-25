@@ -6,3 +6,10 @@ comment-token = "#"
 indent = { tab-width = 2, unit = "  " }
 language-server = { command = "rnix-lsp" }
 auto-format = true
+
+[[language]]
+name = "Tiltfile"
+scope = "Tiltfile"
+file-types = ["Tilefile"]
+comment-token = "#"
+indent = { tab-width = 4, unit = "    " }
