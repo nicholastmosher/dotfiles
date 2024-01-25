@@ -1,3 +1,7 @@
+[language-server.rust-analyzer.config]
+check = { extraArgs = ["--target-dir=target/analyzer"] }
+server = { extraEnv = { CARGO_TARGET_DIR = "target/analyzer" } }
+
 [[language]]
 name = "nix"
 scope = "source.nix"
