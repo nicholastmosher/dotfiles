@@ -7,6 +7,7 @@
     jq
     sd
     xh
+    yq
     bat
     exa
     git
@@ -18,21 +19,25 @@
     glow
     ipfs
     kind
+    navi
     nmap
     skim
     tilt
     tmux
     wget
     yarn
+    dasel
     ngrok
     procs
     taplo
     tokei
     watch
     awscli
+    cachix
     dogdns
     nodejs
     zoxide
+    kakoune
     ripgrep
     marksman
     rnix-lsp
