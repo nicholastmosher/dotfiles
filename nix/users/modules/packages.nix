@@ -27,6 +27,8 @@
     wget
     yarn
     dasel
+    gopls
+    jdk17
     ngrok
     procs
     taplo
@@ -44,7 +46,12 @@
     asciinema
     inetutils
     shellcheck
+    kubelogin-oidc
     kubernetes-helm
+    yaml-language-server
+    jsonnet-language-server
     nodePackages.bash-language-server
+    nodePackages_latest.typescript
+    nodePackages_latest.typescript-language-server
   ];
 }
