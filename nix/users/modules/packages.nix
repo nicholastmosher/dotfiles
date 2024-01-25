@@ -17,7 +17,10 @@
     file
     glow
     ipfs
+    kind
+    nmap
     skim
+    tilt
     tmux
     wget
     yarn
@@ -26,6 +29,7 @@
     taplo
     tokei
     watch
+    awscli
     dogdns
     nodejs
     zoxide
@@ -33,7 +37,9 @@
     marksman
     rnix-lsp
     asciinema
+    inetutils
     shellcheck
+    kubernetes-helm
     nodePackages.bash-language-server
   ];
 }
