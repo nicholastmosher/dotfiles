@@ -4,7 +4,7 @@
 # Uncomment and change the value (true/false) to
 # specify whether bacon should start in summary mode
 #
-summary = true
+# summary = true
 
 # Uncomment and change the value (true/false) to
 # specify whether bacon should start with lines wrapped
@@ -15,6 +15,11 @@ wrap = false
 # order is reversed, and the status bar is on top
 #
 reverse = false
+
+default_job = "clippy"
+
+[jobs.clippy]
+command = ["cargo", "clippy", "--tests"]
 
 [jobs.nextest]
 command = ["cargo", "nextest", "run", "--color", "always"]
