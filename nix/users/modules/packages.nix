@@ -50,6 +50,7 @@
     kubernetes-helm
     yaml-language-server
     jsonnet-language-server
+    jetbrains.idea-community
     nodePackages.bash-language-server
     nodePackages_latest.typescript
     nodePackages_latest.typescript-language-server
