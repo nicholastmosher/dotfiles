@@ -29,6 +29,7 @@
     bacon
     dasel
     gopls
+    helix
     jdk17
     ngrok
     procs

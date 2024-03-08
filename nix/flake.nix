@@ -16,7 +16,7 @@
   inputs = {
     # This is the release branch for NixOS 22.11, which is best to use for
     # system configurations for NixOS machines.
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
 
     # This branch of nixpkgs has newer versions of packages than `nixos-22.11`,
     # but is less likely to have cached binaries than other branches.
@@ -45,6 +45,10 @@
     agenix.url = "github:ryantm/agenix/main";
     agenix.inputs.nixpkgs.follows = "nixpkgs";
     agenix.inputs.darwin.follows = "nixpkgs-darwin";
+
+    # helix.url = "github:helix-editor/helix";
+    # helix.inputs.nixpkgs.follows = "nixpkgs";
+    # helix.inputs.flake-utils.follows = "flake-utils";
   };
 
   outputs =
@@ -57,6 +61,7 @@
     , nix-darwin
     , home-manager
     , agenix
+    , helix
     , ...
     } @ inputs:
     let
@@ -121,6 +126,7 @@
       upgradeToFromInput = system: _: _: nixpkgs.lib.genAttrs
         [
           "agenix"
+          # "helix"
           "home-manager"
         ]
         (name: inputs."${name}".packages."${system}".default);
