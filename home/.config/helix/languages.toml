@@ -5,15 +5,16 @@ server = { extraEnv = { CARGO_TARGET_DIR = "target/analyzer" } }
 [[language]]
 name = "nix"
 scope = "source.nix"
+roots = ["flake.nix", "flake.lock"]
 file-types = ["nix"]
 comment-token = "#"
 indent = { tab-width = 2, unit = "  " }
-language-server = { command = "rnix-lsp" }
 auto-format = true
 
 [[language]]
 name = "Tiltfile"
 scope = "Tiltfile"
+roots = ["Tiltfile"]
 file-types = ["Tilefile"]
 comment-token = "#"
 indent = { tab-width = 4, unit = "    " }

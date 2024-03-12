@@ -46,9 +46,9 @@
     agenix.inputs.nixpkgs.follows = "nixpkgs";
     agenix.inputs.darwin.follows = "nixpkgs-darwin";
 
-    # helix.url = "github:helix-editor/helix";
-    # helix.inputs.nixpkgs.follows = "nixpkgs";
-    # helix.inputs.flake-utils.follows = "flake-utils";
+    helix.url = "github:helix-editor/helix";
+    helix.inputs.nixpkgs.follows = "nixpkgs";
+    helix.inputs.flake-utils.follows = "flake-utils";
   };
 
   outputs =
@@ -126,7 +126,7 @@
       upgradeToFromInput = system: _: _: nixpkgs.lib.genAttrs
         [
           "agenix"
-          # "helix"
+          "helix"
           "home-manager"
         ]
         (name: inputs."${name}".packages."${system}".default);
