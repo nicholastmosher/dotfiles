@@ -208,21 +208,21 @@ install_fzf() {
 	bash "${HOME}/.fzf/install"
 }
 
-# Set up vim
-configure_vim() {
-	echo "Setting up vim"
-	bash "${HOME}/.vim/setup.sh" &> /dev/null
-}
+# # Set up vim
+# configure_vim() {
+# 	echo "Setting up vim"
+# 	bash "${HOME}/.vim/setup.sh" &> /dev/null
+# }
 
-configure_alacritty() {
+# configure_alacritty() {
 
-	# How to configure on OSX
-	if [[ "$(uname)" == "Darwin" ]]; then
-		ln -s "${HOME}/.config/alacritty.osx.yml" "${HOME}/.config/alacritty.yml"
-	else
-		ln -s "${HOME}/.config/alacritty.linux.yml" "${HOME}/.config/alacritty.yml"
-	fi
-}
+# 	# How to configure on OSX
+# 	if [[ "$(uname)" == "Darwin" ]]; then
+# 		ln -s "${HOME}/.config/alacritty.osx.yml" "${HOME}/.config/alacritty.yml"
+# 	else
+# 		ln -s "${HOME}/.config/alacritty.linux.yml" "${HOME}/.config/alacritty.yml"
+# 	fi
+# }
 
 main() {
 	install_utils;
@@ -230,8 +230,8 @@ main() {
 	install_fonts;
 	install_zsh;
 	configure_zsh;
-	configure_vim;
-	configure_alacritty;
+	# configure_vim;
+	# configure_alacritty;
 	install_ripgrep;
 	install_ripgrep_completions;
 	install_fzf;
@@ -241,4 +241,3 @@ main() {
 	echo "Install complete! Please restart your shell for changes to take effect."
 }
 main
-
