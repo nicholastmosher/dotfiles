@@ -1,0 +1,18 @@
+[helpers]
+
+[default]
+depends = []
+
+[default.files]
+".alias" = "~/.alias"
+".alias.osx" = "~/.alias.osx"
+".ideavimrc" = "~/.ideavimrc"
+".osx" = "~/.osx"
+".path" = "~/.path"
+".tmux.conf" = "~/.tmux.conf"
+".zshrc" = "~/.zshrc"
+
+[default.variables]
+
+[settings]
+default_target_type = "automatic"
