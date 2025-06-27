@@ -15,20 +15,20 @@ plugins=(git sudo zsh-autosuggestions vi-mode kubectl)
 
 ### User configuration ###
 
-if [[ -x "$(command -v kak)" ]]; then
-	export EDITOR="kak"
-else
-	export EDITOR="vim"
-fi
-
-# Use kak as EDITOR if it is installed
-[[ -x "$(command -v "kak")" ]] && export EDITOR="kak"
+# Not using kak these days
+# if [[ -x "$(command -v kak)" ]]; then
+# 	export EDITOR="kak"
+# else
+# 	export EDITOR="vim"
+# fi
+# # Use kak as EDITOR if it is installed
+# [[ -x "$(command -v "kak")" ]] && export EDITOR="kak"
 
 # Source "oh-my-zsh" if installed
 [[ -f "${ZSH}/oh-my-zsh.sh" ]] && DISABLE_AUTO_UPDATE=true source "${ZSH}/oh-my-zsh.sh"
 
 # Source .osx if Darwin
-[[ "$(uname)" == "Darwin" ]] && source "${HOME}/.osx"
+[[ "$(uname)" == "Darwin" && -f "${HOME}/.osx" ]] && source "${HOME}/.osx"
 
 # Configure fuzzy finder if installed
 [[ -f "${HOME}/.fzf.zsh" ]] && source "${HOME}/.fzf.zsh"
